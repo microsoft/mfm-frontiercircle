@@ -1,0 +1,1403 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manufacturing &amp; Mobility Frontier Circle | Microsoft</title>
+  <meta name="description" content="Microsoft-hosted technical labs, webinars, and industry briefings for manufacturing and mobility teams building and exploring AI, agents, data platforms, security, modernization, and connected products.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#e6f0fc">
+  <link rel="canonical" href="https://microsoft.github.io/mfm-frontiercircle/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Microsoft Manufacturing &amp; Mobility">
+  <meta property="og:title" content="Manufacturing &amp; Mobility Frontier Circle">
+  <meta property="og:description" content="Microsoft-hosted technical labs, webinars, and industry briefings for manufacturing and mobility teams. Preview the schedule, or subscribe once to keep it current.">
+  <meta property="og:url" content="https://microsoft.github.io/mfm-frontiercircle/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23008575' fill-opacity='.18'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23008575'/%3E%3C/svg%3E">
+  <script>
+    (() => {
+      const root = document.documentElement;
+      root.classList.replace('no-js', 'js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+        root.classList.add('motion');
+      }
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+
+      --brand-blue: #0078d4;
+      --brand-teal: #008575;
+      --brand-yellow: #ffb900;
+      --ms-red: #f25022;
+      --ms-green: #7fba00;
+      --ms-blue: #00a4ef;
+      --ms-yellow: #ffb900;
+
+      --grad-sky: #e4effc;
+      --grad-mist: #f7fbff;
+      --grad-shore: #eaf5f2;
+      --grad-glow-blue: rgba(0, 120, 212, 0.18);
+      --grad-glow-teal: rgba(0, 133, 117, 0.18);
+      --grad-glow-violet: rgba(120, 89, 198, 0.11);
+
+      --art-surface: rgba(255, 255, 255, 0.9);
+      --art-surface-strong: #ffffff;
+      --art-border: #d3e1f1;
+      --art-text: #111827;
+      --art-text-strong: #12345a;
+      --art-text-muted: #566176;
+      --art-text-soft: #5f6a7e;
+      --art-text-code: #39475b;
+      --art-accent: #0078d4;
+      --art-accent-text: #0067b8;
+      --art-positive: #007e72;
+      --art-focus: #0f6cbd;
+      --art-shadow: 0 1px 2px rgba(23, 32, 51, 0.05), 0 24px 52px -26px rgba(23, 52, 90, 0.28);
+      --art-shadow-hover: 0 2px 4px rgba(23, 32, 51, 0.05), 0 18px 34px -16px rgba(0, 92, 170, 0.32);
+      --art-glow-blue: rgba(0, 120, 212, 0.10);
+      --art-glow-teal: rgba(0, 133, 117, 0.10);
+
+      --eyebrow: #00756a;
+      --eyebrow-halo: rgba(0, 133, 117, 0.16);
+      --step-bg: linear-gradient(90deg, #f8fbff, #eef5ff);
+      --step-border: #c6dbf4;
+      --step-pref-bg: linear-gradient(90deg, #ebf4ff, #e1eeff);
+      --step-pref-border: #aaccec;
+      --tile-bg: #e1f0ff;
+      --tile-fg: #0067b8;
+      --tile-pref-bg: #0078d4;
+      --tile-pref-fg: #ffffff;
+      --badge-bg: #007e72;
+      --badge-fg: #ffffff;
+      --code-bg: #f4f7fb;
+      --code-border: #d6e1ee;
+      --copy-bg: #ffffff;
+      --copy-hover-bg: #eef5ff;
+      --toggle-bg: rgba(255, 255, 255, 0.92);
+      --toggle-border: #b4c6db;
+      --toggle-fg: #12345a;
+      --callout-bg: #ecf7f5;
+      --callout-border: #008574;
+      --callout-text: #29433f;
+      --lane-bg: #fafdff;
+      --lane-border: #dae7f4;
+      --lane-title: #172033;
+      --lane-fg: #ffffff;
+      --lane-build: linear-gradient(135deg, #0e6fc0, #0078d4);
+      --lane-transform: linear-gradient(135deg, #00675c, #008575);
+      --lane-exchange: linear-gradient(135deg, #5458a5, #7859c6);
+      --footer-text: #42526a;
+      --bar: linear-gradient(90deg, #0078d4, #008575 50%, #ffb900);
+
+      --il-sun: #ffb900;
+      --il-sun-o: 0.2;
+      --il-cloud: #ffffff;
+      --il-cloud-o: 0.95;
+      --il-bldg: #d3deea;
+      --il-land-1: #dde7f2;
+      --il-land-2: #d3e6e0;
+      --il-land-rim: #ffffff;
+      --il-road-1: #d5dde8;
+      --il-road-2: #c2ccd9;
+      --il-dash: #ffffff;
+      --il-shadow: #172033;
+      --il-shadow-o: 0.1;
+      --il-body: #f3f7fc;
+      --il-body-edge: #c3d2e4;
+      --il-roof: #d6e3f2;
+      --il-roof-edge: #b9cbe0;
+      --il-chimney: #cfdbe9;
+      --il-smoke: #d0dcea;
+      --il-door: #d3e0ee;
+      --il-blue: #0078d4;
+      --il-cab-shade: #0063b1;
+      --il-teal: #008575;
+      --il-teal-soft: #1a8f80;
+      --il-deck-hi: #63b8aa;
+      --il-tail: #f25022;
+      --il-yellow: #ffb900;
+      --il-yellow-edge: #d49900;
+      --il-slate: #5f6b7d;
+      --il-glass: #dbeeff;
+      --il-wheel: #2b3646;
+      --il-hub: #6b7a8f;
+      --il-spoke: #c9d3df;
+      --il-steel: #64738b;
+      --il-steel-light: #8a97a6;
+      --il-steel-dark: #5b6a7d;
+      --il-trolley: #44525e;
+      --il-pier: #c2cdda;
+      --il-sea-1: #1f7fd0;
+      --il-sea-2: #1e8cb5;
+      --il-sea-3: #1a9a86;
+      --il-sea-shade: #0b3f6e;
+      --il-wave: #ffffff;
+      --il-wake: #0b3f6e;
+      --il-wake-o: 0.22;
+      --il-hull-1: #2373b1;
+      --il-hull-2: #0f4b82;
+      --il-hull-stripe: #6aa3d4;
+      --il-mast: #93a3b8;
+      --il-drone: #293646;
+      --il-rotor: #61708a;
+      --il-signal: #008574;
+      --il-plane: #0e6fbf;
+      --il-plane-dark: #0c599d;
+      --il-plane-wing: #0d62aa;
+      --il-engine: #094e86;
+      --il-intake: #296ea7;
+      --il-cockpit: #0c3b62;
+      --il-window: #d9edfa;
+      --il-trail: #0078d4;
+      --il-trail-o: 0.4;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.55;
+      color: var(--art-text);
+      background-color: var(--grad-mist);
+      background-image:
+        radial-gradient(62rem 38rem at 100% -6%, var(--grad-glow-teal), transparent 64%),
+        radial-gradient(56rem 34rem at 58% -12%, var(--grad-glow-blue), transparent 66%),
+        radial-gradient(52rem 40rem at -10% 102%, var(--grad-glow-violet), transparent 66%),
+        radial-gradient(48rem 34rem at 110% 100%, var(--grad-glow-teal), transparent 62%),
+        linear-gradient(180deg, var(--grad-sky) 0%, var(--grad-mist) 42%, var(--grad-mist) 62%, var(--grad-shore) 100%);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    main { flex: 1 0 auto; }
+
+    a { color: var(--art-accent-text); text-underline-offset: 0.18em; }
+
+    :focus-visible {
+      outline: 3px solid var(--art-focus);
+      outline-offset: 3px;
+    }
+
+    .sr-only {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .nowrap { white-space: nowrap; }
+
+    .wrap {
+      width: 100%;
+      max-width: 79rem;
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 4vw, 3rem);
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      gap: clamp(1.5rem, 3vw, 2.5rem);
+      align-items: center;
+      padding-block: clamp(2rem, 5vw, 3.75rem) clamp(1.75rem, 3.5vw, 2.75rem);
+    }
+
+    .hero__text { container-type: inline-size; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin: 0 0 0.9rem;
+      font-size: 0.8125rem;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--eyebrow);
+    }
+
+    .eyebrow__dot {
+      width: 0.55rem;
+      height: 0.55rem;
+      flex: none;
+      border-radius: 50%;
+      background: var(--brand-teal);
+      box-shadow: 0 0 0 0.3rem var(--eyebrow-halo);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 1.2rem + 3.4vw, 3.4rem);
+      font-weight: 700;
+      line-height: 1.06;
+      letter-spacing: -0.022em;
+      color: var(--art-text);
+    }
+
+    @supports (font-size: 1cqi) {
+      .hero h1 { font-size: clamp(2rem, 7.5cqi, 3.4rem); }
+    }
+
+    .hero h1 .line { display: block; }
+
+    .lede {
+      margin: 1.1rem 0 0;
+      max-width: 40rem;
+      font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+      line-height: 1.55;
+      color: var(--art-text-muted);
+      text-wrap: pretty;
+    }
+
+    .hero__art {
+      position: relative;
+      isolation: isolate;
+      margin: 0;
+    }
+
+    .hero__art::before {
+      content: "";
+      position: absolute;
+      inset: -14% 0 -18% 0;
+      z-index: -1;
+      pointer-events: none;
+      background:
+        radial-gradient(closest-side at 62% 52%, var(--art-glow-blue), transparent),
+        radial-gradient(closest-side at 88% 42%, var(--art-glow-teal), transparent);
+    }
+
+    .art-toggle {
+      position: absolute;
+      top: 0.25rem;
+      right: 0.25rem;
+      display: grid;
+      place-items: center;
+      width: 2rem;
+      height: 2rem;
+      padding: 0;
+      border: 1px solid var(--toggle-border);
+      border-radius: 50%;
+      background: var(--toggle-bg);
+      color: var(--toggle-fg);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .hero__art:hover .art-toggle,
+    .hero__art.is-paused .art-toggle,
+    .art-toggle:focus-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .art-toggle[hidden] { display: none; }
+    .art-toggle svg { width: 0.85rem; height: 0.85rem; }
+    .art-toggle .icon-play { display: none; }
+    .hero__art.is-paused .art-toggle .icon-pause { display: none; }
+    .hero__art.is-paused .art-toggle .icon-play { display: block; }
+
+    /* Harbor illustration */
+    .harbor { display: block; width: 100%; height: auto; overflow: visible; }
+    .il-sun { fill: var(--il-sun); opacity: var(--il-sun-o); }
+    .il-cloud { fill: var(--il-cloud); opacity: var(--il-cloud-o); }
+    .il-bldg { fill: var(--il-bldg); }
+    .il-rim { fill: none; stroke: var(--il-land-rim); stroke-width: 1; stroke-linecap: round; opacity: 0.85; }
+    .il-road { fill: none; stroke-width: 9.6; stroke-linecap: round; }
+    .il-shadow { fill: var(--il-shadow); opacity: var(--il-shadow-o); }
+    .il-wake { fill: var(--il-wake); opacity: var(--il-wake-o); }
+    .il-body { fill: var(--il-body); stroke: var(--il-body-edge); stroke-width: 0.8; }
+    .il-chassis { fill: var(--il-wheel); }
+    .il-deck { fill: var(--il-teal-soft); }
+    .il-deck-hi { fill: none; stroke: var(--il-deck-hi); stroke-width: 0.7; stroke-linecap: round; }
+    .il-headboard { fill: var(--il-slate); }
+    .il-tail { fill: var(--il-tail); }
+    .il-roof { fill: var(--il-roof); stroke: var(--il-roof-edge); stroke-width: 0.6; stroke-linejoin: round; }
+    .il-chimney { fill: var(--il-chimney); }
+    .il-smoke { fill: var(--il-smoke); }
+    .il-door { fill: var(--il-door); stroke: var(--il-roof-edge); stroke-width: 0.6; }
+    .il-blue { fill: var(--il-blue); }
+    .il-cab-shade { fill: var(--il-cab-shade); }
+    .il-teal { fill: var(--il-teal); }
+    .il-teal-soft { fill: var(--il-teal-soft); }
+    .il-yellow { fill: var(--il-yellow); }
+    .il-slate { fill: var(--il-slate); }
+    .il-glass { fill: var(--il-glass); }
+    .il-wheel { fill: var(--il-wheel); }
+    .il-hub { fill: var(--il-hub); }
+    .il-spoke { fill: none; stroke: var(--il-spoke); stroke-width: 0.9; stroke-linecap: round; }
+    .il-dash { fill: none; stroke: var(--il-dash); stroke-width: 1.1; stroke-linecap: round; stroke-dasharray: 4.5 6.5; opacity: 0.9; }
+    .il-shore { fill: none; stroke: var(--il-dash); stroke-width: 0.9; stroke-linecap: round; stroke-dasharray: 5 7.5; opacity: 0.85; }
+    .il-wave { fill: none; stroke: var(--il-wave); stroke-width: 0.95; stroke-linecap: round; opacity: 0.55; }
+    .il-reflect { fill: none; stroke: var(--il-wave); stroke-width: 1.9; stroke-linecap: round; opacity: 0.22; }
+    .il-pier { fill: var(--il-pier); }
+    .il-pier-leg { fill: var(--il-steel-light); }
+    .il-crane-leg { fill: none; stroke: var(--il-steel); stroke-width: 2.5; stroke-linecap: round; }
+    .il-crane-brace { fill: none; stroke: var(--il-steel-light); stroke-width: 1.25; stroke-linecap: round; }
+    .il-crane-frame { fill: none; stroke: var(--il-steel); stroke-width: 1.55; stroke-linecap: round; stroke-linejoin: round; }
+    .il-crane-beam { fill: var(--il-steel-dark); }
+    .il-trolley { fill: var(--il-trolley); }
+    .il-cable { fill: none; stroke: var(--il-trolley); stroke-width: 0.95; }
+    .il-load { fill: var(--il-yellow); stroke: var(--il-yellow-edge); stroke-width: 0.5; }
+    .il-load-rib { fill: none; stroke: var(--il-yellow-edge); stroke-width: 0.6; stroke-linecap: round; opacity: 0.85; }
+    .il-cargo { opacity: 0; }
+    .il-stripe { fill: none; stroke: var(--il-hull-stripe); stroke-width: 0.9; opacity: 0.9; }
+    .il-mast { fill: none; stroke: var(--il-mast); stroke-width: 1.1; stroke-linecap: round; }
+    .il-drone-body { fill: var(--il-drone); }
+    .il-drone-arm { fill: none; stroke: var(--il-drone); stroke-width: 1.26; stroke-linecap: round; }
+    .il-rotor { fill: var(--il-rotor); }
+    .il-sensor { fill: var(--il-signal); }
+    .il-signal { fill: none; stroke: var(--il-signal); stroke-linecap: round; }
+    .il-signal--1 { stroke-width: 1.13; }
+    .il-signal--2 { stroke-width: 1; opacity: 0.6; }
+    .il-plane-body { fill: var(--il-plane); }
+    .il-plane-fin { fill: var(--il-plane-dark); }
+    .il-plane-wing { fill: var(--il-plane-wing); }
+    .il-engine { fill: var(--il-engine); }
+    .il-intake { fill: var(--il-intake); }
+    .il-cockpit { fill: var(--il-cockpit); }
+    .il-windows { fill: none; stroke: var(--il-window); stroke-width: 1.05; stroke-linecap: round; stroke-dasharray: 0.75 2.15; }
+    .il-trail { fill: none; stroke: var(--il-trail); stroke-width: 1.25; stroke-linecap: round; stroke-dasharray: 1.25 4.25; opacity: var(--il-trail-o); }
+
+    /* Panels */
+    .panels {
+      display: grid;
+      gap: clamp(1rem, 2vw, 1.5rem);
+      padding-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
+    }
+
+    .panel {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: clamp(1.25rem, 0.95rem + 1.4vw, 2rem);
+      background: var(--art-surface);
+      border: 1px solid var(--art-border);
+      border-radius: 1.25rem;
+      box-shadow: var(--art-shadow);
+    }
+
+    .panel h2 {
+      margin: 0;
+      font-size: clamp(1.375rem, 1.2rem + 0.5vw, 1.625rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--art-text);
+    }
+
+    .panel__intro {
+      margin: 0.5rem 0 0;
+      color: var(--art-text-muted);
+    }
+
+    .panel__foot {
+      margin-top: auto;
+      padding-top: 1.5rem;
+    }
+
+    /* Calendar steps */
+    .steps {
+      list-style: none;
+      margin: 1.4rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .step {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.95rem;
+      align-items: start;
+      padding: 1.05rem 1.1rem;
+      background: var(--step-bg);
+      border: 1px solid var(--step-border);
+      border-radius: 0.9rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .step--preferred {
+      background: var(--step-pref-bg);
+      border-color: var(--step-pref-border);
+    }
+
+    .step__num {
+      display: grid;
+      place-items: center;
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 0.6rem;
+      background: var(--tile-bg);
+      color: var(--tile-fg);
+      font-size: 1.15rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .step--preferred .step__num {
+      background: var(--tile-pref-bg);
+      color: var(--tile-pref-fg);
+    }
+
+    .step__title {
+      margin: 0.1rem 0 0;
+      font-size: 1.125rem;
+      font-weight: 900;
+      line-height: 1.3;
+      color: var(--art-text-strong);
+    }
+
+    .step__link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .step__link::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+    }
+
+    .step__link:focus-visible { outline: none; }
+
+    .step__link:focus-visible::after {
+      outline: 3px solid var(--art-focus);
+      outline-offset: 3px;
+    }
+
+    .step__ext {
+      display: inline-block;
+      width: 0.8em;
+      height: 0.8em;
+      margin-left: 0.35em;
+      vertical-align: -0.02em;
+      color: var(--art-accent-text);
+      transition: transform 0.2s ease;
+    }
+
+    .step__desc {
+      margin: 0.3rem 0 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--art-text-muted);
+    }
+
+    .step__url {
+      margin: 0.35rem 0 0;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--art-text-code);
+      overflow-wrap: anywhere;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-left: 0.35rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: var(--badge-bg);
+      color: var(--badge-fg);
+      font-size: 0.6875rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      line-height: 1.3;
+      text-transform: uppercase;
+      vertical-align: 0.15em;
+      white-space: nowrap;
+    }
+
+    @media (hover: hover) {
+      .step:hover {
+        transform: translateY(-2px);
+        border-color: var(--art-accent);
+        box-shadow: var(--art-shadow-hover);
+      }
+      .step:hover .step__ext { transform: translate(2px, -2px); }
+    }
+
+    /* ICS address */
+    .ics { margin-top: 1.4rem; }
+
+    .ics__label {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--art-text-soft);
+    }
+
+    .ics__field {
+      display: flex;
+      align-items: stretch;
+      margin-top: 0.55rem;
+      background: var(--code-bg);
+      border: 1px solid var(--code-border);
+      border-radius: 0.7rem;
+      overflow: hidden;
+    }
+
+    .ics__url {
+      flex: 1;
+      min-width: 0;
+      padding: 0.65rem 0.85rem;
+      font-family: Consolas, "Cascadia Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--art-text-code);
+      overflow-wrap: anywhere;
+      -webkit-user-select: all;
+      user-select: all;
+    }
+
+    .ics__copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex: none;
+      padding: 0 1rem;
+      border: 0;
+      border-left: 1px solid var(--code-border);
+      background: var(--copy-bg);
+      color: var(--art-accent-text);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .ics__copy:hover { background: var(--copy-hover-bg); }
+    .ics__copy:focus-visible { outline-offset: -3px; }
+    .ics__copy svg { width: 1rem; height: 1rem; flex: none; }
+    .ics__copy .icon-check { display: none; }
+    .ics__copy[data-state="copied"] { color: var(--art-positive); }
+    .ics__copy[data-state="copied"] .icon-copy { display: none; }
+    .ics__copy[data-state="copied"] .icon-check { display: block; }
+    .no-js .ics__copy { display: none; }
+
+    .howto {
+      margin-top: 0.7rem;
+      font-size: 0.9rem;
+      color: var(--art-text-muted);
+    }
+
+    .howto summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      cursor: pointer;
+      color: var(--art-accent-text);
+      font-weight: 700;
+      list-style: none;
+      border-radius: 0.3rem;
+    }
+
+    .howto summary::-webkit-details-marker { display: none; }
+
+    .howto summary::before {
+      content: "";
+      width: 0.45rem;
+      height: 0.45rem;
+      margin-inline: 0.1rem 0.05rem;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(-45deg);
+      transition: transform 0.2s ease;
+    }
+
+    .howto[open] summary::before { transform: rotate(45deg); }
+
+    .howto ul {
+      margin: 0.6rem 0 0;
+      padding-left: 1.2rem;
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .howto strong { color: var(--art-text); }
+
+    /* Lanes */
+    .lanes {
+      list-style: none;
+      margin: 1.4rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .lane {
+      display: grid;
+      grid-template-columns: 7.25rem minmax(0, 1fr);
+      background: var(--lane-bg);
+      border: 1px solid var(--lane-border);
+      border-radius: 0.9rem;
+      overflow: hidden;
+    }
+
+    .lane--build { --lane-grad: var(--lane-build); }
+    .lane--transform { --lane-grad: var(--lane-transform); }
+    .lane--exchange { --lane-grad: var(--lane-exchange); }
+
+    .lane__tag {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.15rem;
+      margin: 0;
+      padding: 1rem 0.95rem;
+      background: var(--lane-grad);
+      color: var(--lane-fg);
+    }
+
+    .lane__audience {
+      font-size: 0.6875rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .lane__name {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .lane__body { padding: 1rem 1.2rem 1.05rem; }
+
+    .lane__title {
+      margin: 0;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--lane-title);
+    }
+
+    .lane__body p {
+      margin: 0.3rem 0 0;
+      font-size: 0.9375rem;
+      color: var(--art-text-soft);
+    }
+
+    /* Callouts */
+    .callout {
+      margin: 0;
+      padding: 0.85rem 1.05rem;
+      background: var(--callout-bg);
+      border-left: 3px solid var(--callout-border);
+      border-radius: 0.6rem;
+      color: var(--callout-text);
+      font-size: 0.9375rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      color: var(--footer-text);
+      font-size: 0.875rem;
+    }
+
+    .footer__row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem 2rem;
+      padding-block: 0.25rem 1rem;
+    }
+
+    .footer__row p { margin: 0; }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+    }
+
+    .ms-logo { width: 1.125rem; height: 1.125rem; flex: none; }
+    .ms-logo .r { fill: var(--ms-red); }
+    .ms-logo .g { fill: var(--ms-green); }
+    .ms-logo .b { fill: var(--ms-blue); }
+    .ms-logo .y { fill: var(--ms-yellow); }
+
+    .footer__contact a {
+      font-weight: 700;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .footer__contact a:hover { text-decoration: underline; }
+
+    .sep { margin-inline: 0.6rem; opacity: 0.7; }
+
+    .footer__legal {
+      border-top: 1px solid var(--art-border);
+      padding-block: 0.9rem 1.25rem;
+    }
+
+    .footer__legal ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 1.5rem;
+      font-size: 0.8125rem;
+    }
+
+    .footer__legal a { color: inherit; }
+
+    .footer__bar {
+      height: 0.5rem;
+      background: var(--bar);
+    }
+
+    /* Layout breakpoints */
+    @media (min-width: 64rem) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+        column-gap: 2rem;
+      }
+      .hero__art { margin-right: calc(-1 * clamp(0rem, 4vw - 1rem, 2rem)); }
+    }
+
+    @media (min-width: 72rem) {
+      .panels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 33.99rem) {
+      .step { gap: 0.8rem; padding: 0.95rem; }
+      .ics__url { font-size: 0.8125rem; }
+      .lane { grid-template-columns: minmax(0, 1fr); }
+      .lane__tag {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 0.55rem;
+        padding: 0.55rem 1.2rem;
+      }
+      .footer__row { justify-content: flex-start; }
+      .contact-item { display: block; }
+      .footer__contact .sep { display: none; }
+    }
+
+    /* Motion: one-time intro (under 5 s) */
+    @media (prefers-reduced-motion: no-preference) {
+      .motion [data-reveal] {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.7s ease, transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+        transition-delay: var(--d, 0ms);
+      }
+
+      .motion [data-reveal].is-in {
+        opacity: 1;
+        transform: none;
+      }
+
+      .harbor .il-sun-intro { animation: hb-fade 1.4s ease-out both; }
+      .harbor .il-cloud { animation: hb-drift 3.2s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+      .harbor .il-plane { animation: hb-plane 2.4s cubic-bezier(0.17, 0.84, 0.32, 1) 0.3s both; }
+      .harbor .il-trail-intro { animation: hb-fade 1s ease-out 1.5s both; }
+      .harbor .il-drone { animation: hb-drone 2.6s cubic-bezier(0.33, 0.66, 0.34, 1) 0.45s both; }
+
+      @keyframes hb-fade { from { opacity: 0; } }
+      @keyframes hb-drift { from { opacity: 0; transform: translateX(-10px); } }
+      @keyframes hb-plane {
+        from { opacity: 0; transform: translate(-56px, 17px); }
+        35% { opacity: 1; }
+        to { transform: none; }
+      }
+      @keyframes hb-drone {
+        0% { opacity: 0; transform: translateY(-12px); }
+        40% { opacity: 1; transform: translateY(1.6px); }
+        65% { transform: translateY(-1px); }
+        85% { transform: translateY(0.4px); }
+        100% { transform: none; }
+      }
+
+      /* Ambient loops: need JavaScript so the pause control exists; paused while off-screen */
+      .motion .harbor .amb-plane {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: amb-plane 9s ease-in-out infinite;
+      }
+      .motion .harbor .amb-trail { animation: amb-trail 1.2s linear infinite; }
+      .motion .harbor .amb-drone { animation: amb-drone 7s ease-in-out infinite; }
+      .motion .harbor .amb-rotor {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: amb-rotor 0.3s linear infinite alternate;
+      }
+      .motion .harbor .amb-signal { animation: amb-signal 2.2s ease-in-out infinite; }
+      .motion .harbor .amb-signal-2 { animation: amb-signal-2 2.2s ease-in-out 0.3s infinite; }
+      .motion .harbor .amb-cloud { animation: amb-cloud 16s ease-in-out infinite alternate; }
+      .motion .harbor .amb-cloud--b { animation-duration: 21s; animation-direction: alternate-reverse; }
+      .motion .harbor .amb-sun {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: amb-sun 6s ease-in-out infinite alternate;
+      }
+      .motion .harbor .amb-smoke {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: amb-smoke 3.6s ease-out infinite;
+      }
+      .motion .harbor .amb-smoke:nth-child(2) { animation-delay: -1.2s; }
+      .motion .harbor .amb-smoke:nth-child(3) { animation-delay: -2.4s; }
+      .motion .harbor .amb-truck { animation: amb-truck 16s ease-in-out infinite; }
+      .motion .harbor .amb-wheel {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: amb-wheel 16s ease-in-out infinite;
+      }
+      .motion .harbor .amb-cargo {
+        transform-box: fill-box;
+        transform-origin: 50% 100%;
+        animation: amb-cargo 16s ease-in-out infinite;
+      }
+      .motion .harbor .amb-trolley { animation: amb-trolley 16s ease-in-out infinite; }
+      .motion .harbor .amb-hook { animation: amb-hook 16s ease-in-out infinite; }
+      .motion .harbor .amb-cable {
+        transform-box: fill-box;
+        transform-origin: 50% 0;
+        animation: amb-cable 16s ease-in-out infinite;
+      }
+      .motion .harbor .amb-crate { animation: amb-crate 16s linear infinite; }
+      .motion .harbor .amb-ship {
+        transform-box: fill-box;
+        transform-origin: 50% 100%;
+        animation: amb-ship 6s ease-in-out infinite;
+      }
+      .motion .harbor .amb-wave { animation: amb-wave 3.6s ease-in-out infinite alternate; }
+      .motion .harbor .amb-wave--b { animation-delay: -1.2s; }
+      .motion .harbor .amb-wave--c { animation-delay: -2.4s; }
+      .motion .harbor .amb-wave--d { animation-delay: -0.6s; }
+      .motion .harbor .amb-wave--e { animation-delay: -1.8s; }
+      .motion .harbor .amb-shore { animation: amb-shore 7s linear infinite; }
+      .motion .harbor .amb-shimmer { animation: amb-shimmer 2.4s ease-in-out infinite alternate; }
+
+      .motion .hero__art.is-paused .amb,
+      .motion .hero__art.is-offscreen .amb { animation-play-state: paused; }
+
+      @keyframes amb-plane {
+        0%, 100% { transform: translate(0, 0) rotate(0deg); }
+        35% { transform: translate(6px, -1.8px) rotate(-1.2deg); }
+        70% { transform: translate(-3px, 1px) rotate(0.6deg); }
+      }
+      @keyframes amb-trail { to { stroke-dashoffset: 5.5; } }
+      @keyframes amb-drone {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(4px, -2.2px); }
+        50% { transform: translate(8px, 0.4px); }
+        75% { transform: translate(4px, 1.6px); }
+      }
+      @keyframes amb-rotor { to { transform: scaleX(0.55); } }
+      @keyframes amb-signal { 0%, 100% { opacity: 0.15; } 40% { opacity: 1; } }
+      @keyframes amb-signal-2 { 0%, 100% { opacity: 0.08; } 50% { opacity: 0.7; } }
+      @keyframes amb-cloud { to { transform: translateX(18px); } }
+      @keyframes amb-sun { to { transform: scale(1.08); } }
+      @keyframes amb-smoke {
+        0% { opacity: 0; transform: translate(0, 4px) scale(0.6); }
+        25% { opacity: 1; }
+        100% { opacity: 0; transform: translate(2.5px, -7px) scale(1.35); }
+      }
+      /* Loading story (16 s): crane lifts a box from the ship, loads the truck, truck delivers it to the factory */
+      @keyframes amb-truck {
+        0%, 6.25% { transform: translateX(-28px); }
+        31.25%, 50% { transform: translateX(24px); }
+        75%, 100% { transform: translateX(-28px); }
+      }
+      @keyframes amb-wheel {
+        0%, 6.25% { transform: rotate(0deg); }
+        31.25%, 50% { transform: rotate(-562deg); }
+        75%, 100% { transform: rotate(0deg); }
+      }
+      @keyframes amb-cargo {
+        0%, 41.2% { opacity: 0; transform: none; }
+        41.3%, 75% { opacity: 1; transform: none; }
+        83.75% { opacity: 0; transform: translateY(-3px) scale(0.85); }
+        100% { opacity: 0; transform: none; }
+      }
+      @keyframes amb-trolley {
+        0%, 8.75% { transform: translateX(8px); }
+        30%, 47.5% { transform: translateX(-61.6px); }
+        67.5%, 100% { transform: translateX(8px); }
+      }
+      @keyframes amb-hook {
+        0% { transform: translateY(15.2px); }
+        8.75%, 33.75% { transform: translateY(-16.2px); }
+        41.25% { transform: translateY(-1.4px); }
+        47.5%, 67.5% { transform: translateY(-16.2px); }
+        77.5%, 100% { transform: translateY(15.2px); }
+      }
+      @keyframes amb-cable {
+        0% { transform: scaleY(1.889); }
+        8.75%, 33.75% { transform: scaleY(0.0526); }
+        41.25% { transform: scaleY(0.918); }
+        47.5%, 67.5% { transform: scaleY(0.0526); }
+        77.5%, 100% { transform: scaleY(1.889); }
+      }
+      @keyframes amb-crate {
+        0%, 41.2% { opacity: 1; }
+        41.3%, 81% { opacity: 0; }
+        81.1%, 100% { opacity: 1; }
+      }
+      @keyframes amb-ship {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        30% { transform: translateY(1.2px) rotate(-0.9deg); }
+        70% { transform: translateY(-0.4px) rotate(0.6deg); }
+      }
+      @keyframes amb-wave {
+        from { opacity: 0.35; transform: translateX(-3px); }
+        to { opacity: 0.8; transform: translateX(4px); }
+      }
+      @keyframes amb-shore { to { stroke-dashoffset: -25; } }
+      @keyframes amb-shimmer { to { opacity: 0.05; } }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .step, .step__ext, .howto summary::before { transition: none; }
+      .step:hover, .step:hover .step__ext { transform: none; }
+    }
+
+    @media (forced-colors: active) {
+      .lane__tag { border-right: 1px solid CanvasText; }
+      .badge, .step__num { border: 1px solid CanvasText; }
+      .callout { border-left-color: CanvasText; }
+    }
+
+    @media print {
+      body { background: var(--art-surface-strong); }
+      .panel { box-shadow: none; break-inside: avoid; }
+      .ics__copy, .howto, .art-toggle, .footer__bar { display: none; }
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+      .step__link::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="page-title">
+      <div class="hero__text">
+        <p class="eyebrow" data-reveal><span class="eyebrow__dot" aria-hidden="true"></span>Customer Innovation Series</p>
+        <h1 id="page-title" data-reveal style="--d: 70ms"><span class="line">Manufacturing &amp;&nbsp;Mobility</span> <span class="line">Frontier&nbsp;Circle</span></h1>
+        <p class="lede" data-reveal style="--d: 140ms">Microsoft-hosted technical labs, webinars, and industry briefings for manufacturing and mobility teams building and exploring AI, agents, data platforms, security, modernization, and connected products.</p>
+      </div>
+
+      <div class="hero__art">
+        <svg class="harbor" viewBox="494 22 446 132" aria-hidden="true" focusable="false">
+          <defs>
+            <clipPath id="hb-base">
+              <path d="M506 151C501.5 151 499.5 147.5 499.5 142C500 118 503 101 516 99.6C600 97.6 760 94.6 926 97.2C932.5 97.6 936.5 102.5 936.5 109V142C936.5 147.5 933 151 927 151Z"/>
+            </clipPath>
+            <linearGradient id="hb-land" gradientUnits="userSpaceOnUse" x1="499" y1="0" x2="937" y2="0">
+              <stop offset="0" style="stop-color: var(--il-land-1)"/>
+              <stop offset="1" style="stop-color: var(--il-land-2)"/>
+            </linearGradient>
+            <linearGradient id="hb-road" gradientUnits="userSpaceOnUse" x1="504" y1="0" x2="710" y2="0">
+              <stop offset="0" style="stop-color: var(--il-road-1)"/>
+              <stop offset="1" style="stop-color: var(--il-road-2)"/>
+            </linearGradient>
+            <linearGradient id="hb-sea" gradientUnits="userSpaceOnUse" x1="518" y1="0" x2="937" y2="0">
+              <stop offset="0" style="stop-color: var(--il-sea-1)"/>
+              <stop offset="0.55" style="stop-color: var(--il-sea-2)"/>
+              <stop offset="1" style="stop-color: var(--il-sea-3)"/>
+            </linearGradient>
+            <linearGradient id="hb-depth" gradientUnits="userSpaceOnUse" x1="0" y1="119" x2="0" y2="151">
+              <stop offset="0" style="stop-color: var(--il-sea-shade); stop-opacity: 0"/>
+              <stop offset="1" style="stop-color: var(--il-sea-shade); stop-opacity: 0.28"/>
+            </linearGradient>
+            <linearGradient id="hb-hull" gradientUnits="userSpaceOnUse" x1="0" y1="124.6" x2="0" y2="141">
+              <stop offset="0" style="stop-color: var(--il-hull-1)"/>
+              <stop offset="1" style="stop-color: var(--il-hull-2)"/>
+            </linearGradient>
+          </defs>
+
+          <g class="il-sun-intro"><circle class="il-sun amb amb-sun" cx="549.8" cy="47.9" r="15.1"/></g>
+          <g class="il-cloud">
+            <g class="amb amb-cloud">
+              <ellipse cx="629" cy="40.4" rx="10.7" ry="5.1"/>
+              <ellipse cx="638.5" cy="38.5" rx="7" ry="3.8"/>
+            </g>
+          </g>
+          <g class="il-cloud">
+            <g class="amb amb-cloud amb-cloud--b">
+              <ellipse cx="769.9" cy="46.6" rx="16.4" ry="6.9"/>
+              <ellipse cx="783.7" cy="44.1" rx="11.3" ry="5.7"/>
+              <ellipse cx="757.3" cy="44.8" rx="9.5" ry="5.1"/>
+            </g>
+          </g>
+
+          <g clip-path="url(#hb-base)">
+            <rect x="499" y="94" width="438" height="58" fill="url(#hb-land)"/>
+            <path class="il-road" stroke="url(#hb-road)" d="M509 116.8C590 114.9 650 115 705 116.4"/>
+            <path class="il-dash" d="M517 117C590 115.1 650 115.2 699 116.5"/>
+            <path d="M518 152C524 140 538 127.5 564 124.2C586 121.6 604 121.6 622 121.9C680 122.6 760 128.4 840 129C880 129.2 906 125 928 121.8C936 120.7 942 120.5 946 120.5V152Z" fill="url(#hb-sea)"/>
+            <path d="M518 152C524 140 538 127.5 564 124.2C586 121.6 604 121.6 622 121.9C680 122.6 760 128.4 840 129C880 129.2 906 125 928 121.8C936 120.7 942 120.5 946 120.5V152Z" fill="url(#hb-depth)"/>
+            <path class="il-shore amb amb-shore" d="M518 152C524 140 538 127.5 564 124.2C586 121.6 604 121.6 622 121.9C680 122.6 760 128.4 840 129C880 129.2 906 125 928 121.8C936 120.7 942 120.5 946 120.5"/>
+          </g>
+          <path class="il-rim" d="M499.5 142C500 118 503 101 516 99.6C600 97.6 760 94.6 926 97.2C932.5 97.6 936.5 102.5 936.5 109"/>
+
+          <g class="il-bldg">
+            <rect x="510.8" y="86.8" width="8.2" height="17.7" rx="1.5"/>
+            <rect x="593.8" y="85.6" width="6.9" height="18.9" rx="1.5"/>
+            <rect x="603.9" y="90.6" width="5.6" height="13.9" rx="1.5"/>
+          </g>
+
+          <g class="il-factory">
+            <ellipse class="il-shadow" cx="555" cy="104.8" rx="40" ry="2.6"/>
+            <g class="il-smoke">
+              <circle class="amb amb-smoke" cx="580.6" cy="67.9" r="1.7"/>
+              <circle class="amb amb-smoke" cx="583" cy="64.1" r="1.9"/>
+              <circle class="amb amb-smoke" cx="580.1" cy="60" r="2.6"/>
+            </g>
+            <rect class="il-chimney" x="578.6" y="71.8" width="3.9" height="7.6"/>
+            <path class="il-roof" d="M525.6 79V70.1L538.8 79ZM540.7 79V70.1L553.9 79ZM555.8 79V70.1L569 79ZM571 79V70.1L584.2 79Z"/>
+            <rect class="il-body" x="524.4" y="79" width="63.1" height="25.4" rx="2.2"/>
+            <rect class="il-blue" x="532.3" y="88.8" width="6.7" height="6.7" rx="1.3"/>
+            <rect class="il-teal" x="549.8" y="88.8" width="6.7" height="6.7" rx="1.3"/>
+            <rect class="il-yellow" x="567.4" y="88.8" width="6.7" height="6.7" rx="1.3"/>
+            <rect class="il-door" x="577.4" y="90" width="7.5" height="14.2" rx="1.2"/>
+          </g>
+
+          <g class="il-truck">
+            <g class="amb amb-truck">
+              <g transform="matrix(-1 0 0 1 1262.1 0)">
+                <ellipse class="il-shadow" cx="635" cy="117.5" rx="41" ry="2.3"/>
+                <rect class="il-chassis" x="598" y="110" width="68" height="2.4" rx="0.8"/>
+                <rect class="il-deck" x="596" y="106.6" width="54" height="4" rx="0.9"/>
+                <path class="il-deck-hi" d="M597 107.3H649"/>
+                <rect class="il-tail" x="595.4" y="107.3" width="1.6" height="2" rx="0.4"/>
+                <rect class="il-headboard" x="646.2" y="99" width="3.4" height="7.8" rx="0.6"/>
+                <path class="il-blue" d="M650.1 99.4H663.6Q666.7 99.4 666.7 102.5V114.5H650.1Z"/>
+                <rect class="il-cab-shade" x="650.1" y="112.6" width="16.6" height="1.9"/>
+                <rect class="il-glass" x="653" y="102" width="8.7" height="5.3" rx="1.4"/>
+                <rect class="il-headboard" x="650.6" y="95.6" width="1.2" height="6.4" rx="0.6"/>
+                <g class="amb amb-wheel">
+                  <circle class="il-wheel" cx="610" cy="115.7" r="5.3"/>
+                  <circle class="il-hub" cx="610" cy="115.7" r="2.3"/>
+                  <path class="il-spoke" d="M607.9 115.7h4.2"/>
+                </g>
+                <g class="amb amb-wheel">
+                  <circle class="il-wheel" cx="629" cy="115.7" r="5.3"/>
+                  <circle class="il-hub" cx="629" cy="115.7" r="2.3"/>
+                  <path class="il-spoke" d="M626.9 115.7h4.2"/>
+                </g>
+                <g class="amb amb-wheel">
+                  <circle class="il-wheel" cx="659.3" cy="115.7" r="5.3"/>
+                  <circle class="il-hub" cx="659.3" cy="115.7" r="2.3"/>
+                  <path class="il-spoke" d="M657.2 115.7h4.2"/>
+                </g>
+              </g>
+              <g class="il-cargo amb amb-cargo">
+                <rect class="il-load" x="633" y="98.6" width="12" height="8" rx="0.8"/>
+                <path class="il-load-rib" d="M637 99.6v6M641 99.6v6"/>
+              </g>
+            </g>
+          </g>
+
+          <path class="il-wave amb amb-wave" d="M575 134.7q3.75-2.7 7.5 0t7.5 0"/>
+          <path class="il-wave amb amb-wave amb-wave--b" d="M851.6 130.9q3.75-2.7 7.5 0t7.5 0"/>
+          <path class="il-wave amb amb-wave amb-wave--c" d="M709.4 136.6q5.7 3.1 11.4 0"/>
+          <path class="il-wave amb amb-wave amb-wave--d" d="M612 143.2q3-2.2 6 0t6 0"/>
+          <path class="il-wave amb amb-wave amb-wave--e" d="M876 140.2q3-2.2 6 0t6 0"/>
+          <path class="il-reflect amb amb-shimmer" d="M746 143.4v3.8M773.6 144.1v3.7M801.3 143.4v3.8"/>
+
+          <g class="il-crane">
+            <rect class="il-pier-leg" x="689.4" y="125.8" width="2.5" height="9.5"/>
+            <rect class="il-pier-leg" x="717" y="127.1" width="2.6" height="9.4"/>
+            <rect class="il-pier" x="685.6" y="123.3" width="37.7" height="3.2" rx="1"/>
+            <path class="il-crane-leg" d="M694 77.6 692.4 124.2M713.6 77.6 715.3 124.2"/>
+            <path class="il-crane-brace" d="M695.9 106.8 711.9 102.7"/>
+            <path class="il-crane-frame" d="M687 77.2 703.2 69.6 719.4 77.4M703.2 69.6V77"/>
+            <rect class="il-crane-beam" x="658" y="75.4" width="84.2" height="3.7" rx="1.85"/>
+            <g class="amb amb-trolley">
+              <path class="il-cable amb amb-cable" d="M724.6 82.9V100"/>
+              <rect class="il-trolley" x="720.8" y="79.1" width="7.6" height="3.8" rx="0.8"/>
+              <g class="amb amb-hook">
+                <g class="amb amb-crate">
+                  <rect class="il-load" x="718.6" y="100" width="12" height="8" rx="0.8"/>
+                  <path class="il-load-rib" d="M722.6 101v6M726.6 101v6"/>
+                </g>
+              </g>
+            </g>
+          </g>
+
+          <g class="il-ship">
+            <ellipse class="il-wake" cx="782" cy="142.4" rx="47" ry="2.6"/>
+            <g class="amb amb-ship">
+              <path d="M721.9 124.6H841.7L828.5 140.9H736.1Z" fill="url(#hb-hull)"/>
+              <path class="il-stripe" d="M728.6 131.6H835.4"/>
+              <rect class="il-blue" x="725.8" y="112.3" width="13.8" height="12.3" rx="1.2"/>
+              <rect class="il-teal" x="740.9" y="112.3" width="13.8" height="12.3" rx="1.2"/>
+              <rect class="il-yellow" x="756" y="112.3" width="13.8" height="12.3" rx="1.2"/>
+              <rect class="il-slate" x="771.1" y="112.3" width="13.8" height="12.3" rx="1.2"/>
+              <rect class="il-blue" x="786.2" y="112.3" width="13.8" height="12.3" rx="1.2"/>
+              <rect class="il-teal" x="801.3" y="112.3" width="13.8" height="12.3" rx="1.2"/>
+              <rect class="il-yellow" x="740.9" y="100.6" width="13.8" height="11.2" rx="1.2"/>
+              <rect class="il-blue" x="756" y="100.6" width="13.8" height="11.2" rx="1.2"/>
+              <rect class="il-teal" x="771.1" y="100.6" width="13.8" height="11.2" rx="1.2"/>
+              <rect class="il-yellow" x="786.2" y="100.6" width="13.8" height="11.2" rx="1.2"/>
+              <path class="il-mast" d="M824.6 96.6V106.8"/>
+              <path class="il-yellow" d="M825.1 97 831.3 99.2 825.1 101.4Z"/>
+              <rect class="il-body" x="816.4" y="106.8" width="16.4" height="17.8" rx="1.6"/>
+              <rect class="il-blue" x="819.6" y="110.3" width="3.5" height="3.5" rx="0.6"/>
+              <rect class="il-blue" x="825.3" y="110.3" width="3.5" height="3.5" rx="0.6"/>
+            </g>
+          </g>
+
+          <g class="il-drone">
+            <g class="amb amb-drone">
+              <path class="il-drone-arm" d="M647.9 56.7 656.7 61.1M666.7 56.7 657.9 61.1"/>
+              <ellipse class="il-rotor amb amb-rotor" cx="647.9" cy="56.05" rx="5.05" ry="1.35"/>
+              <ellipse class="il-rotor amb amb-rotor" cx="666.75" cy="56.05" rx="5.05" ry="1.35"/>
+              <rect class="il-drone-body" x="652.3" y="59.2" width="10" height="5" rx="1.4"/>
+              <circle class="il-sensor" cx="657.3" cy="65.5" r="1.9"/>
+              <path class="il-signal il-signal--1 amb amb-signal" d="M671.1 60.4Q674.6 63.55 671.1 66.7"/>
+              <path class="il-signal il-signal--2 amb amb-signal-2" d="M674.3 57.9Q681.9 63.55 674.3 69.2"/>
+            </g>
+          </g>
+
+          <g class="il-plane">
+            <g class="amb amb-plane">
+              <g class="il-trail-intro"><path class="il-trail amb amb-trail" d="M786.3 55.2 810.2 48"/></g>
+              <path class="il-plane-fin" d="M812.2 34.5 826.6 42.2 819.8 43.3Z"/>
+              <path class="il-plane-fin" d="M812.3 45.7 820.5 44.8 816.6 46.1Z"/>
+              <path class="il-plane-wing" d="M846.7 45.3 853.8 44.1 860.5 52.7 856.6 53.2Z"/>
+              <path class="il-plane-body" d="M815.2 44 865 37.8C870.2 37 876.4 36.4 881.5 38.7 877.2 41.7 871.2 43.3 865 44L815.8 49.7C813.8 49.3 812.8 48 813.3 46.7 813.6 45.6 814.3 44.6 815.2 44Z"/>
+              <path class="il-cockpit" d="M873.2 37.5C876 37.2 878.7 37.6 880.4 38.6 878.7 39.6 876.8 40.2 875 40.5Z"/>
+              <path class="il-windows" d="M824.6 45.6 866 39.9"/>
+              <rect class="il-engine" x="851.4" y="51.3" width="7.4" height="3.9" rx="1.95" transform="rotate(-8 855.1 53.25)"/>
+              <ellipse class="il-intake" cx="851.4" cy="53.6" rx="1.3" ry="1.9" transform="rotate(-8 851.4 53.6)"/>
+            </g>
+          </g>
+        </svg>
+        <button class="art-toggle" type="button" hidden>
+          <svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3.5v9M11 3.5v9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3.2v9.6c0 .5.5.8 1 .5l7.3-4.8c.4-.3.4-.8 0-1L6 2.7c-.5-.3-1 0-1 .5Z" fill="currentColor"/></svg>
+          <span class="sr-only" data-toggle-label>Pause animation</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="panels wrap">
+      <section class="panel" id="subscribe" aria-labelledby="subscribe-title" data-reveal style="--d: 200ms">
+        <h2 id="subscribe-title">Never miss a session</h2>
+        <p class="panel__intro">Your Microsoft account team uses Frontier Circle to invite you to upcoming sessions. Preview the schedule, or subscribe once to keep it current.</p>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <div>
+              <h3 class="step__title">
+                <a class="step__link" href="https://aka.ms/mfm-frontiercircle-calendar" target="_blank" rel="noopener" aria-describedby="step-1-desc">Preview the Outlook <span class="nowrap">calendar<svg class="step__ext" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens in a new tab)</span></a>
+              </h3>
+              <p class="step__desc" id="step-1-desc">Click to view upcoming sessions in Outlook on the web.</p>
+              <p class="step__url">https://aka.ms/mfm-frontiercircle-calendar</p>
+            </div>
+          </li>
+          <li class="step step--preferred">
+            <span class="step__num" aria-hidden="true">2</span>
+            <div>
+              <h3 class="step__title">
+                <a class="step__link" href="https://outlook.office.com/calendar/addfromweb/?url=https%3A%2F%2Faka.ms%2Fmfm-frontiercircle-calendar-ics&amp;name=MfM%20Frontier%20Circle" target="_blank" rel="noopener" aria-describedby="step-2-desc">Subscribe in Outlook&nbsp;&mdash; one <span class="nowrap">click<svg class="step__ext" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens in a new tab)</span></a>
+                <span class="badge">Preferred</span>
+              </h3>
+              <p class="step__desc" id="step-2-desc">Opens Outlook&rsquo;s Subscribe dialog pre-filled&nbsp;&mdash; just select Import. Stays current automatically as sessions are added or revised.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="ics">
+          <p class="ics__label"><strong>Other calendar apps (Gmail, Apple):</strong> add this calendar address&nbsp;&mdash;</p>
+          <div class="ics__field">
+            <code class="ics__url" id="ics-url">https://aka.ms/mfm-frontiercircle-calendar-ics</code>
+            <button class="ics__copy" type="button" data-copy-target="ics-url">
+              <svg class="icon-copy" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="7" y="7" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 4.6V4a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 3 4v7a1.5 1.5 0 0 0 1.5 1.5h.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <svg class="icon-check" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-label>Copy</span><span class="sr-only"> calendar address</span>
+            </button>
+          </div>
+          <details class="howto">
+            <summary>How to add it in Google or Apple Calendar</summary>
+            <ul>
+              <li><strong>Google Calendar (web):</strong> next to <em>Other calendars</em>, select <strong>+</strong> &rarr; <strong>From URL</strong>, paste the address, then select <strong>Add calendar</strong>.</li>
+              <li><strong>Apple Calendar (Mac):</strong> choose <strong>File &rarr; New Calendar Subscription</strong>, paste the address, then select <strong>Subscribe</strong>.</li>
+            </ul>
+          </details>
+          <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="panel__foot">
+          <p class="callout"><strong>Tip:</strong> Subscribing keeps your calendar up to date. Downloading/importing an ICS file is only a one-time snapshot.</p>
+        </div>
+      </section>
+
+      <section class="panel" id="what-to-expect" aria-labelledby="expect-title" data-reveal style="--d: 280ms">
+        <h2 id="expect-title">What to expect</h2>
+        <p class="panel__intro">Frontier Circle is designed for both technical teams and business leaders. Pick the lane that fits the topic and audience.</p>
+
+        <ul class="lanes">
+          <li class="lane lane--build">
+            <p class="lane__tag"><span class="lane__audience">Technical</span> <span class="lane__name">Build</span></p>
+            <div class="lane__body">
+              <h3 class="lane__title">Build &amp; Skill Labs</h3>
+              <p>Hands-on labs, guided workshops, and implementation clinics for architects, engineers, makers, and technical teams.</p>
+            </div>
+          </li>
+          <li class="lane lane--transform">
+            <p class="lane__tag"><span class="lane__audience">Business</span> <span class="lane__name">Transform</span></p>
+            <div class="lane__body">
+              <h3 class="lane__title">Transformation Briefings</h3>
+              <p>Webinars, industry insights, customer stories, and art-of-the-possible discussions for business and technology leaders.</p>
+            </div>
+          </li>
+          <li class="lane lane--exchange">
+            <p class="lane__tag"><span class="lane__audience">Shared</span> <span class="lane__name">Exchange</span></p>
+            <div class="lane__body">
+              <h3 class="lane__title">Frontier Exchange</h3>
+              <p>Cross-functional sessions where business and technical stakeholders compare patterns, questions, and next steps.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="panel__foot">
+          <p class="callout"><strong>Registration required:</strong> each event has its own registration page. Use the calendar to discover topics, then register separately for the sessions you want to attend.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__row">
+      <p class="brand">
+        <svg class="ms-logo" viewBox="0 0 23 23" aria-hidden="true" focusable="false"><path class="r" d="M1 1h10v10H1z"/><path class="g" d="M12 1h10v10H12z"/><path class="b" d="M1 12h10v10H1z"/><path class="y" d="M12 12h10v10H12z"/></svg>
+        <span>Microsoft Manufacturing &amp; Mobility</span>
+      </p>
+      <p class="footer__contact"><span class="contact-item">Frontier Circle: <a href="https://aka.ms/mfm-frontiercircle">https://aka.ms/mfm-frontiercircle</a></span><span class="sep" aria-hidden="true">|</span><span class="contact-item">Mailbox: <a href="mailto:mfm-frontiercircle@microsoft.com">mfm-frontiercircle@microsoft.com</a></span></p>
+    </div>
+    <div class="wrap footer__legal">
+      <ul>
+        <li><a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy &amp; cookies</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a></li>
+        <li><a href="https://www.microsoft.com/trademarks">Trademarks</a></li>
+        <li>&copy; Microsoft <span data-year>2026</span></li>
+      </ul>
+    </div>
+    <div class="footer__bar" aria-hidden="true"></div>
+  </footer>
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      try {
+        const status = document.getElementById('copy-status');
+        const announce = (message) => {
+          status.textContent = '';
+          window.setTimeout(() => { status.textContent = message; }, 60);
+        };
+
+        const legacyCopy = (text) => {
+          const field = document.createElement('textarea');
+          field.value = text;
+          field.setAttribute('readonly', '');
+          field.className = 'sr-only';
+          document.body.appendChild(field);
+          field.select();
+          let copied = false;
+          try { copied = document.execCommand('copy'); } catch (_) { copied = false; }
+          field.remove();
+          return copied;
+        };
+
+        document.querySelectorAll('[data-copy-target]').forEach((button) => {
+          const source = document.getElementById(button.getAttribute('data-copy-target'));
+          const label = button.querySelector('[data-label]');
+          let timer = 0;
+
+          button.addEventListener('click', async () => {
+            const text = source.textContent.trim();
+            let copied = false;
+            if (navigator.clipboard && window.isSecureContext) {
+              try { await navigator.clipboard.writeText(text); copied = true; } catch (_) { copied = false; }
+            }
+            if (!copied) copied = legacyCopy(text);
+
+            window.clearTimeout(timer);
+            if (copied) {
+              button.dataset.state = 'copied';
+              label.textContent = 'Copied';
+              announce('Calendar address copied to your clipboard.');
+              timer = window.setTimeout(() => {
+                delete button.dataset.state;
+                label.textContent = 'Copy';
+              }, 2600);
+            } else {
+              const range = document.createRange();
+              range.selectNodeContents(source);
+              const selection = window.getSelection();
+              selection.removeAllRanges();
+              selection.addRange(range);
+              announce('Address selected. Press Ctrl+C, or Command+C on a Mac, to copy it.');
+            }
+          });
+        });
+
+        document.querySelectorAll('[data-year]').forEach((node) => {
+          node.textContent = String(new Date().getFullYear());
+        });
+
+        if (root.classList.contains('motion')) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { rootMargin: '0px 0px -6% 0px', threshold: 0.08 });
+          document.querySelectorAll('[data-reveal]').forEach((node) => observer.observe(node));
+
+          const art = document.querySelector('.hero__art');
+          const toggle = art && art.querySelector('.art-toggle');
+          if (toggle) {
+            const toggleLabel = toggle.querySelector('[data-toggle-label]');
+            toggle.hidden = false;
+            toggle.addEventListener('click', () => {
+              const paused = art.classList.toggle('is-paused');
+              toggleLabel.textContent = paused ? 'Play animation' : 'Pause animation';
+            });
+            new IntersectionObserver(([entry]) => {
+              art.classList.toggle('is-offscreen', !entry.isIntersecting);
+            }).observe(art);
+          }
+        }
+      } catch (error) {
+        root.classList.remove('motion');
+      }
+    })();
+  </script>
+</body>
+</html>
