@@ -25,6 +25,31 @@
       }
     })();
   </script>
+  <script>
+    (() => {
+      const projectId = 'z4t5ly03h4';
+      const localHosts = new Set(['localhost', '127.0.0.1', '::1']);
+      const isProduction = window.location.protocol === 'https:' && !localHosts.has(window.location.hostname);
+      if (!isProduction) return;
+
+      window.clarity = window.clarity || function () {
+        (window.clarity.q = window.clarity.q || []).push(arguments);
+      };
+
+      window.clarity('consentv2', {
+        ad_Storage: 'denied',
+        analytics_Storage: 'denied'
+      });
+
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = `https://www.clarity.ms/tag/${projectId}`;
+      script.dataset.clarityProject = projectId;
+      const firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(script, firstScript);
+    })();
+  </script>
   <style>
     :root {
       color-scheme: light;
@@ -1213,7 +1238,7 @@
             <span class="step__num" aria-hidden="true">1</span>
             <div>
               <h3 class="step__title">
-                <a class="step__link" href="https://aka.ms/mfm-frontiercircle-calendar" target="_blank" rel="noopener" aria-describedby="step-1-desc">Preview the Outlook <span class="nowrap">calendar<svg class="step__ext" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens in a new tab)</span></a>
+                <a class="step__link" href="https://aka.ms/mfm-frontiercircle-calendar" target="_blank" rel="noopener" aria-describedby="step-1-desc" data-clarity-event="calendar_preview_click">Preview the Outlook <span class="nowrap">calendar<svg class="step__ext" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens in a new tab)</span></a>
               </h3>
               <p class="step__desc" id="step-1-desc">Click to view upcoming sessions in Outlook on the web.</p>
               <p class="step__url">https://aka.ms/mfm-frontiercircle-calendar</p>
@@ -1223,7 +1248,7 @@
             <span class="step__num" aria-hidden="true">2</span>
             <div>
               <h3 class="step__title">
-                <a class="step__link" href="https://outlook.office.com/calendar/addfromweb/?url=https%3A%2F%2Faka.ms%2Fmfm-frontiercircle-calendar-ics&amp;name=MfM%20Frontier%20Circle" target="_blank" rel="noopener" aria-describedby="step-2-desc">Subscribe in Outlook&nbsp;&mdash; one <span class="nowrap">click<svg class="step__ext" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens in a new tab)</span></a>
+                <a class="step__link" href="https://outlook.office.com/calendar/addfromweb/?url=https%3A%2F%2Faka.ms%2Fmfm-frontiercircle-calendar-ics&amp;name=MfM%20Frontier%20Circle" target="_blank" rel="noopener" aria-describedby="step-2-desc" data-clarity-event="outlook_subscribe_click">Subscribe in Outlook&nbsp;&mdash; one <span class="nowrap">click<svg class="step__ext" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens in a new tab)</span></a>
                 <span class="badge">Preferred</span>
               </h3>
               <p class="step__desc" id="step-2-desc">Opens Outlook&rsquo;s Subscribe dialog pre-filled&nbsp;&mdash; just select Import. Stays current automatically as sessions are added or revised.</p>
@@ -1235,7 +1260,7 @@
           <p class="ics__label"><strong>Other calendar apps (Gmail, Apple):</strong> add this calendar address&nbsp;&mdash;</p>
           <div class="ics__field">
             <code class="ics__url" id="ics-url">https://aka.ms/mfm-frontiercircle-calendar-ics</code>
-            <button class="ics__copy" type="button" data-copy-target="ics-url">
+            <button class="ics__copy" type="button" data-copy-target="ics-url" data-clarity-event="calendar_address_copy_click">
               <svg class="icon-copy" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="7" y="7" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 4.6V4a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 3 4v7a1.5 1.5 0 0 0 1.5 1.5h.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
               <svg class="icon-check" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span data-label>Copy</span><span class="sr-only"> calendar address</span>
@@ -1297,7 +1322,7 @@
         <svg class="ms-logo" viewBox="0 0 23 23" aria-hidden="true" focusable="false"><path class="r" d="M1 1h10v10H1z"/><path class="g" d="M12 1h10v10H12z"/><path class="b" d="M1 12h10v10H1z"/><path class="y" d="M12 12h10v10H12z"/></svg>
         <span>Microsoft Manufacturing &amp; Mobility</span>
       </p>
-      <p class="footer__contact"><span class="contact-item">Frontier Circle: <a href="https://aka.ms/mfm-frontiercircle">https://aka.ms/mfm-frontiercircle</a></span><span class="sep" aria-hidden="true">|</span><span class="contact-item">Mailbox: <a href="mailto:mfm-frontiercircle@microsoft.com">mfm-frontiercircle@microsoft.com</a></span></p>
+      <p class="footer__contact"><span class="contact-item">Frontier Circle: <a href="https://aka.ms/mfm-frontiercircle">https://aka.ms/mfm-frontiercircle</a></span><span class="sep" aria-hidden="true">|</span><span class="contact-item">Mailbox: <a href="mailto:mfm-frontiercircle@microsoft.com" data-clarity-event="contact_email_click">mfm-frontiercircle@microsoft.com</a></span></p>
     </div>
     <div class="wrap footer__legal">
       <ul>
@@ -1316,6 +1341,14 @@
     (() => {
       const root = document.documentElement;
       try {
+        document.querySelectorAll('[data-clarity-event]').forEach((element) => {
+          element.addEventListener('click', () => {
+            if (typeof window.clarity === 'function') {
+              window.clarity('event', element.dataset.clarityEvent);
+            }
+          });
+        });
+
         const status = document.getElementById('copy-status');
         const announce = (message) => {
           status.textContent = '';
