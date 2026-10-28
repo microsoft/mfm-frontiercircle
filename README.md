@@ -40,7 +40,7 @@ Questions about Frontier Circle? Email [mfm-frontiercircle@microsoft.com](mailto
 
 ## About this site
 
-The page is a single, self-contained [`index.html`](index.html): HTML, CSS, an inline SVG illustration, and a small script. There's no build step, framework, web font, analytics, or third-party request. It's published with [GitHub Pages](https://docs.github.com/pages) from the root of the `main` branch.
+The page is a single, self-contained [`index.html`](index.html): HTML, CSS, an inline SVG illustration, and a small script. There's no build step, framework, web font, external asset dependency, or custom analytics or telemetry code. It's published with [GitHub Pages](https://docs.github.com/pages) from the root of the `main` branch.
 
 ### Preview locally
 
@@ -76,10 +76,22 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 Please don't report security vulnerabilities through public GitHub issues. See [SECURITY.md](SECURITY.md) for how to report them.
 
-## Trademarks
+## Data collection and privacy
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general). Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.
+The landing page source includes no custom analytics or telemetry code. The site is hosted by GitHub Pages and links to Microsoft services.
 
-## License
+The software may collect information about you and your use of the software and send it to Microsoft. Microsoft may use this information to provide services and improve our products and services. You may turn off the telemetry as described in the repository. There are also some features in the software that may enable you and Microsoft to collect data from users of your applications. If you use these features, you must comply with applicable law, including providing appropriate notices to users of your applications together with a copy of Microsoft's privacy statement. Our privacy statement is located at <https://go.microsoft.com/fwlink/?LinkID=824704>. You can learn more about data collection and use in the help documentation and our privacy statement. Your use of the software operates as your consent to these practices.
 
-Licensed under the [MIT License](LICENSE).
+Because this page does not implement custom telemetry, it has no repository-specific telemetry control. Service-level data collection is controlled through the relevant service and browser settings.
+
+## Legal notices
+
+Microsoft and any contributors grant you a license to the Microsoft documentation and other content in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the [LICENSE-CODE](LICENSE-CODE) file.
+
+In [`index.html`](index.html), the customer-facing copy and original logistics illustration are content licensed under CC BY 4.0; the HTML, CSS, and JavaScript implementation is code licensed under MIT. Microsoft names, logos, and trademarks are excluded from that content license as described below.
+
+Microsoft, Windows, Microsoft Azure, and other Microsoft products and services referenced in the documentation may be either trademarks or registered trademarks of Microsoft in the United States or other countries. The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks. Microsoft's general trademark guidelines can be found at the [Microsoft Trademark and Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+
+Privacy information can be found at [https://privacy.microsoft.com](https://privacy.microsoft.com).
+
+Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents, or trademarks, whether by implication, estoppel, or otherwise.
