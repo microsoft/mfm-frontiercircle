@@ -44,16 +44,6 @@ Questions about Frontier Circle? Email [mfm-frontiercircle@microsoft.com](mailto
 
 The page is a single [`index.html`](index.html): HTML, CSS, an inline SVG illustration, and small scripts. There's no build step, framework, or web font. The production page uses Microsoft Clarity's cookieless mode for page-visit and link-engagement reporting. Local previews don't load Clarity. It's published with [GitHub Pages](https://docs.github.com/pages) from the root of the `main` branch.
 
-### Preview locally
-
-Open `index.html` directly in a browser, or serve the folder to mirror GitHub Pages:
-
-```bash
-python -m http.server 8000
-```
-
-Then browse to <http://localhost:8000>.
-
 ### Make changes
 
 - All content, styles, and the illustration live in `index.html`. Colors are defined once as CSS custom properties at the top of the stylesheet.
