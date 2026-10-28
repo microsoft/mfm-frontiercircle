@@ -25,6 +25,83 @@
       }
     })();
   </script>
+  <script>
+    (() => {
+      const storageKey = 'mfm-frontiercircle.analytics-consent.v1';
+      const projectId = 'z4t5ly03h4';
+      const consentLifetime = 1000 * 60 * 60 * 24 * 270;
+      const localHosts = new Set(['localhost', '127.0.0.1', '::1']);
+      const isProduction = window.location.protocol === 'https:' && !localHosts.has(window.location.hostname);
+
+      const read = () => {
+        try {
+          const stored = JSON.parse(window.localStorage.getItem(storageKey));
+          if (!stored || !['granted', 'denied'].includes(stored.state) || !Number.isFinite(stored.updatedAt)) {
+            return null;
+          }
+          if (Date.now() - stored.updatedAt > consentLifetime) {
+            window.localStorage.removeItem(storageKey);
+            return null;
+          }
+          return stored.state;
+        } catch (_) {
+          return null;
+        }
+      };
+
+      const write = (state) => {
+        try {
+          window.localStorage.setItem(storageKey, JSON.stringify({ state, updatedAt: Date.now() }));
+          return true;
+        } catch (_) {
+          return false;
+        }
+      };
+
+      const ensureQueue = () => {
+        window.clarity = window.clarity || function () {
+          (window.clarity.q = window.clarity.q || []).push(arguments);
+        };
+      };
+
+      const signal = (analyticsStorage) => {
+        ensureQueue();
+        window.clarity('consentv2', {
+          ad_Storage: 'denied',
+          analytics_Storage: analyticsStorage
+        });
+      };
+
+      const loadClarity = () => {
+        if (!isProduction) return;
+        signal('granted');
+        if (document.querySelector('script[data-clarity-project]')) return;
+
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = `https://www.clarity.ms/tag/${projectId}`;
+        script.dataset.clarityProject = projectId;
+        const firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+      };
+
+      const revokeClarity = () => {
+        if (typeof window.clarity !== 'function') return;
+        signal('denied');
+        window.clarity('consent', false);
+      };
+
+      window.frontierCircleConsent = Object.freeze({
+        read,
+        write,
+        loadClarity,
+        revokeClarity
+      });
+
+      if (read() === 'granted') loadClarity();
+    })();
+  </script>
   <style>
     :root {
       color-scheme: light;
@@ -769,10 +846,103 @@
 
     .footer__legal a { color: inherit; }
 
+    .footer__cookie-button {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      color: inherit;
+      background: none;
+      font: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
+      cursor: pointer;
+    }
+
+    .footer__cookie-button:hover { text-decoration-thickness: 2px; }
+
     .footer__bar {
       height: 0.5rem;
       background: var(--bar);
     }
+
+    /* Optional analytics consent */
+    .cookie-consent {
+      position: fixed;
+      z-index: 1000;
+      inset: auto 0 0;
+      padding:
+        1rem max(1rem, env(safe-area-inset-right))
+        calc(1rem + env(safe-area-inset-bottom))
+        max(1rem, env(safe-area-inset-left));
+      border-top: 1px solid var(--art-border);
+      background: rgba(247, 251, 255, 0.96);
+      box-shadow: 0 -18px 48px -28px rgba(23, 52, 90, 0.48);
+      backdrop-filter: blur(14px);
+    }
+
+    .cookie-consent__panel {
+      width: 100%;
+      max-width: 75rem;
+      margin-inline: auto;
+      padding: clamp(1rem, 2.5vw, 1.4rem);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 1rem 2rem;
+      border: 1px solid var(--art-border);
+      border-radius: 0.85rem;
+      color: var(--art-text);
+      background: var(--art-surface-strong);
+      box-shadow: var(--art-shadow);
+    }
+
+    .cookie-consent__title {
+      margin: 0 0 0.25rem;
+      color: var(--art-text-strong);
+      font-size: 1.125rem;
+      line-height: 1.3;
+    }
+
+    .cookie-consent__copy,
+    .cookie-consent__status {
+      margin: 0;
+      font-size: 0.875rem;
+    }
+
+    .cookie-consent__status {
+      margin-top: 0.35rem;
+      color: var(--art-text-muted);
+      font-weight: 600;
+    }
+
+    .cookie-consent__actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.65rem;
+    }
+
+    .cookie-consent__button {
+      min-height: 2.75rem;
+      padding: 0.65rem 1rem;
+      border: 1px solid var(--art-accent);
+      border-radius: 0.35rem;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .cookie-consent__button--reject {
+      color: var(--art-accent-text);
+      background: var(--art-surface-strong);
+    }
+
+    .cookie-consent__button--accept {
+      color: #ffffff;
+      background: var(--art-accent);
+    }
+
+    .cookie-consent__button:hover { box-shadow: var(--art-shadow-hover); }
 
     /* Layout breakpoints */
     @media (min-width: 64rem) {
@@ -801,6 +971,13 @@
       .footer__row { justify-content: flex-start; }
       .contact-item { display: block; }
       .footer__contact .sep { display: none; }
+      .cookie-consent__actions { flex-direction: column; }
+      .cookie-consent__button { width: 100%; }
+    }
+
+    @media (max-width: 47.99rem) {
+      .cookie-consent__panel { grid-template-columns: minmax(0, 1fr); }
+      .cookie-consent__actions { justify-content: flex-start; }
     }
 
     /* Motion: one-time intro (under 5 s) */
@@ -992,13 +1169,27 @@
     @media print {
       body { background: var(--art-surface-strong); }
       .panel { box-shadow: none; break-inside: avoid; }
-      .ics__copy, .howto, .art-toggle, .footer__bar { display: none; }
+      .ics__copy, .howto, .art-toggle, .footer__bar, .cookie-consent, .footer__cookie-button { display: none; }
       [data-reveal] { opacity: 1 !important; transform: none !important; }
       .step__link::after { display: none; }
     }
   </style>
 </head>
 <body>
+  <div class="cookie-consent" data-cookie-consent hidden>
+    <section class="cookie-consent__panel" role="region" aria-labelledby="cookie-title" aria-describedby="cookie-description">
+      <div>
+        <h2 class="cookie-consent__title" id="cookie-title" tabindex="-1">Optional analytics cookies</h2>
+        <p class="cookie-consent__copy" id="cookie-description">We use Microsoft Clarity engagement analytics and session recordings to understand how visitors use this page. We only load Clarity after you accept, and advertising storage stays off. See the <a href="https://go.microsoft.com/fwlink/?LinkID=824704">Microsoft Privacy Statement</a> and <a href="https://learn.microsoft.com/clarity/setup-and-installation/clarity-cookies">Clarity cookie details</a>.</p>
+        <p class="cookie-consent__status" data-cookie-status aria-live="polite" hidden></p>
+      </div>
+      <div class="cookie-consent__actions">
+        <button class="cookie-consent__button cookie-consent__button--reject" type="button" data-cookie-reject>Reject optional cookies</button>
+        <button class="cookie-consent__button cookie-consent__button--accept" type="button" data-cookie-accept>Accept analytics</button>
+      </div>
+    </section>
+  </div>
+
   <main id="main">
     <section class="hero wrap" aria-labelledby="page-title">
       <div class="hero__text">
@@ -1301,6 +1492,7 @@
     </div>
     <div class="wrap footer__legal">
       <ul>
+        <li><button class="footer__cookie-button" type="button" data-cookie-settings>Cookie settings</button></li>
         <li><a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy &amp; cookies</a></li>
         <li><a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a></li>
         <li><a href="https://www.microsoft.com/trademarks">Trademarks</a></li>
@@ -1311,6 +1503,71 @@
     </div>
     <div class="footer__bar" aria-hidden="true"></div>
   </footer>
+
+  <script>
+    (() => {
+      const consent = window.frontierCircleConsent;
+      const banner = document.querySelector('[data-cookie-consent]');
+      if (!consent || !banner) return;
+
+      const title = banner.querySelector('#cookie-title');
+      const status = banner.querySelector('[data-cookie-status]');
+      const accept = banner.querySelector('[data-cookie-accept]');
+      const reject = banner.querySelector('[data-cookie-reject]');
+      const settings = document.querySelectorAll('[data-cookie-settings]');
+      let returnFocus = null;
+
+      const updateStatus = () => {
+        const state = consent.read();
+        status.hidden = !state;
+        status.textContent = state === 'granted'
+          ? 'Current choice: analytics allowed.'
+          : state === 'denied'
+            ? 'Current choice: optional cookies rejected.'
+            : '';
+      };
+
+      const openBanner = (focusTitle = false) => {
+        updateStatus();
+        banner.hidden = false;
+        if (focusTitle) window.setTimeout(() => title.focus(), 0);
+      };
+
+      const closeBanner = () => {
+        banner.hidden = true;
+        if (returnFocus) {
+          returnFocus.focus();
+          returnFocus = null;
+        }
+      };
+
+      accept.addEventListener('click', () => {
+        consent.write('granted');
+        consent.loadClarity();
+        closeBanner();
+      });
+
+      reject.addEventListener('click', () => {
+        const wasGranted = consent.read() === 'granted';
+        consent.write('denied');
+        if (wasGranted) {
+          consent.revokeClarity();
+          window.setTimeout(() => window.location.reload(), 80);
+          return;
+        }
+        closeBanner();
+      });
+
+      settings.forEach((button) => {
+        button.addEventListener('click', () => {
+          returnFocus = button;
+          openBanner(true);
+        });
+      });
+
+      if (!consent.read()) openBanner();
+    })();
+  </script>
 
   <script>
     (() => {

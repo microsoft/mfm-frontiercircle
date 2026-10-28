@@ -40,7 +40,7 @@ Questions about Frontier Circle? Email [mfm-frontiercircle@microsoft.com](mailto
 
 ## About this site
 
-The page is a single, self-contained [`index.html`](index.html): HTML, CSS, an inline SVG illustration, and a small script. There's no build step, framework, web font, external asset dependency, or custom analytics or telemetry code. It's published with [GitHub Pages](https://docs.github.com/pages) from the root of the `main` branch.
+The page is a single [`index.html`](index.html): HTML, CSS, an inline SVG illustration, and small scripts. There's no build step, framework, or web font. The production page includes optional Microsoft Clarity engagement analytics, gated by explicit visitor consent; local previews don't load Clarity. It's published with [GitHub Pages](https://docs.github.com/pages) from the root of the `main` branch.
 
 ### Preview locally
 
@@ -56,6 +56,7 @@ Then browse to <http://localhost:8000>.
 
 - All content, styles, and the illustration live in `index.html`. Colors are defined once as CSS custom properties at the top of the stylesheet.
 - Calendar links use `aka.ms` short links, so the calendar can be republished without changing the page.
+- Microsoft Clarity uses project `z4t5ly03h4`. Keep its tag behind the page's consent controls, keep advertising storage denied, and enable [Consent Mode](https://learn.microsoft.com/clarity/setup-and-installation/consent-mode) in the Clarity project so cookies are off by default.
 - Before merging, check the page at desktop and mobile widths, using only the keyboard, and with your operating system's *reduce motion* setting turned on.
 
 ### Accessibility
@@ -78,11 +79,11 @@ Please don't report security vulnerabilities through public GitHub issues. See [
 
 ## Data collection and privacy
 
-The landing page source includes no custom analytics or telemetry code. The site is hosted by GitHub Pages and links to Microsoft services.
+The production page uses [Microsoft Clarity](https://clarity.microsoft.com/) for engagement analytics and session recordings. Clarity is treated as non-essential analytics: its script doesn't load until a visitor selects **Accept analytics**, advertising storage remains denied, and selecting **Reject optional cookies** prevents the script from loading. Visitors can reopen **Cookie settings** from the footer and change their choice.
+
+The consent choice is stored in the visitor's browser for up to nine months. Changing from accepted to rejected tells Clarity to revoke consent and clear its cookies, then reloads the page without the Clarity tag. Clarity is disabled for local and non-HTTPS previews. See the [Clarity cookie documentation](https://learn.microsoft.com/clarity/setup-and-installation/clarity-cookies) for the cookies Clarity may set after consent.
 
 The software may collect information about you and your use of the software and send it to Microsoft. Microsoft may use this information to provide services and improve our products and services. You may turn off the telemetry as described in the repository. There are also some features in the software that may enable you and Microsoft to collect data from users of your applications. If you use these features, you must comply with applicable law, including providing appropriate notices to users of your applications together with a copy of Microsoft's privacy statement. Our privacy statement is located at <https://go.microsoft.com/fwlink/?LinkID=824704>. You can learn more about data collection and use in the help documentation and our privacy statement. Your use of the software operates as your consent to these practices.
-
-Because this page does not implement custom telemetry, it has no repository-specific telemetry control. Service-level data collection is controlled through the relevant service and browser settings.
 
 ## Legal notices
 
