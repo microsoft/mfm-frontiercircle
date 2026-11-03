@@ -1,0 +1,2 @@
+# iCalendar requires CRLF; folded lines may end with meaningful spaces.
+*.ics -text whitespace=-blank-at-eol
