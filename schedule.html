@@ -1,0 +1,127 @@
+<!doctype html>
+<!-- Code: MIT (LICENSE-CODE). Page copy: CC BY 4.0 (LICENSE). Microsoft trademarks are excluded. -->
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upcoming sessions | Manufacturing &amp; Mobility Frontier Circle</title>
+  <meta name="description" content="Browse all upcoming Microsoft Manufacturing &amp; Mobility Frontier Circle labs, briefings, and exchanges.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#e4effc">
+  <link rel="canonical" href="https://microsoft.github.io/mfm-frontiercircle/schedule.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Microsoft Manufacturing &amp; Mobility">
+  <meta property="og:title" content="Upcoming sessions | Frontier Circle">
+  <meta property="og:description" content="Browse upcoming labs, briefings, and exchanges from the Frontier Circle series.">
+  <meta property="og:url" content="https://microsoft.github.io/mfm-frontiercircle/schedule.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23008575' fill-opacity='.18'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23008575'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="events-ui.css">
+  <script>
+    (() => {
+      document.documentElement.classList.replace('no-js', 'js');
+      const localHosts = new Set(['localhost', '127.0.0.1', '::1']);
+      const isProduction = window.location.protocol === 'https:' && !localHosts.has(window.location.hostname);
+      if (!isProduction) return;
+      const projectId = 'z4t5ly03h4';
+      window.clarity = window.clarity || function () {
+        (window.clarity.q = window.clarity.q || []).push(arguments);
+      };
+      window.clarity('consentv2', {
+        ad_Storage: 'denied',
+        analytics_Storage: 'denied'
+      });
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = `https://www.clarity.ms/tag/${projectId}`;
+      script.dataset.clarityProject = projectId;
+      document.head.appendChild(script);
+    })();
+  </script>
+</head>
+<body class="schedule-page" data-shared-controls="true">
+  <header class="schedule-header wrap">
+    <a class="schedule-brand" href="./" aria-label="Manufacturing and Mobility Frontier Circle home">Microsoft Manufacturing &amp; Mobility · Frontier Circle</a>
+    <a class="schedule-home" href="./">Home</a>
+  </header>
+
+  <main id="main">
+    <section class="schedule-intro wrap" aria-labelledby="schedule-title">
+      <p class="schedule-intro__eyebrow">Frontier Circle · Public agenda</p>
+      <h1 id="schedule-title">Upcoming sessions</h1>
+      <p>Find your next session by keyword, topic, or format. See who it&rsquo;s for and what you&rsquo;ll learn, expand the full details, then register through its official link.</p>
+      <details class="hero-subscribe schedule-subscribe">
+        <summary data-clarity-event="series_subscribe_options_open">Subscribe to the series calendar</summary>
+        <div class="hero-subscribe__options">
+          <a class="hero-subscribe__outlook" href="https://outlook.office.com/calendar/addfromweb/?url=https%3A%2F%2Fmicrosoft.github.io%2Fmfm-frontiercircle%2Fcalendar.ics&amp;name=MfM%20Frontier%20Circle" target="_blank" rel="noopener" data-clarity-event="outlook_subscribe_click">Add the series in Outlook<span class="sr-only"> (opens in a new tab)</span></a>
+          <p>Subscribing helps you keep the public schedule on your radar. It does not register you for a session.</p>
+          <div class="hero-subscribe__feed">
+            <code id="schedule-ics-url">https://microsoft.github.io/mfm-frontiercircle/calendar.ics</code>
+            <button type="button" data-copy-target="schedule-ics-url" data-clarity-event="calendar_address_copy_click">Copy feed address</button>
+          </div>
+          <details class="hero-subscribe__howto">
+            <summary>Google and Apple setup instructions</summary>
+            <ul>
+              <li><strong>Google Calendar:</strong> next to <em>Other calendars</em>, select <strong>+</strong> &rarr; <strong>From URL</strong>, paste the address, then select <strong>Add calendar</strong>.</li>
+              <li><strong>Apple Calendar (Mac):</strong> choose <strong>File &rarr; New Calendar Subscription</strong>, paste the address, then select <strong>Subscribe</strong>.</li>
+            </ul>
+          </details>
+        </div>
+      </details>
+    </section>
+
+    <section class="schedule-content wrap" aria-label="All upcoming sessions">
+      <div class="schedule-tools">
+        <div class="schedule-discovery">
+          <div class="schedule-field schedule-field--search" data-clarity-mask="true">
+            <label for="session-search">Search sessions</label>
+            <input id="session-search" type="search" placeholder="Keywords, skills, or audience" autocomplete="off" aria-controls="event-board">
+          </div>
+          <div class="schedule-field">
+            <label for="session-topic">Topic</label>
+            <select id="session-topic" aria-controls="event-board">
+              <option value="all">All topics</option>
+            </select>
+          </div>
+        </div>
+        <div class="schedule-filters" role="group" aria-label="Filter sessions by format">
+          <button class="schedule-filter" type="button" data-lane="all" aria-pressed="true">All</button>
+          <button class="schedule-filter" type="button" data-lane="lab" aria-pressed="false">Labs</button>
+          <button class="schedule-filter" type="button" data-lane="briefing" aria-pressed="false">Briefings</button>
+          <button class="schedule-filter" type="button" data-lane="exchange" aria-pressed="false">Exchange</button>
+        </div>
+        <button class="schedule-clear" id="clear-filters" type="button" hidden disabled>Clear filters</button>
+        <p id="events-status" role="status" aria-live="polite" aria-atomic="true">Loading upcoming sessions&hellip;</p>
+      </div>
+      <div class="event-board schedule-board" id="event-board" data-event-mode="schedule"></div>
+      <noscript>
+        <p class="events__error">JavaScript is required to display the agenda. You can still <a href="calendar.ics">open the public series calendar feed</a>.</p>
+      </noscript>
+      <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__row">
+      <p class="brand">
+        <svg class="ms-logo" viewBox="0 0 23 23" aria-hidden="true" focusable="false"><path class="r" d="M1 1h10v10H1z"/><path class="g" d="M12 1h10v10H12z"/><path class="b" d="M1 12h10v10H1z"/><path class="y" d="M12 12h10v10H12z"/></svg>
+        <span>Microsoft Manufacturing &amp; Mobility</span>
+      </p>
+      <p class="footer__contact"><span class="contact-item">Frontier Circle: <a href="https://aka.ms/mfm-frontiercircle">https://aka.ms/mfm-frontiercircle</a></span><span class="sep" aria-hidden="true">|</span><span class="contact-item">Mailbox: <a href="mailto:mfm-frontiercircle@microsoft.com" data-clarity-event="contact_email_click">mfm-frontiercircle@microsoft.com</a></span></p>
+    </div>
+    <div class="wrap footer__legal">
+      <ul>
+        <li><a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy &amp; cookies</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a></li>
+        <li><a href="https://www.microsoft.com/trademarks">Trademarks</a></li>
+        <li><a href="LICENSE">Content license</a></li>
+        <li><a href="LICENSE-CODE">Code license</a></li>
+        <li>&copy; Microsoft <span data-year>2026</span></li>
+      </ul>
+    </div>
+    <div class="footer__bar" aria-hidden="true"></div>
+  </footer>
+
+  <script src="events/events.js"></script>
+  <script src="events-ui.js"></script>
+</body>
+</html>

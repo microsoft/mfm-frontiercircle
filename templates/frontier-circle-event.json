@@ -1,0 +1,25 @@
+{
+  "id": "PUBLIC-EVENT-UUID",
+  "lane": "lab",
+  "status": "Scheduled",
+  "sequence": 0,
+  "created": "2026-12-01T09:00:00-05:00",
+  "lastModified": "2026-12-01T09:00:00-05:00",
+  "title": "Specific public event title",
+  "start": "2026-12-14T13:00:00-05:00",
+  "end": "2026-12-14T17:00:00-05:00",
+  "timeZone": "America/New_York",
+  "timeZoneLabel": "ET",
+  "location": "Online",
+  "description": "Explain what attendees will learn and why the session matters.",
+  "audience": "Describe the intended public audience.",
+  "audienceSummary": "Name the intended roles in a short, reviewed public summary.",
+  "takeaway": "Summarize what participants can learn or build, grounded in the public agenda.",
+  "topicCategories": ["data-analytics"],
+  "topics": [
+    "First public topic",
+    "Second public topic"
+  ],
+  "registrationDeadline": "2026-12-13T13:00:00-05:00",
+  "registrationUrl": "https://example.com/public-registration-page"
+}

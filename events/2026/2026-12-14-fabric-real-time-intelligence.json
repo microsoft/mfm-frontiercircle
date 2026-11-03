@@ -1,0 +1,27 @@
+{
+  "id": "94bfeeb4-605f-47e1-abb1-2fcb2b538501",
+  "lane": "lab",
+  "status": "Scheduled",
+  "sequence": 2,
+  "created": "2026-10-30T11:06:07-04:00",
+  "lastModified": "2026-11-02T13:07:34-05:00",
+  "title": "Build A Fabric Real-Time Intelligence Solution in a Day",
+  "start": "2026-12-14T13:00:00-05:00",
+  "end": "2026-12-14T17:00:00-05:00",
+  "timeZone": "America/New_York",
+  "timeZoneLabel": "ET",
+  "location": "Online",
+  "description": "In this hands-on lab, build event-driven pipelines and visualize live insights through interactive dashboards using Fabric Eventstream, Eventhouse, OneLake, Lakehouse, KQL, notebooks, and Data Activator.",
+  "audience": "Data engineers, architects, and solution developers with basic familiarity with Azure, data pipelines, real-time dashboards, and Python.",
+  "audienceSummary": "Data engineers, architects, and developers",
+  "takeaway": "Build streaming pipelines and a live dashboard with Fabric Real-Time Intelligence.",
+  "topicCategories": ["data-analytics"],
+  "topics": [
+    "Create a Fabric workspace and Eventhouse for Real-Time Intelligence",
+    "Process streaming data with Eventstream and notebooks",
+    "Integrate Eventhouse with Lakehouse",
+    "Build a live real-time dashboard with automated actions"
+  ],
+  "registrationDeadline": "2026-12-13T13:00:00-05:00",
+  "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bfeeb4-605f-47e1-abb1-2fcb2b538501"
+}

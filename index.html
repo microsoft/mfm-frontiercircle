@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manufacturing &amp; Mobility Frontier Circle | Microsoft</title>
-  <meta name="description" content="Microsoft-hosted technical labs, webinars, and industry briefings for manufacturing and mobility teams building and exploring AI, agents, data platforms, security, modernization, and connected products.">
+  <meta name="description" content="Build practical skills, explore industry-relevant ideas, and learn approaches your team can apply. Microsoft-hosted labs, briefings, and conversations for manufacturing and mobility teams.">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#e6f0fc">
   <link rel="canonical" href="https://microsoft.github.io/mfm-frontiercircle/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Microsoft Manufacturing &amp; Mobility">
   <meta property="og:title" content="Manufacturing &amp; Mobility Frontier Circle">
-  <meta property="og:description" content="Microsoft-hosted technical labs, webinars, and industry briefings for manufacturing and mobility teams. Preview the schedule, or subscribe once to keep it current.">
+  <meta property="og:description" content="Build practical skills, explore industry-relevant ideas, and learn approaches your team can apply. Microsoft-hosted labs, briefings, and conversations for manufacturing and mobility teams.">
   <meta property="og:url" content="https://microsoft.github.io/mfm-frontiercircle/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23008575' fill-opacity='.18'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23008575'/%3E%3C/svg%3E">
@@ -115,6 +115,17 @@
       --lane-build: linear-gradient(135deg, #0e6fc0, #0078d4);
       --lane-transform: linear-gradient(135deg, #00675c, #008575);
       --lane-exchange: linear-gradient(135deg, #5458a5, #7859c6);
+      --event-board-bg: rgba(255, 255, 255, 0.76);
+      --event-board-rule: #c9daeb;
+      --event-meta-bg: #f4f8fc;
+      --event-meta-border: #d7e4f0;
+      --event-button-bg: #0067b8;
+      --event-button-hover: #005a9e;
+      --event-secondary-bg: #ffffff;
+      --event-secondary-hover: #edf5fc;
+      --event-lab: var(--lane-build);
+      --event-briefing: var(--lane-transform);
+      --event-exchange: var(--lane-exchange);
       --footer-text: #42526a;
       --bar: linear-gradient(90deg, #0078d4, #008575 50%, #ffb900);
 
@@ -404,6 +415,353 @@
     .il-cockpit { fill: var(--il-cockpit); }
     .il-windows { fill: none; stroke: var(--il-window); stroke-width: 1.05; stroke-linecap: round; stroke-dasharray: 0.75 2.15; }
     .il-trail { fill: none; stroke: var(--il-trail); stroke-width: 1.25; stroke-linecap: round; stroke-dasharray: 1.25 4.25; opacity: var(--il-trail-o); }
+
+    /* Upcoming events: a live departure board for the public schedule */
+    .events {
+      padding-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
+    }
+
+    .events__shell {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(1.3rem, 1rem + 1.6vw, 2.25rem);
+      background: var(--event-board-bg);
+      border: 1px solid var(--art-border);
+      border-radius: 1.25rem;
+      box-shadow: var(--art-shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .events__shell::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 0.32rem;
+      background: var(--bar);
+    }
+
+    .events__head {
+      display: grid;
+      gap: 1rem;
+      align-items: end;
+      padding-top: 0.35rem;
+    }
+
+    .events__eyebrow {
+      margin: 0 0 0.4rem;
+      color: var(--eyebrow);
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .events h2 {
+      margin: 0;
+      color: var(--art-text);
+      font-size: clamp(1.55rem, 1.25rem + 1vw, 2.15rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+    }
+
+    .events__intro {
+      max-width: 48rem;
+      margin: 0.55rem 0 0;
+      color: var(--art-text-muted);
+      font-size: 1rem;
+    }
+
+    .events__feed {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      padding: 0.65rem 1rem;
+      border: 1px solid var(--event-meta-border);
+      border-radius: 0.7rem;
+      background: var(--event-secondary-bg);
+      color: var(--art-accent-text);
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .events__feed:hover {
+      background: var(--event-secondary-hover);
+      box-shadow: var(--art-shadow-hover);
+      transform: translateY(-1px);
+    }
+
+    .events__status {
+      margin: 1.25rem 0 0;
+      color: var(--art-text-muted);
+      font-weight: 700;
+    }
+
+    .event-board {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .event-card {
+      --event-grad: var(--event-lab);
+      display: grid;
+      grid-template-columns: minmax(8.5rem, 0.22fr) minmax(0, 1fr);
+      overflow: hidden;
+      background: var(--art-surface-strong);
+      border: 1px solid var(--event-board-rule);
+      border-radius: 1rem;
+      box-shadow: 0 10px 32px -24px rgba(18, 52, 90, 0.55);
+    }
+
+    .event-card--lab { --event-grad: var(--event-lab); }
+    .event-card--briefing { --event-grad: var(--event-briefing); }
+    .event-card--exchange { --event-grad: var(--event-exchange); }
+
+    .event-date {
+      position: relative;
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.35rem 1.2rem;
+      overflow: hidden;
+      background: var(--event-grad);
+      color: #ffffff;
+    }
+
+    .event-date::after {
+      content: "";
+      position: absolute;
+      right: -2.5rem;
+      bottom: -2.75rem;
+      width: 7.5rem;
+      height: 7.5rem;
+      border: 0.9rem solid rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+    }
+
+    .event-date__lane,
+    .event-date__year {
+      position: relative;
+      z-index: 1;
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .event-date__month {
+      position: relative;
+      z-index: 1;
+      display: block;
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .event-date__day {
+      position: relative;
+      z-index: 1;
+      display: block;
+      margin: -0.15rem 0 -0.3rem;
+      font-size: clamp(3.6rem, 7vw, 5.3rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.08em;
+    }
+
+    .event-date__weekday {
+      position: relative;
+      z-index: 1;
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .event-body {
+      min-width: 0;
+      padding: clamp(1.25rem, 1rem + 1vw, 1.85rem);
+    }
+
+    .event-kicker {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem 0.75rem;
+      margin: 0;
+      color: var(--art-accent-text);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+    }
+
+    .event-status {
+      padding: 0.2rem 0.48rem;
+      border: 1px solid var(--event-meta-border);
+      border-radius: 999px;
+      background: var(--event-meta-bg);
+      color: var(--art-positive);
+      font-size: 0.65rem;
+    }
+
+    .event-title {
+      margin: 0.55rem 0 0;
+      color: var(--art-text);
+      font-size: clamp(1.35rem, 1.15rem + 0.65vw, 1.8rem);
+      line-height: 1.18;
+      letter-spacing: -0.018em;
+    }
+
+    .event-description {
+      max-width: 53rem;
+      margin: 0.75rem 0 0;
+      color: var(--art-text-muted);
+      line-height: 1.65;
+    }
+
+    .event-facts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin: 1rem 0 0;
+      border-block: 1px solid var(--event-meta-border);
+    }
+
+    .event-fact {
+      min-width: 0;
+      padding: 0.8rem 0.9rem 0.8rem 0;
+    }
+
+    .event-fact + .event-fact {
+      padding-left: 0.9rem;
+      border-left: 1px solid var(--event-meta-border);
+    }
+
+    .event-fact__label {
+      display: block;
+      color: var(--art-text-soft);
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .event-fact__value {
+      display: block;
+      margin-top: 0.25rem;
+      color: var(--art-text);
+      font-size: 0.92rem;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .event-registration-note {
+      margin: 1rem 0 0;
+      padding: 0.75rem 0.9rem;
+      background: var(--callout-bg);
+      border-left: 3px solid var(--callout-border);
+      border-radius: 0.5rem;
+      color: var(--callout-text);
+      font-size: 0.88rem;
+    }
+
+    .event-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1rem;
+    }
+
+    .event-action {
+      display: inline-flex;
+      min-height: 2.65rem;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--event-button-bg);
+      border-radius: 0.65rem;
+      background: var(--event-button-bg);
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-decoration: none;
+      transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .event-action:hover {
+      background: var(--event-button-hover);
+      box-shadow: var(--art-shadow-hover);
+      transform: translateY(-1px);
+    }
+
+    .event-action--secondary {
+      border-color: var(--event-meta-border);
+      background: var(--event-secondary-bg);
+      color: var(--art-accent-text);
+    }
+
+    .event-action--secondary:hover {
+      background: var(--event-secondary-hover);
+    }
+
+    .event-details {
+      margin-top: 1rem;
+      color: var(--art-text-muted);
+    }
+
+    .event-details summary {
+      width: fit-content;
+      border-radius: 0.25rem;
+      color: var(--art-accent-text);
+      font-size: 0.9rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .event-details__content {
+      display: grid;
+      gap: 1rem;
+      margin-top: 0.75rem;
+      padding: 1rem;
+      background: var(--event-meta-bg);
+      border: 1px solid var(--event-meta-border);
+      border-radius: 0.7rem;
+    }
+
+    .event-details h4 {
+      margin: 0;
+      color: var(--art-text);
+      font-size: 0.92rem;
+    }
+
+    .event-details p,
+    .event-details ul {
+      margin: 0.35rem 0 0;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .event-details ul {
+      padding-left: 1.2rem;
+    }
+
+    .events__empty,
+    .events__error {
+      margin: 1.25rem 0 0;
+      padding: 1rem;
+      border: 1px solid var(--event-meta-border);
+      border-radius: 0.7rem;
+      background: var(--event-meta-bg);
+      color: var(--art-text-muted);
+    }
 
     /* Panels */
     .panels {
@@ -806,6 +1164,9 @@
         column-gap: 2rem;
       }
       .hero__art { margin-right: calc(-1 * clamp(0rem, 4vw - 1rem, 2rem)); }
+      .events__head {
+        grid-template-columns: minmax(0, 1fr) auto;
+      }
     }
 
     @media (min-width: 72rem) {
@@ -826,6 +1187,31 @@
       .footer__row { justify-content: flex-start; }
       .contact-item { display: block; }
       .footer__contact .sep { display: none; }
+    }
+
+    @media (max-width: 47.99rem) {
+      .event-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .event-date {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: end;
+        gap: 1rem;
+        min-height: 0;
+      }
+      .event-date__month { margin-top: 1rem; }
+      .event-date__day { font-size: 3.8rem; }
+      .event-date__year { text-align: right; }
+      .event-facts { grid-template-columns: minmax(0, 1fr); }
+      .event-fact,
+      .event-fact + .event-fact {
+        padding: 0.7rem 0;
+        border-left: 0;
+      }
+      .event-fact + .event-fact {
+        border-top: 1px solid var(--event-meta-border);
+      }
     }
 
     /* Motion: one-time intro (under 5 s) */
@@ -1022,6 +1408,7 @@
       .step__link::after { display: none; }
     }
   </style>
+  <link rel="stylesheet" href="events-ui.css">
 </head>
 <body>
   <main id="main">
@@ -1029,7 +1416,38 @@
       <div class="hero__text">
         <p class="eyebrow" data-reveal><span class="eyebrow__dot" aria-hidden="true"></span>Customer Innovation Series</p>
         <h1 id="page-title" data-reveal style="--d: 70ms"><span class="line">Manufacturing &amp;&nbsp;Mobility</span> <span class="line">Frontier&nbsp;Circle</span></h1>
-        <p class="lede" data-reveal style="--d: 140ms">Microsoft-hosted technical labs, webinars, and industry briefings for manufacturing and mobility teams building and exploring AI, agents, data platforms, security, modernization, and connected products.</p>
+        <p class="lede" data-reveal style="--d: 140ms">Build practical skills, explore industry-relevant ideas, and learn approaches your team can apply. Microsoft-hosted labs, briefings, and conversations for manufacturing and mobility teams.</p>
+        <p class="hero__helper">Keep upcoming sessions on your radar. Subscribing doesn&rsquo;t register you&mdash;choose the sessions that interest you.</p>
+        <div class="hero__actions" data-reveal style="--d: 180ms">
+          <div class="hero__subscribe-callout">
+          <details class="hero-subscribe" id="subscribe">
+            <summary data-clarity-event="series_subscribe_options_open">Subscribe to the series calendar</summary>
+            <div class="hero-subscribe__options">
+              <a class="hero-subscribe__outlook" href="https://outlook.office.com/calendar/addfromweb/?url=https%3A%2F%2Fmicrosoft.github.io%2Fmfm-frontiercircle%2Fcalendar.ics&amp;name=MfM%20Frontier%20Circle" target="_blank" rel="noopener" data-clarity-event="outlook_subscribe_click">Add the series in Outlook<span class="sr-only"> (opens in a new tab)</span></a>
+              <p>For Google or Apple Calendar, copy the series feed address and add it as a calendar subscription.</p>
+              <div class="hero-subscribe__feed">
+                <code id="hero-ics-url">https://microsoft.github.io/mfm-frontiercircle/calendar.ics</code>
+                <button type="button" data-copy-target="hero-ics-url" data-clarity-event="calendar_address_copy_click"><span data-label>Copy feed address</span></button>
+              </div>
+              <details class="hero-subscribe__howto">
+                <summary>Google and Apple setup instructions</summary>
+                <ul>
+                  <li><strong>Google Calendar:</strong> next to <em>Other calendars</em>, select <strong>+</strong> &rarr; <strong>From URL</strong>, paste the address, then select <strong>Add calendar</strong>.</li>
+                  <li><strong>Apple Calendar (Mac):</strong> choose <strong>File &rarr; New Calendar Subscription</strong>, paste the address, then select <strong>Subscribe</strong>.</li>
+                </ul>
+              </details>
+              <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
+            </div>
+          </details>
+          <span class="hero__calendar-note" aria-hidden="true">
+            Keep these on your radar
+            <svg viewBox="0 0 170 58" fill="none" focusable="false">
+              <path d="M151 9C150 42 65 43 12 7M26 5L12 7L17 21" />
+            </svg>
+          </span>
+          </div>
+          <a class="hero__browse" href="schedule.html" data-clarity-event="event_schedule_click">Browse upcoming sessions</a>
+        </div>
       </div>
 
       <div class="hero__art">
@@ -1228,92 +1646,44 @@
       </div>
     </section>
 
-    <div class="panels wrap">
-      <section class="panel" id="subscribe" aria-labelledby="subscribe-title" data-reveal style="--d: 200ms">
-        <h2 id="subscribe-title">Never miss a session</h2>
-        <p class="panel__intro">Your Microsoft account team uses Frontier Circle to invite you to upcoming sessions. Preview the schedule, or subscribe once to keep it current.</p>
+    <section class="purpose-strip wrap" id="what-to-expect" aria-label="Series session types">
+      <article class="purpose-strip__lane purpose-strip__lane--lab">
+        <span class="purpose-strip__audience">For makers</span>
+        <h2>Build &amp; Skill Labs</h2>
+        <p>Hands-on learning for engineers, architects, and technical teams.</p>
+      </article>
+      <article class="purpose-strip__lane purpose-strip__lane--briefing">
+        <span class="purpose-strip__audience">For leaders</span>
+        <h2>Transformation Briefings</h2>
+        <p>Industry ideas and customer perspectives for business and technology leaders.</p>
+      </article>
+      <article class="purpose-strip__lane purpose-strip__lane--exchange">
+        <span class="purpose-strip__audience">For both</span>
+        <h2>Frontier Exchange</h2>
+        <p>Shared conversations about patterns, questions, and what comes next.</p>
+      </article>
+    </section>
 
-        <ol class="steps">
-          <li class="step">
-            <span class="step__num" aria-hidden="true">1</span>
-            <div>
-              <h3 class="step__title">
-                <a class="step__link" href="https://aka.ms/mfm-frontiercircle-calendar" target="_blank" rel="noopener" aria-describedby="step-1-desc" data-clarity-event="calendar_preview_click">Preview the Outlook <span class="nowrap">calendar<svg class="step__ext" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens in a new tab)</span></a>
-              </h3>
-              <p class="step__desc" id="step-1-desc">Click to view upcoming sessions in Outlook on the web.</p>
-              <p class="step__url">https://aka.ms/mfm-frontiercircle-calendar</p>
-            </div>
-          </li>
-          <li class="step step--preferred">
-            <span class="step__num" aria-hidden="true">2</span>
-            <div>
-              <h3 class="step__title">
-                <a class="step__link" href="https://outlook.office.com/calendar/addfromweb/?url=https%3A%2F%2Faka.ms%2Fmfm-frontiercircle-calendar-ics&amp;name=MfM%20Frontier%20Circle" target="_blank" rel="noopener" aria-describedby="step-2-desc" data-clarity-event="outlook_subscribe_click">Subscribe in Outlook&nbsp;&mdash; one <span class="nowrap">click<svg class="step__ext" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr-only"> (opens in a new tab)</span></a>
-                <span class="badge">Preferred</span>
-              </h3>
-              <p class="step__desc" id="step-2-desc">Opens Outlook&rsquo;s Subscribe dialog pre-filled&nbsp;&mdash; just select Import. Stays current automatically as sessions are added or revised.</p>
-            </div>
-          </li>
-        </ol>
-
-        <div class="ics">
-          <p class="ics__label"><strong>Other calendar apps (Gmail, Apple):</strong> add this calendar address&nbsp;&mdash;</p>
-          <div class="ics__field">
-            <code class="ics__url" id="ics-url">https://aka.ms/mfm-frontiercircle-calendar-ics</code>
-            <button class="ics__copy" type="button" data-copy-target="ics-url" data-clarity-event="calendar_address_copy_click">
-              <svg class="icon-copy" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="7" y="7" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 4.6V4a1.5 1.5 0 0 0-1.5-1.5h-7A1.5 1.5 0 0 0 3 4v7a1.5 1.5 0 0 0 1.5 1.5h.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-              <svg class="icon-check" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span data-label>Copy</span><span class="sr-only"> calendar address</span>
-            </button>
+    <section class="events wrap" id="upcoming-events" aria-labelledby="events-title" data-reveal style="--d: 180ms">
+      <div class="events__shell">
+        <header class="events__head">
+          <div>
+            <p class="events__eyebrow">Next on the calendar</p>
+            <h2 id="events-title">Upcoming sessions</h2>
+            <p class="events__intro">These are the currently published dates across the series. Open the full agenda to find a session that fits.</p>
           </div>
-          <details class="howto">
-            <summary>How to add it in Google or Apple Calendar</summary>
-            <ul>
-              <li><strong>Google Calendar (web):</strong> next to <em>Other calendars</em>, select <strong>+</strong> &rarr; <strong>From URL</strong>, paste the address, then select <strong>Add calendar</strong>.</li>
-              <li><strong>Apple Calendar (Mac):</strong> choose <strong>File &rarr; New Calendar Subscription</strong>, paste the address, then select <strong>Subscribe</strong>.</li>
-            </ul>
-          </details>
-          <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
-        </div>
+          <a class="events__feed" href="schedule.html" data-clarity-event="event_schedule_click">See all upcoming sessions</a>
+        </header>
 
-        <div class="panel__foot">
-          <p class="callout"><strong>Tip:</strong> Subscribing keeps your calendar up to date. Downloading/importing an ICS file is only a one-time snapshot.</p>
-        </div>
-      </section>
+        <p class="events__status" id="events-status" role="status" aria-live="polite">Loading upcoming events&hellip;</p>
+        <div class="event-board" id="event-board" data-event-mode="preview" data-limit="3"></div>
 
-      <section class="panel" id="what-to-expect" aria-labelledby="expect-title" data-reveal style="--d: 280ms">
-        <h2 id="expect-title">What to expect</h2>
-        <p class="panel__intro">Frontier Circle is designed for both technical teams and business leaders. Pick the lane that fits the topic and audience.</p>
+        <noscript>
+          <p class="events__empty">JavaScript is required to display event details here. You can still <a href="calendar.ics">open the public calendar feed</a>.</p>
+        </noscript>
+      </div>
+    </section>
 
-        <ul class="lanes">
-          <li class="lane lane--build">
-            <p class="lane__tag"><span class="lane__audience">Technical</span> <span class="lane__name">Build</span></p>
-            <div class="lane__body">
-              <h3 class="lane__title">Build &amp; Skill Labs</h3>
-              <p>Hands-on labs, guided workshops, and implementation clinics for architects, engineers, makers, and technical teams.</p>
-            </div>
-          </li>
-          <li class="lane lane--transform">
-            <p class="lane__tag"><span class="lane__audience">Business</span> <span class="lane__name">Transform</span></p>
-            <div class="lane__body">
-              <h3 class="lane__title">Transformation Briefings</h3>
-              <p>Webinars, industry insights, customer stories, and art-of-the-possible discussions for business and technology leaders.</p>
-            </div>
-          </li>
-          <li class="lane lane--exchange">
-            <p class="lane__tag"><span class="lane__audience">Shared</span> <span class="lane__name">Exchange</span></p>
-            <div class="lane__body">
-              <h3 class="lane__title">Frontier Exchange</h3>
-              <p>Cross-functional sessions where business and technical stakeholders compare patterns, questions, and next steps.</p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="panel__foot">
-          <p class="callout"><strong>Registration required:</strong> each event has its own registration page. Use the calendar to discover topics, then register separately for the sessions you want to attend.</p>
-        </div>
-      </section>
-    </div>
   </main>
 
   <footer class="site-footer">
@@ -1337,20 +1707,278 @@
     <div class="footer__bar" aria-hidden="true"></div>
   </footer>
 
+  <script src="events/events.js"></script>
   <script>
     (() => {
       const root = document.documentElement;
       try {
-        document.querySelectorAll('[data-clarity-event]').forEach((element) => {
-          element.addEventListener('click', () => {
-            if (typeof window.clarity === 'function') {
-              window.clarity('event', element.dataset.clarityEvent);
-            }
-          });
+        document.addEventListener('click', (clickEvent) => {
+          if (!(clickEvent.target instanceof Element)) return;
+          const element = clickEvent.target.closest('[data-clarity-event]');
+          if (element && typeof window.clarity === 'function') {
+            window.clarity('event', element.dataset.clarityEvent);
+          }
         });
+
+        const eventBoard = document.getElementById('event-board');
+        const eventsStatus = document.getElementById('events-status');
+        const eventData = window.frontierCircleEventData;
+
+        const formatEventDate = (value, timeZone, options) => {
+          return new Intl.DateTimeFormat('en-US', {
+            ...options,
+            timeZone
+          }).format(new Date(value));
+        };
+
+        const appendTextElement = (parent, tagName, className, text) => {
+          const node = document.createElement(tagName);
+          if (className) node.className = className;
+          node.textContent = text;
+          parent.appendChild(node);
+          return node;
+        };
+
+        const appendEventFact = (parent, label, value) => {
+          const fact = document.createElement('div');
+          fact.className = 'event-fact';
+          appendTextElement(fact, 'span', 'event-fact__label', label);
+          appendTextElement(fact, 'span', 'event-fact__value', value);
+          parent.appendChild(fact);
+        };
+
+        const renderEvent = (event, index) => {
+          const article = document.createElement('article');
+          article.className = `event-card event-card--${event.lane}`;
+          article.id = `event-${event.id}`;
+          article.dataset.reveal = '';
+          article.style.setProperty('--d', `${220 + (index * 70)}ms`);
+
+          const dateRail = document.createElement('div');
+          dateRail.className = 'event-date';
+          dateRail.setAttribute('aria-label', formatEventDate(
+            event.start,
+            event.timeZone,
+            { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }
+          ));
+
+          const dateMain = document.createElement('div');
+          appendTextElement(
+            dateMain,
+            'span',
+            'event-date__lane',
+            `${event.laneEmoji} ${event.laneLabel}`
+          );
+          appendTextElement(
+            dateMain,
+            'span',
+            'event-date__month',
+            formatEventDate(event.start, event.timeZone, { month: 'long' })
+          );
+          appendTextElement(
+            dateMain,
+            'span',
+            'event-date__day',
+            formatEventDate(event.start, event.timeZone, { day: 'numeric' })
+          );
+          appendTextElement(
+            dateMain,
+            'span',
+            'event-date__weekday',
+            formatEventDate(event.start, event.timeZone, { weekday: 'long' })
+          );
+          dateRail.appendChild(dateMain);
+          appendTextElement(
+            dateRail,
+            'span',
+            'event-date__year',
+            formatEventDate(event.start, event.timeZone, { year: 'numeric' })
+          );
+
+          const body = document.createElement('div');
+          body.className = 'event-body';
+
+          const kicker = document.createElement('p');
+          kicker.className = 'event-kicker';
+          kicker.append(document.createTextNode(event.laneName));
+          body.appendChild(kicker);
+
+          const title = appendTextElement(body, 'h3', 'event-title', event.title);
+          title.id = `${article.id}-title`;
+          article.setAttribute('aria-labelledby', title.id);
+          appendTextElement(body, 'p', 'event-description', event.description);
+
+          const facts = document.createElement('div');
+          facts.className = 'event-facts';
+          const fullDate = formatEventDate(
+            event.start,
+            event.timeZone,
+            { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }
+          );
+          const startTime = formatEventDate(
+            event.start,
+            event.timeZone,
+            { hour: 'numeric', minute: '2-digit' }
+          );
+          const endTime = formatEventDate(
+            event.end,
+            event.timeZone,
+            { hour: 'numeric', minute: '2-digit' }
+          );
+          appendEventFact(facts, 'Date', fullDate);
+          appendEventFact(
+            facts,
+            'Time',
+            `${startTime}–${endTime} ${event.timeZoneLabel}`
+          );
+          appendEventFact(facts, 'Location', event.location);
+          body.appendChild(facts);
+
+          const registrationNote = document.createElement('p');
+          registrationNote.className = 'event-registration-note';
+          if (event.registrationDeadline) {
+            const deadline = formatEventDate(
+              event.registrationDeadline,
+              event.timeZone,
+              {
+                weekday: 'long',
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit'
+              }
+            );
+            registrationNote.textContent =
+              `Registration is required and subject to approval. Registration closes ${deadline} ${event.timeZoneLabel}.`;
+          } else {
+            registrationNote.textContent =
+              'Registration is required and subject to approval.';
+          }
+          body.appendChild(registrationNote);
+
+          const actions = document.createElement('div');
+          actions.className = 'event-actions';
+          const registerLink = appendTextElement(
+            actions,
+            'a',
+            'event-action',
+            'Register for this event'
+          );
+          registerLink.href = event.registrationUrl;
+          registerLink.target = '_blank';
+          registerLink.rel = 'noopener';
+          registerLink.dataset.clarityEvent = 'event_registration_click';
+
+          const calendarLink = appendTextElement(
+            actions,
+            'a',
+            'event-action event-action--secondary',
+            'Download this event (.ics)'
+          );
+          calendarLink.href = event.eventIcsUrl;
+          calendarLink.download = '';
+          calendarLink.dataset.clarityEvent = 'event_ics_download';
+          body.appendChild(actions);
+
+          if (
+            (Array.isArray(event.topics) && event.topics.length > 0) ||
+            event.audience
+          ) {
+            const details = document.createElement('details');
+            details.className = 'event-details';
+            appendTextElement(
+              details,
+              'summary',
+              '',
+              'Topics and intended audience'
+            );
+
+            const detailsContent = document.createElement('div');
+            detailsContent.className = 'event-details__content';
+
+            if (Array.isArray(event.topics) && event.topics.length > 0) {
+              const topicsSection = document.createElement('section');
+              appendTextElement(
+                topicsSection,
+                'h4',
+                '',
+                'What participants will do'
+              );
+              const topicsList = document.createElement('ul');
+              event.topics.forEach((topic) => {
+                appendTextElement(topicsList, 'li', '', topic);
+              });
+              topicsSection.appendChild(topicsList);
+              detailsContent.appendChild(topicsSection);
+            }
+
+            if (event.audience) {
+              const audienceSection = document.createElement('section');
+              appendTextElement(audienceSection, 'h4', '', 'Audience');
+              appendTextElement(audienceSection, 'p', '', event.audience);
+              detailsContent.appendChild(audienceSection);
+            }
+
+            details.appendChild(detailsContent);
+            body.appendChild(details);
+          }
+
+          article.append(dateRail, body);
+          return article;
+        };
+
+        if (
+          eventBoard &&
+          eventsStatus &&
+          eventBoard.dataset.eventMode !== 'preview' &&
+          eventData &&
+          Array.isArray(eventData.events)
+        ) {
+          const now = Date.now();
+          const upcomingEvents = eventData.events
+            .filter((event) => {
+              return (
+                event.status !== 'Cancelled' &&
+                new Date(event.end).getTime() >= now
+              );
+            })
+            .sort((left, right) => {
+              return new Date(left.start) - new Date(right.start);
+            });
+
+          if (upcomingEvents.length > 0) {
+            eventsStatus.textContent =
+              `${upcomingEvents.length} upcoming ${upcomingEvents.length === 1 ? 'event' : 'events'}`;
+            upcomingEvents.forEach((event, index) => {
+              eventBoard.appendChild(renderEvent(event, index));
+            });
+          } else {
+            eventsStatus.textContent = 'No upcoming events are currently scheduled.';
+            appendTextElement(
+              eventBoard,
+              'p',
+              'events__empty',
+              'New sessions will appear here when they are published.'
+            );
+          }
+        } else if (
+          eventBoard &&
+          eventsStatus &&
+          eventBoard.dataset.eventMode !== 'preview'
+        ) {
+          eventsStatus.textContent = 'The event schedule could not be loaded.';
+          appendTextElement(
+            eventBoard,
+            'p',
+            'events__error',
+            'Refresh the page to try again, or use the series calendar subscription.'
+          );
+        }
 
         const status = document.getElementById('copy-status');
         const announce = (message) => {
+          if (!status) return;
           status.textContent = '';
           window.setTimeout(() => { status.textContent = message; }, 60);
         };
@@ -1371,9 +1999,14 @@
         document.querySelectorAll('[data-copy-target]').forEach((button) => {
           const source = document.getElementById(button.getAttribute('data-copy-target'));
           const label = button.querySelector('[data-label]');
+          const originalLabel = label && label.textContent;
           let timer = 0;
 
           button.addEventListener('click', async () => {
+            if (!source) {
+              announce('The calendar address is not available to copy.');
+              return;
+            }
             const text = source.textContent.trim();
             let copied = false;
             if (navigator.clipboard && window.isSecureContext) {
@@ -1384,11 +2017,11 @@
             window.clearTimeout(timer);
             if (copied) {
               button.dataset.state = 'copied';
-              label.textContent = 'Copied';
+              if (label) label.textContent = 'Copied';
               announce('Calendar address copied to your clipboard.');
               timer = window.setTimeout(() => {
                 delete button.dataset.state;
-                label.textContent = 'Copy';
+                if (label) label.textContent = originalLabel;
               }, 2600);
             } else {
               const range = document.createRange();
@@ -1435,5 +2068,6 @@
       }
     })();
   </script>
+  <script src="events-ui.js"></script>
 </body>
 </html>

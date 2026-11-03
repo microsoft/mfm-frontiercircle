@@ -1,0 +1,45 @@
+name: Validate public events
+
+on:
+  pull_request:
+    paths:
+      - "events/**"
+      - "scripts/**"
+      - "templates/**"
+      - "calendar.ics"
+      - ".github/workflows/validate-public-events.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "events/**"
+      - "scripts/**"
+      - "templates/**"
+      - "calendar.ics"
+      - ".github/workflows/validate-public-events.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  generated-event-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate public event assets
+        shell: pwsh
+        run: ./scripts/Build-FrontierCirclePublicEvents.ps1
+
+      - name: Verify generated assets are committed
+        shell: pwsh
+        run: |
+          $changes = git status --short -- `
+            calendar.ics `
+            events/index.json `
+            events/events.js `
+            events/ics
+          if ($changes) {
+            $changes
+            throw "Generated public event assets are not current."
+          }

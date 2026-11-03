@@ -1,0 +1,31 @@
+{
+  "id": "67e59ab7-ed5b-4816-a3ce-1f918ea3fa3d",
+  "lane": "lab",
+  "status": "Scheduled",
+  "sequence": 0,
+  "created": "2026-11-03T10:58:42-05:00",
+  "lastModified": "2026-11-03T10:58:42-05:00",
+  "title": "Azure AI Gateway: API Management for Intelligent Services",
+  "start": "2026-12-01T09:00:00-05:00",
+  "end": "2026-12-01T17:00:00-05:00",
+  "timeZone": "America/New_York",
+  "timeZoneLabel": "ET",
+  "location": "Online",
+  "description": "In this hands-on lab, use Azure API Management to expose, manage, and optimize AI services, including large language models and Model Context Protocol (MCP) servers. Practice load balancing, model routing, token monitoring and rate limiting, secure MCP tools, semantic caching, and content safety to build scalable, secure, and cost-effective AI-powered solutions.",
+  "audience": "Technical teams interested in managing and securing LLM services and MCP tools with Azure API Management.",
+  "audienceSummary": "Technical teams managing AI services and MCP tools",
+  "takeaway": "Configure AI Gateway capabilities for routing, token cost controls, secure MCP access, semantic caching, and content safety.",
+  "topicCategories": ["ai-agents", "security"],
+  "topics": [
+    "Load balance across Azure OpenAI resources and route requests to specific models",
+    "Configure session affinity for consistent interactions",
+    "Monitor token usage and apply rate limits to control consumption",
+    "Optimize AI service costs and performance",
+    "Expose MCP servers through API Management and publish REST APIs as MCP tools",
+    "Secure MCP endpoints with authorization",
+    "Configure semantic caching to reduce latency and token usage",
+    "Configure content safety filters and enforce safety rules in API Management"
+  ],
+  "registrationDeadline": "2026-11-30T09:00:00-05:00",
+  "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/67e59ab7-ed5b-4816-a3ce-1f918ea3fa3d"
+}
