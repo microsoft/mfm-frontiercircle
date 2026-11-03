@@ -1,0 +1,120 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft//Manufacturing and Mobility Frontier Circle//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Manufacturing & Mobility Frontier Circle
+BEGIN:VEVENT
+UID:67e59ab7-ed5b-4816-a3ce-1f918ea3fa3d@mfm-frontiercircle.microsoft.com
+DTSTAMP:20261103T155842Z
+CREATED:20261103T155842Z
+LAST-MODIFIED:20261103T155842Z
+DTSTART:20261201T140000Z
+DTEND:20261201T220000Z
+SUMMARY:🧪 Lab | Azure AI Gateway: API Management for Intelligent Service
+ s
+LOCATION:Online
+DESCRIPTION:In this hands-on lab\, use Azure API Management to expose\, man
+ age\, and optimize AI services\, including large language models and Model
+  Context Protocol (MCP) servers. Practice load balancing\, model routing\,
+  token monitoring and rate limiting\, secure MCP tools\, semantic caching\
+ , and content safety to build scalable\, secure\, and cost-effective AI-po
+ wered solutions.\n\nTopics:\n- Load balance across Azure OpenAI resources 
+ and route requests to specific models\n- Configure session affinity for co
+ nsistent interactions\n- Monitor token usage and apply rate limits to cont
+ rol consumption\n- Optimize AI service costs and performance\n- Expose MCP
+  servers through API Management and publish REST APIs as MCP tools\n- Secu
+ re MCP endpoints with authorization\n- Configure semantic caching to reduc
+ e latency and token usage\n- Configure content safety filters and enforce 
+ safety rules in API Management\n\nAudience: Technical teams interested in 
+ managing and securing LLM services and MCP tools with Azure API Management
+ .\n\nRegistration is required and subject to approval.\n\nThis series cale
+ ndar is for discovery\, not registration. Entries are marked Free. Registe
+ r separately for the sessions you want to attend.\n\nRegistration closes M
+ onday\, November 30\, 2026 at 9:00 AM ET.\n\nRegister: https://ms-workshop
+ s.cloudevents.ai/ms-innovation-workshops/events/67e59ab7-ed5b-4816-a3ce-1f
+ 918ea3fa3d
+X-ALT-DESC;FMTTYPE=text/html:<!doctype html><html><body style="margin:0\;pa
+ dding:0\;background-color:#eef3f5\;font-family:'Segoe UI'\,Arial\,sans-ser
+ if\;color:#182230\;"><table role="presentation" width="100%" cellpadding="
+ 0" cellspacing="0" border="0" style="width:100%\;background-color:#eef3f5\
+ ;"><tr><td align="center" style="padding:18px 10px\;"><table role="present
+ ation" width="680" cellpadding="0" cellspacing="0" border="0" style="width
+ :100%\;max-width:680px\;background-color:#ffffff\;border:1px solid #c8d8de
+ \;"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\;border-left
+ :6px solid #d83b7d\;padding:18px 24px\;color:#ffffff\;"><div style="font-s
+ ize:13px\;font-weight:700\;letter-spacing:1px\;text-transform:uppercase\;"
+ >🧪 Build &amp\; Skill Labs</div><div style="font-size:14px\;margin-top:
+ 5px\;color:#f4eefa\;">Manufacturing &amp\; Mobility Frontier Circle</div><
+ /td></tr><tr><td style="padding:26px 28px 16px 28px\;"><div style="font-si
+ ze:27px\;line-height:1.16\;font-weight:700\;color:#182230\;">Azure AI Gate
+ way: API Management for Intelligent Services</div><div style="margin-top:1
+ 4px\;font-size:16px\;line-height:1.6\;color:#526575\;">In this hands-on la
+ b\, use Azure API Management to expose\, manage\, and optimize AI services
+ \, including large language models and Model Context Protocol (MCP) server
+ s. Practice load balancing\, model routing\, token monitoring and rate lim
+ iting\, secure MCP tools\, semantic caching\, and content safety to build 
+ scalable\, secure\, and cost-effective AI-powered solutions.<br><br>This s
+ eries calendar is for discovery\, not registration. Entries are marked Fre
+ e. Register separately for the sessions you want to attend.</div></td></tr
+ ><tr><td style="padding:0 28px 24px 28px\;"><table role="presentation" wid
+ th="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%\;bo
+ rder-top:1px solid #c8d8de\;border-bottom:1px solid #c8d8de\;"><tr><td wid
+ th="42%" valign="top" style="padding:14px 12px 14px 0\;"><div style="font-
+ size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">DATE</d
+ iv><div style="margin-top:5px\;font-size:14px\;font-weight:600\;color:#182
+ 230\;">Tuesday\, December 1\, 2026</div></td><td width="30%" valign="top" 
+ style="padding:14px 12px\;border-left:1px solid #c8d8de\;"><div style="fon
+ t-size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">TIME<
+ /div><div style="margin-top:5px\;font-size:14px\;font-weight:600\;color:#1
+ 82230\;">9:00 AM–5:00 PM ET</div></td><td width="28%" valign="top" style
+ ="padding:14px 0 14px 12px\;border-left:1px solid #c8d8de\;"><div style="f
+ ont-size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">LOC
+ ATION</div><div style="margin-top:5px\;font-size:14px\;font-weight:600\;co
+ lor:#182230\;">Online</div></td></tr></table></td></tr><tr><td style="padd
+ ing:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;color
+ :#182230\;margin:0 0 10px 0\;">What participants will do</div><ul style="m
+ argin:0\;padding:0 0 0 20px\;color:#526575\;font-size:15px\;line-height:1.
+ 55\;"><li style="margin:0 0 7px 0\;">Load balance across Azure OpenAI reso
+ urces and route requests to specific models</li><li style="margin:0 0 7px 
+ 0\;">Configure session affinity for consistent interactions</li><li style=
+ "margin:0 0 7px 0\;">Monitor token usage and apply rate limits to control 
+ consumption</li><li style="margin:0 0 7px 0\;">Optimize AI service costs a
+ nd performance</li><li style="margin:0 0 7px 0\;">Expose MCP servers throu
+ gh API Management and publish REST APIs as MCP tools</li><li style="margin
+ :0 0 7px 0\;">Secure MCP endpoints with authorization</li><li style="margi
+ n:0 0 7px 0\;">Configure semantic caching to reduce latency and token usag
+ e</li><li style="margin:0 0 7px 0\;">Configure content safety filters and 
+ enforce safety rules in API Management</li></ul></td></tr><tr><td style="p
+ adding:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;co
+ lor:#182230\;margin:0 0 8px 0\;">Audience</div><div style="font-size:15px\
+ ;line-height:1.55\;color:#526575\;">Technical teams interested in managing
+  and securing LLM services and MCP tools with Azure API Management.</div><
+ /td></tr><tr><td style="padding:0 28px 22px 28px\;"><table role="presentat
+ ion" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:
+ 100%\;background-color:#f7f2fb\;border-left:4px solid #d83b7d\;"><tr><td s
+ tyle="padding:14px 16px\;color:#4a265f\;font-size:14px\;line-height:1.5\;"
+ ><strong>Registration is required and subject to approval.</strong><br>Reg
+ istration closes Monday\, November 30\, 2026 at 9:00 AM ET.</td></tr></tab
+ le></td></tr><tr><td style="padding:0 28px 30px 28px\;"><table role="prese
+ ntation" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#5b2c
+ 83" style="background-color:#5b2c83\;padding:12px 18px\;"><a href="https:/
+ /ms-workshops.cloudevents.ai/ms-innovation-workshops/events/67e59ab7-ed5b-
+ 4816-a3ce-1f918ea3fa3d" style="color:#ffffff\;text-decoration:none\;font-s
+ ize:15px\;font-weight:700\;">Register for this event</a></td></tr></table>
+ <div style="margin-top:12px\;font-size:12px\;line-height:1.45\;color:#6676
+ 84\;">If the button does not open\, use: <a href="https://ms-workshops.clo
+ udevents.ai/ms-innovation-workshops/events/67e59ab7-ed5b-4816-a3ce-1f918ea
+ 3fa3d" style="color:#5b2c83\;">https://ms-workshops.cloudevents.ai/ms-inno
+ vation-workshops/events/67e59ab7-ed5b-4816-a3ce-1f918ea3fa3d</a></div></td
+ ></tr></table></td></tr></table></body></html>
+URL:https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/67e5
+ 9ab7-ed5b-4816-a3ce-1f918ea3fa3d
+CATEGORIES:Build & Skill Labs,Frontier Circle
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+END:VCALENDAR

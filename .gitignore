@@ -426,3 +426,9 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# Local calendar drafts are operational artifacts, not repository content.
+calendar-drafts/
+
+# Generated reports may be combined with private outcome data.
+reports/

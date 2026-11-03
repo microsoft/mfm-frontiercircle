@@ -1,0 +1,326 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft//Manufacturing and Mobility Frontier Circle//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Manufacturing & Mobility Frontier Circle
+X-WR-CALDESC:Public events for Manufacturing & Mobility Frontier Circle
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:67e59ab7-ed5b-4816-a3ce-1f918ea3fa3d@mfm-frontiercircle.microsoft.com
+DTSTAMP:20261103T155842Z
+CREATED:20261103T155842Z
+LAST-MODIFIED:20261103T155842Z
+DTSTART:20261201T140000Z
+DTEND:20261201T220000Z
+SUMMARY:🧪 Lab | Azure AI Gateway: API Management for Intelligent Service
+ s
+LOCATION:Online
+DESCRIPTION:In this hands-on lab\, use Azure API Management to expose\, man
+ age\, and optimize AI services\, including large language models and Model
+  Context Protocol (MCP) servers. Practice load balancing\, model routing\,
+  token monitoring and rate limiting\, secure MCP tools\, semantic caching\
+ , and content safety to build scalable\, secure\, and cost-effective AI-po
+ wered solutions.\n\nTopics:\n- Load balance across Azure OpenAI resources 
+ and route requests to specific models\n- Configure session affinity for co
+ nsistent interactions\n- Monitor token usage and apply rate limits to cont
+ rol consumption\n- Optimize AI service costs and performance\n- Expose MCP
+  servers through API Management and publish REST APIs as MCP tools\n- Secu
+ re MCP endpoints with authorization\n- Configure semantic caching to reduc
+ e latency and token usage\n- Configure content safety filters and enforce 
+ safety rules in API Management\n\nAudience: Technical teams interested in 
+ managing and securing LLM services and MCP tools with Azure API Management
+ .\n\nRegistration is required and subject to approval.\n\nThis series cale
+ ndar is for discovery\, not registration. Entries are marked Free. Registe
+ r separately for the sessions you want to attend.\n\nRegistration closes M
+ onday\, November 30\, 2026 at 9:00 AM ET.\n\nRegister: https://ms-workshop
+ s.cloudevents.ai/ms-innovation-workshops/events/67e59ab7-ed5b-4816-a3ce-1f
+ 918ea3fa3d
+X-ALT-DESC;FMTTYPE=text/html:<!doctype html><html><body style="margin:0\;pa
+ dding:0\;background-color:#eef3f5\;font-family:'Segoe UI'\,Arial\,sans-ser
+ if\;color:#182230\;"><table role="presentation" width="100%" cellpadding="
+ 0" cellspacing="0" border="0" style="width:100%\;background-color:#eef3f5\
+ ;"><tr><td align="center" style="padding:18px 10px\;"><table role="present
+ ation" width="680" cellpadding="0" cellspacing="0" border="0" style="width
+ :100%\;max-width:680px\;background-color:#ffffff\;border:1px solid #c8d8de
+ \;"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\;border-left
+ :6px solid #d83b7d\;padding:18px 24px\;color:#ffffff\;"><div style="font-s
+ ize:13px\;font-weight:700\;letter-spacing:1px\;text-transform:uppercase\;"
+ >🧪 Build &amp\; Skill Labs</div><div style="font-size:14px\;margin-top:
+ 5px\;color:#f4eefa\;">Manufacturing &amp\; Mobility Frontier Circle</div><
+ /td></tr><tr><td style="padding:26px 28px 16px 28px\;"><div style="font-si
+ ze:27px\;line-height:1.16\;font-weight:700\;color:#182230\;">Azure AI Gate
+ way: API Management for Intelligent Services</div><div style="margin-top:1
+ 4px\;font-size:16px\;line-height:1.6\;color:#526575\;">In this hands-on la
+ b\, use Azure API Management to expose\, manage\, and optimize AI services
+ \, including large language models and Model Context Protocol (MCP) server
+ s. Practice load balancing\, model routing\, token monitoring and rate lim
+ iting\, secure MCP tools\, semantic caching\, and content safety to build 
+ scalable\, secure\, and cost-effective AI-powered solutions.<br><br>This s
+ eries calendar is for discovery\, not registration. Entries are marked Fre
+ e. Register separately for the sessions you want to attend.</div></td></tr
+ ><tr><td style="padding:0 28px 24px 28px\;"><table role="presentation" wid
+ th="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%\;bo
+ rder-top:1px solid #c8d8de\;border-bottom:1px solid #c8d8de\;"><tr><td wid
+ th="42%" valign="top" style="padding:14px 12px 14px 0\;"><div style="font-
+ size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">DATE</d
+ iv><div style="margin-top:5px\;font-size:14px\;font-weight:600\;color:#182
+ 230\;">Tuesday\, December 1\, 2026</div></td><td width="30%" valign="top" 
+ style="padding:14px 12px\;border-left:1px solid #c8d8de\;"><div style="fon
+ t-size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">TIME<
+ /div><div style="margin-top:5px\;font-size:14px\;font-weight:600\;color:#1
+ 82230\;">9:00 AM–5:00 PM ET</div></td><td width="28%" valign="top" style
+ ="padding:14px 0 14px 12px\;border-left:1px solid #c8d8de\;"><div style="f
+ ont-size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">LOC
+ ATION</div><div style="margin-top:5px\;font-size:14px\;font-weight:600\;co
+ lor:#182230\;">Online</div></td></tr></table></td></tr><tr><td style="padd
+ ing:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;color
+ :#182230\;margin:0 0 10px 0\;">What participants will do</div><ul style="m
+ argin:0\;padding:0 0 0 20px\;color:#526575\;font-size:15px\;line-height:1.
+ 55\;"><li style="margin:0 0 7px 0\;">Load balance across Azure OpenAI reso
+ urces and route requests to specific models</li><li style="margin:0 0 7px 
+ 0\;">Configure session affinity for consistent interactions</li><li style=
+ "margin:0 0 7px 0\;">Monitor token usage and apply rate limits to control 
+ consumption</li><li style="margin:0 0 7px 0\;">Optimize AI service costs a
+ nd performance</li><li style="margin:0 0 7px 0\;">Expose MCP servers throu
+ gh API Management and publish REST APIs as MCP tools</li><li style="margin
+ :0 0 7px 0\;">Secure MCP endpoints with authorization</li><li style="margi
+ n:0 0 7px 0\;">Configure semantic caching to reduce latency and token usag
+ e</li><li style="margin:0 0 7px 0\;">Configure content safety filters and 
+ enforce safety rules in API Management</li></ul></td></tr><tr><td style="p
+ adding:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;co
+ lor:#182230\;margin:0 0 8px 0\;">Audience</div><div style="font-size:15px\
+ ;line-height:1.55\;color:#526575\;">Technical teams interested in managing
+  and securing LLM services and MCP tools with Azure API Management.</div><
+ /td></tr><tr><td style="padding:0 28px 22px 28px\;"><table role="presentat
+ ion" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:
+ 100%\;background-color:#f7f2fb\;border-left:4px solid #d83b7d\;"><tr><td s
+ tyle="padding:14px 16px\;color:#4a265f\;font-size:14px\;line-height:1.5\;"
+ ><strong>Registration is required and subject to approval.</strong><br>Reg
+ istration closes Monday\, November 30\, 2026 at 9:00 AM ET.</td></tr></tab
+ le></td></tr><tr><td style="padding:0 28px 30px 28px\;"><table role="prese
+ ntation" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#5b2c
+ 83" style="background-color:#5b2c83\;padding:12px 18px\;"><a href="https:/
+ /ms-workshops.cloudevents.ai/ms-innovation-workshops/events/67e59ab7-ed5b-
+ 4816-a3ce-1f918ea3fa3d" style="color:#ffffff\;text-decoration:none\;font-s
+ ize:15px\;font-weight:700\;">Register for this event</a></td></tr></table>
+ <div style="margin-top:12px\;font-size:12px\;line-height:1.45\;color:#6676
+ 84\;">If the button does not open\, use: <a href="https://ms-workshops.clo
+ udevents.ai/ms-innovation-workshops/events/67e59ab7-ed5b-4816-a3ce-1f918ea
+ 3fa3d" style="color:#5b2c83\;">https://ms-workshops.cloudevents.ai/ms-inno
+ vation-workshops/events/67e59ab7-ed5b-4816-a3ce-1f918ea3fa3d</a></div></td
+ ></tr></table></td></tr></table></body></html>
+URL:https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/67e5
+ 9ab7-ed5b-4816-a3ce-1f918ea3fa3d
+CATEGORIES:Build & Skill Labs,Frontier Circle
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:0f992fbc-7567-4106-98d2-c0529baa1d20@mfm-frontiercircle.microsoft.com
+DTSTAMP:20261103T155711Z
+CREATED:20261103T155711Z
+LAST-MODIFIED:20261103T155711Z
+DTSTART:20261209T180000Z
+DTEND:20261209T220000Z
+SUMMARY:🧪 Lab | AI-Assisted Development with GitHub Copilot
+LOCATION:Online
+DESCRIPTION:In this hands-on lab\, use GitHub Copilot to accelerate generat
+ ive AI app development. Explore Copilot's core features\, scaffold and ref
+ actor a summarizer web app\, integrate Azure OpenAI\, and automate deploym
+ ent to Azure using GitHub Actions. Practice contextual prompts\, improve a
+ pplication UI and real-time features\, and streamline issues and pull requ
+ ests with GitHub Copilot Agent.\n\nTopics:\n- Use GitHub Copilot in VS Cod
+ e for AI-assisted app development\n- Build\, refactor\, and test an Azure 
+ OpenAI web app\n- Automate deployment with GitHub Actions and secrets\n- E
+ nhance apps with prompts\, features\, and collaboration through Copilot Ag
+ ent\n\nAudience: Developers interested in hands-on AI-assisted application
+  development with GitHub Copilot in VS Code\, Azure OpenAI\, and GitHub Ac
+ tions.\n\nRegistration is required and subject to approval.\n\nThis series
+  calendar is for discovery\, not registration. Entries are marked Free. Re
+ gister separately for the sessions you want to attend.\n\nRegistration clo
+ ses Tuesday\, December 8\, 2026 at 1:00 PM ET.\n\nRegister: https://ms-wor
+ kshops.cloudevents.ai/ms-innovation-workshops/events/0f992fbc-7567-4106-98
+ d2-c0529baa1d20
+X-ALT-DESC;FMTTYPE=text/html:<!doctype html><html><body style="margin:0\;pa
+ dding:0\;background-color:#eef3f5\;font-family:'Segoe UI'\,Arial\,sans-ser
+ if\;color:#182230\;"><table role="presentation" width="100%" cellpadding="
+ 0" cellspacing="0" border="0" style="width:100%\;background-color:#eef3f5\
+ ;"><tr><td align="center" style="padding:18px 10px\;"><table role="present
+ ation" width="680" cellpadding="0" cellspacing="0" border="0" style="width
+ :100%\;max-width:680px\;background-color:#ffffff\;border:1px solid #c8d8de
+ \;"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\;border-left
+ :6px solid #d83b7d\;padding:18px 24px\;color:#ffffff\;"><div style="font-s
+ ize:13px\;font-weight:700\;letter-spacing:1px\;text-transform:uppercase\;"
+ >🧪 Build &amp\; Skill Labs</div><div style="font-size:14px\;margin-top:
+ 5px\;color:#f4eefa\;">Manufacturing &amp\; Mobility Frontier Circle</div><
+ /td></tr><tr><td style="padding:26px 28px 16px 28px\;"><div style="font-si
+ ze:27px\;line-height:1.16\;font-weight:700\;color:#182230\;">AI-Assisted D
+ evelopment with GitHub Copilot</div><div style="margin-top:14px\;font-size
+ :16px\;line-height:1.6\;color:#526575\;">In this hands-on lab\, use GitHub
+  Copilot to accelerate generative AI app development. Explore Copilot&#39\
+ ;s core features\, scaffold and refactor a summarizer web app\, integrate 
+ Azure OpenAI\, and automate deployment to Azure using GitHub Actions. Prac
+ tice contextual prompts\, improve application UI and real-time features\, 
+ and streamline issues and pull requests with GitHub Copilot Agent.<br><br>
+ This series calendar is for discovery\, not registration. Entries are mark
+ ed Free. Register separately for the sessions you want to attend.</div></t
+ d></tr><tr><td style="padding:0 28px 24px 28px\;"><table role="presentatio
+ n" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:10
+ 0%\;border-top:1px solid #c8d8de\;border-bottom:1px solid #c8d8de\;"><tr><
+ td width="42%" valign="top" style="padding:14px 12px 14px 0\;"><div style=
+ "font-size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">D
+ ATE</div><div style="margin-top:5px\;font-size:14px\;font-weight:600\;colo
+ r:#182230\;">Wednesday\, December 9\, 2026</div></td><td width="30%" valig
+ n="top" style="padding:14px 12px\;border-left:1px solid #c8d8de\;"><div st
+ yle="font-size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\
+ ;">TIME</div><div style="margin-top:5px\;font-size:14px\;font-weight:600\;
+ color:#182230\;">1:00 PM–5:00 PM ET</div></td><td width="28%" valign="to
+ p" style="padding:14px 0 14px 12px\;border-left:1px solid #c8d8de\;"><div 
+ style="font-size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c8
+ 3\;">LOCATION</div><div style="margin-top:5px\;font-size:14px\;font-weight
+ :600\;color:#182230\;">Online</div></td></tr></table></td></tr><tr><td sty
+ le="padding:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:70
+ 0\;color:#182230\;margin:0 0 10px 0\;">What participants will do</div><ul 
+ style="margin:0\;padding:0 0 0 20px\;color:#526575\;font-size:15px\;line-h
+ eight:1.55\;"><li style="margin:0 0 7px 0\;">Use GitHub Copilot in VS Code
+  for AI-assisted app development</li><li style="margin:0 0 7px 0\;">Build\
+ , refactor\, and test an Azure OpenAI web app</li><li style="margin:0 0 7p
+ x 0\;">Automate deployment with GitHub Actions and secrets</li><li style="
+ margin:0 0 7px 0\;">Enhance apps with prompts\, features\, and collaborati
+ on through Copilot Agent</li></ul></td></tr><tr><td style="padding:0 28px 
+ 22px 28px\;"><div style="font-size:16px\;font-weight:700\;color:#182230\;m
+ argin:0 0 8px 0\;">Audience</div><div style="font-size:15px\;line-height:1
+ .55\;color:#526575\;">Developers interested in hands-on AI-assisted applic
+ ation development with GitHub Copilot in VS Code\, Azure OpenAI\, and GitH
+ ub Actions.</div></td></tr><tr><td style="padding:0 28px 22px 28px\;"><tab
+ le role="presentation" width="100%" cellpadding="0" cellspacing="0" border
+ ="0" style="width:100%\;background-color:#f7f2fb\;border-left:4px solid #d
+ 83b7d\;"><tr><td style="padding:14px 16px\;color:#4a265f\;font-size:14px\;
+ line-height:1.5\;"><strong>Registration is required and subject to approva
+ l.</strong><br>Registration closes Tuesday\, December 8\, 2026 at 1:00 PM 
+ ET.</td></tr></table></td></tr><tr><td style="padding:0 28px 30px 28px\;">
+ <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+ <td bgcolor="#5b2c83" style="background-color:#5b2c83\;padding:12px 18px\;
+ "><a href="https://ms-workshops.cloudevents.ai/ms-innovation-workshops/eve
+ nts/0f992fbc-7567-4106-98d2-c0529baa1d20" style="color:#ffffff\;text-decor
+ ation:none\;font-size:15px\;font-weight:700\;">Register for this event</a>
+ </td></tr></table><div style="margin-top:12px\;font-size:12px\;line-height
+ :1.45\;color:#667684\;">If the button does not open\, use: <a href="https:
+ //ms-workshops.cloudevents.ai/ms-innovation-workshops/events/0f992fbc-7567
+ -4106-98d2-c0529baa1d20" style="color:#5b2c83\;">https://ms-workshops.clou
+ devents.ai/ms-innovation-workshops/events/0f992fbc-7567-4106-98d2-c0529baa
+ 1d20</a></div></td></tr></table></td></tr></table></body></html>
+URL:https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/0f99
+ 2fbc-7567-4106-98d2-c0529baa1d20
+CATEGORIES:Build & Skill Labs,Frontier Circle
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:94bfeeb4-605f-47e1-abb1-2fcb2b538501@mfm-frontiercircle.microsoft.com
+DTSTAMP:20261102T180734Z
+CREATED:20261030T150607Z
+LAST-MODIFIED:20261102T180734Z
+DTSTART:20261214T180000Z
+DTEND:20261214T220000Z
+SUMMARY:🧪 Lab | Build A Fabric Real-Time Intelligence Solution in a Day
+LOCATION:Online
+DESCRIPTION:In this hands-on lab\, build event-driven pipelines and visuali
+ ze live insights through interactive dashboards using Fabric Eventstream\,
+  Eventhouse\, OneLake\, Lakehouse\, KQL\, notebooks\, and Data Activator.\
+ n\nTopics:\n- Create a Fabric workspace and Eventhouse for Real-Time Intel
+ ligence\n- Process streaming data with Eventstream and notebooks\n- Integr
+ ate Eventhouse with Lakehouse\n- Build a live real-time dashboard with aut
+ omated actions\n\nAudience: Data engineers\, architects\, and solution dev
+ elopers with basic familiarity with Azure\, data pipelines\, real-time das
+ hboards\, and Python.\n\nRegistration is required and subject to approval.
+ \n\nThis series calendar is for discovery\, not registration. Entries are 
+ marked Free. Register separately for the sessions you want to attend.\n\nR
+ egistration closes Sunday\, December 13\, 2026 at 1:00 PM ET.\n\nRegister:
+  https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bfee
+ b4-605f-47e1-abb1-2fcb2b538501
+X-ALT-DESC;FMTTYPE=text/html:<!doctype html><html><body style="margin:0\;pa
+ dding:0\;background-color:#eef3f5\;font-family:'Segoe UI'\,Arial\,sans-ser
+ if\;color:#182230\;"><table role="presentation" width="100%" cellpadding="
+ 0" cellspacing="0" border="0" style="width:100%\;background-color:#eef3f5\
+ ;"><tr><td align="center" style="padding:18px 10px\;"><table role="present
+ ation" width="680" cellpadding="0" cellspacing="0" border="0" style="width
+ :100%\;max-width:680px\;background-color:#ffffff\;border:1px solid #c8d8de
+ \;"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\;border-left
+ :6px solid #d83b7d\;padding:18px 24px\;color:#ffffff\;"><div style="font-s
+ ize:13px\;font-weight:700\;letter-spacing:1px\;text-transform:uppercase\;"
+ >🧪 Build &amp\; Skill Labs</div><div style="font-size:14px\;margin-top:
+ 5px\;color:#f4eefa\;">Manufacturing &amp\; Mobility Frontier Circle</div><
+ /td></tr><tr><td style="padding:26px 28px 16px 28px\;"><div style="font-si
+ ze:27px\;line-height:1.16\;font-weight:700\;color:#182230\;">Build A Fabri
+ c Real-Time Intelligence Solution in a Day</div><div style="margin-top:14p
+ x\;font-size:16px\;line-height:1.6\;color:#526575\;">In this hands-on lab\
+ , build event-driven pipelines and visualize live insights through interac
+ tive dashboards using Fabric Eventstream\, Eventhouse\, OneLake\, Lakehous
+ e\, KQL\, notebooks\, and Data Activator.<br><br>This series calendar is f
+ or discovery\, not registration. Entries are marked Free. Register separat
+ ely for the sessions you want to attend.</div></td></tr><tr><td style="pad
+ ding:0 28px 24px 28px\;"><table role="presentation" width="100%" cellpaddi
+ ng="0" cellspacing="0" border="0" style="width:100%\;border-top:1px solid 
+ #c8d8de\;border-bottom:1px solid #c8d8de\;"><tr><td width="42%" valign="to
+ p" style="padding:14px 12px 14px 0\;"><div style="font-size:11px\;font-wei
+ ght:700\;letter-spacing:0.8px\;color:#5b2c83\;">DATE</div><div style="marg
+ in-top:5px\;font-size:14px\;font-weight:600\;color:#182230\;">Monday\, Dec
+ ember 14\, 2026</div></td><td width="30%" valign="top" style="padding:14px
+  12px\;border-left:1px solid #c8d8de\;"><div style="font-size:11px\;font-w
+ eight:700\;letter-spacing:0.8px\;color:#5b2c83\;">TIME</div><div style="ma
+ rgin-top:5px\;font-size:14px\;font-weight:600\;color:#182230\;">1:00 PM–
+ 5:00 PM ET</div></td><td width="28%" valign="top" style="padding:14px 0 14
+ px 12px\;border-left:1px solid #c8d8de\;"><div style="font-size:11px\;font
+ -weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">LOCATION</div><div sty
+ le="margin-top:5px\;font-size:14px\;font-weight:600\;color:#182230\;">Onli
+ ne</div></td></tr></table></td></tr><tr><td style="padding:0 28px 22px 28p
+ x\;"><div style="font-size:16px\;font-weight:700\;color:#182230\;margin:0 
+ 0 10px 0\;">What participants will do</div><ul style="margin:0\;padding:0 
+ 0 0 20px\;color:#526575\;font-size:15px\;line-height:1.55\;"><li style="ma
+ rgin:0 0 7px 0\;">Create a Fabric workspace and Eventhouse for Real-Time I
+ ntelligence</li><li style="margin:0 0 7px 0\;">Process streaming data with
+  Eventstream and notebooks</li><li style="margin:0 0 7px 0\;">Integrate Ev
+ enthouse with Lakehouse</li><li style="margin:0 0 7px 0\;">Build a live re
+ al-time dashboard with automated actions</li></ul></td></tr><tr><td style=
+ "padding:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;
+ color:#182230\;margin:0 0 8px 0\;">Audience</div><div style="font-size:15p
+ x\;line-height:1.55\;color:#526575\;">Data engineers\, architects\, and so
+ lution developers with basic familiarity with Azure\, data pipelines\, rea
+ l-time dashboards\, and Python.</div></td></tr><tr><td style="padding:0 28
+ px 22px 28px\;"><table role="presentation" width="100%" cellpadding="0" ce
+ llspacing="0" border="0" style="width:100%\;background-color:#f7f2fb\;bord
+ er-left:4px solid #d83b7d\;"><tr><td style="padding:14px 16px\;color:#4a26
+ 5f\;font-size:14px\;line-height:1.5\;"><strong>Registration is required an
+ d subject to approval.</strong><br>Registration closes Sunday\, December 1
+ 3\, 2026 at 1:00 PM ET.</td></tr></table></td></tr><tr><td style="padding:
+ 0 28px 30px 28px\;"><table role="presentation" cellpadding="0" cellspacing
+ ="0" border="0"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\
+ ;padding:12px 18px\;"><a href="https://ms-workshops.cloudevents.ai/ms-inno
+ vation-workshops/events/94bfeeb4-605f-47e1-abb1-2fcb2b538501" style="color
+ :#ffffff\;text-decoration:none\;font-size:15px\;font-weight:700\;">Registe
+ r for this event</a></td></tr></table><div style="margin-top:12px\;font-si
+ ze:12px\;line-height:1.45\;color:#667684\;">If the button does not open\, 
+ use: <a href="https://ms-workshops.cloudevents.ai/ms-innovation-workshops/
+ events/94bfeeb4-605f-47e1-abb1-2fcb2b538501" style="color:#5b2c83\;">https
+ ://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bfeeb4-605
+ f-47e1-abb1-2fcb2b538501</a></div></td></tr></table></td></tr></table></bo
+ dy></html>
+URL:https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bf
+ eeb4-605f-47e1-abb1-2fcb2b538501
+CATEGORIES:Build & Skill Labs,Frontier Circle
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+END:VCALENDAR

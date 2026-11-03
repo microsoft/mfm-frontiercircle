@@ -1,0 +1,136 @@
+window.frontierCircleEventData = {
+  "schemaVersion": 1,
+  "lastUpdated": "2026-11-03T10:58:42-05:00",
+  "calendarUrl": "https://microsoft.github.io/mfm-frontiercircle/calendar.ics",
+  "topicCategories": [
+    {
+      "id": "ai-agents",
+      "label": "AI & agents"
+    },
+    {
+      "id": "data-analytics",
+      "label": "Data & analytics"
+    },
+    {
+      "id": "security",
+      "label": "Security"
+    },
+    {
+      "id": "modernization",
+      "label": "Modernization"
+    },
+    {
+      "id": "connected-products",
+      "label": "Connected products"
+    }
+  ],
+  "events": [
+    {
+      "id": "67e59ab7-ed5b-4816-a3ce-1f918ea3fa3d",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-03T10:58:42-05:00",
+      "lastModified": "2026-11-03T10:58:42-05:00",
+      "summary": "🧪 Lab | Azure AI Gateway: API Management for Intelligent Services",
+      "title": "Azure AI Gateway: API Management for Intelligent Services",
+      "start": "2026-12-01T09:00:00-05:00",
+      "end": "2026-12-01T17:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "In this hands-on lab, use Azure API Management to expose, manage, and optimize AI services, including large language models and Model Context Protocol (MCP) servers. Practice load balancing, model routing, token monitoring and rate limiting, secure MCP tools, semantic caching, and content safety to build scalable, secure, and cost-effective AI-powered solutions.",
+      "audience": "Technical teams interested in managing and securing LLM services and MCP tools with Azure API Management.",
+      "audienceSummary": "Technical teams managing AI services and MCP tools",
+      "takeaway": "Configure AI Gateway capabilities for routing, token cost controls, secure MCP access, semantic caching, and content safety.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Load balance across Azure OpenAI resources and route requests to specific models",
+        "Configure session affinity for consistent interactions",
+        "Monitor token usage and apply rate limits to control consumption",
+        "Optimize AI service costs and performance",
+        "Expose MCP servers through API Management and publish REST APIs as MCP tools",
+        "Secure MCP endpoints with authorization",
+        "Configure semantic caching to reduce latency and token usage",
+        "Configure content safety filters and enforce safety rules in API Management"
+      ],
+      "registrationDeadline": "2026-11-30T09:00:00-05:00",
+      "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/67e59ab7-ed5b-4816-a3ce-1f918ea3fa3d",
+      "eventIcsUrl": "events/ics/2026-12-01-azure-ai-gateway-api-management.ics"
+    },
+    {
+      "id": "0f992fbc-7567-4106-98d2-c0529baa1d20",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-03T10:57:11-05:00",
+      "lastModified": "2026-11-03T10:57:11-05:00",
+      "summary": "🧪 Lab | AI-Assisted Development with GitHub Copilot",
+      "title": "AI-Assisted Development with GitHub Copilot",
+      "start": "2026-12-09T13:00:00-05:00",
+      "end": "2026-12-09T17:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "In this hands-on lab, use GitHub Copilot to accelerate generative AI app development. Explore Copilot's core features, scaffold and refactor a summarizer web app, integrate Azure OpenAI, and automate deployment to Azure using GitHub Actions. Practice contextual prompts, improve application UI and real-time features, and streamline issues and pull requests with GitHub Copilot Agent.",
+      "audience": "Developers interested in hands-on AI-assisted application development with GitHub Copilot in VS Code, Azure OpenAI, and GitHub Actions.",
+      "audienceSummary": "Developers exploring AI-assisted application development",
+      "takeaway": "Build, refactor, and test an Azure OpenAI web app with GitHub Copilot, then automate deployment with GitHub Actions.",
+      "topicCategories": [
+        "ai-agents"
+      ],
+      "topics": [
+        "Use GitHub Copilot in VS Code for AI-assisted app development",
+        "Build, refactor, and test an Azure OpenAI web app",
+        "Automate deployment with GitHub Actions and secrets",
+        "Enhance apps with prompts, features, and collaboration through Copilot Agent"
+      ],
+      "registrationDeadline": "2026-12-08T13:00:00-05:00",
+      "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/0f992fbc-7567-4106-98d2-c0529baa1d20",
+      "eventIcsUrl": "events/ics/2026-12-09-ai-assisted-development-github-copilot.ics"
+    },
+    {
+      "id": "94bfeeb4-605f-47e1-abb1-2fcb2b538501",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 2,
+      "created": "2026-10-30T11:06:07-04:00",
+      "lastModified": "2026-11-02T13:07:34-05:00",
+      "summary": "🧪 Lab | Build A Fabric Real-Time Intelligence Solution in a Day",
+      "title": "Build A Fabric Real-Time Intelligence Solution in a Day",
+      "start": "2026-12-14T13:00:00-05:00",
+      "end": "2026-12-14T17:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "In this hands-on lab, build event-driven pipelines and visualize live insights through interactive dashboards using Fabric Eventstream, Eventhouse, OneLake, Lakehouse, KQL, notebooks, and Data Activator.",
+      "audience": "Data engineers, architects, and solution developers with basic familiarity with Azure, data pipelines, real-time dashboards, and Python.",
+      "audienceSummary": "Data engineers, architects, and developers",
+      "takeaway": "Build streaming pipelines and a live dashboard with Fabric Real-Time Intelligence.",
+      "topicCategories": [
+        "data-analytics"
+      ],
+      "topics": [
+        "Create a Fabric workspace and Eventhouse for Real-Time Intelligence",
+        "Process streaming data with Eventstream and notebooks",
+        "Integrate Eventhouse with Lakehouse",
+        "Build a live real-time dashboard with automated actions"
+      ],
+      "registrationDeadline": "2026-12-13T13:00:00-05:00",
+      "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bfeeb4-605f-47e1-abb1-2fcb2b538501",
+      "eventIcsUrl": "events/ics/2026-12-14-fabric-real-time-intelligence.ics"
+    }
+  ]
+};

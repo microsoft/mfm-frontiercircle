@@ -1,0 +1,106 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft//Manufacturing and Mobility Frontier Circle//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Manufacturing & Mobility Frontier Circle
+BEGIN:VEVENT
+UID:94bfeeb4-605f-47e1-abb1-2fcb2b538501@mfm-frontiercircle.microsoft.com
+DTSTAMP:20261102T180734Z
+CREATED:20261030T150607Z
+LAST-MODIFIED:20261102T180734Z
+DTSTART:20261214T180000Z
+DTEND:20261214T220000Z
+SUMMARY:🧪 Lab | Build A Fabric Real-Time Intelligence Solution in a Day
+LOCATION:Online
+DESCRIPTION:In this hands-on lab\, build event-driven pipelines and visuali
+ ze live insights through interactive dashboards using Fabric Eventstream\,
+  Eventhouse\, OneLake\, Lakehouse\, KQL\, notebooks\, and Data Activator.\
+ n\nTopics:\n- Create a Fabric workspace and Eventhouse for Real-Time Intel
+ ligence\n- Process streaming data with Eventstream and notebooks\n- Integr
+ ate Eventhouse with Lakehouse\n- Build a live real-time dashboard with aut
+ omated actions\n\nAudience: Data engineers\, architects\, and solution dev
+ elopers with basic familiarity with Azure\, data pipelines\, real-time das
+ hboards\, and Python.\n\nRegistration is required and subject to approval.
+ \n\nThis series calendar is for discovery\, not registration. Entries are 
+ marked Free. Register separately for the sessions you want to attend.\n\nR
+ egistration closes Sunday\, December 13\, 2026 at 1:00 PM ET.\n\nRegister:
+  https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bfee
+ b4-605f-47e1-abb1-2fcb2b538501
+X-ALT-DESC;FMTTYPE=text/html:<!doctype html><html><body style="margin:0\;pa
+ dding:0\;background-color:#eef3f5\;font-family:'Segoe UI'\,Arial\,sans-ser
+ if\;color:#182230\;"><table role="presentation" width="100%" cellpadding="
+ 0" cellspacing="0" border="0" style="width:100%\;background-color:#eef3f5\
+ ;"><tr><td align="center" style="padding:18px 10px\;"><table role="present
+ ation" width="680" cellpadding="0" cellspacing="0" border="0" style="width
+ :100%\;max-width:680px\;background-color:#ffffff\;border:1px solid #c8d8de
+ \;"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\;border-left
+ :6px solid #d83b7d\;padding:18px 24px\;color:#ffffff\;"><div style="font-s
+ ize:13px\;font-weight:700\;letter-spacing:1px\;text-transform:uppercase\;"
+ >🧪 Build &amp\; Skill Labs</div><div style="font-size:14px\;margin-top:
+ 5px\;color:#f4eefa\;">Manufacturing &amp\; Mobility Frontier Circle</div><
+ /td></tr><tr><td style="padding:26px 28px 16px 28px\;"><div style="font-si
+ ze:27px\;line-height:1.16\;font-weight:700\;color:#182230\;">Build A Fabri
+ c Real-Time Intelligence Solution in a Day</div><div style="margin-top:14p
+ x\;font-size:16px\;line-height:1.6\;color:#526575\;">In this hands-on lab\
+ , build event-driven pipelines and visualize live insights through interac
+ tive dashboards using Fabric Eventstream\, Eventhouse\, OneLake\, Lakehous
+ e\, KQL\, notebooks\, and Data Activator.<br><br>This series calendar is f
+ or discovery\, not registration. Entries are marked Free. Register separat
+ ely for the sessions you want to attend.</div></td></tr><tr><td style="pad
+ ding:0 28px 24px 28px\;"><table role="presentation" width="100%" cellpaddi
+ ng="0" cellspacing="0" border="0" style="width:100%\;border-top:1px solid 
+ #c8d8de\;border-bottom:1px solid #c8d8de\;"><tr><td width="42%" valign="to
+ p" style="padding:14px 12px 14px 0\;"><div style="font-size:11px\;font-wei
+ ght:700\;letter-spacing:0.8px\;color:#5b2c83\;">DATE</div><div style="marg
+ in-top:5px\;font-size:14px\;font-weight:600\;color:#182230\;">Monday\, Dec
+ ember 14\, 2026</div></td><td width="30%" valign="top" style="padding:14px
+  12px\;border-left:1px solid #c8d8de\;"><div style="font-size:11px\;font-w
+ eight:700\;letter-spacing:0.8px\;color:#5b2c83\;">TIME</div><div style="ma
+ rgin-top:5px\;font-size:14px\;font-weight:600\;color:#182230\;">1:00 PM–
+ 5:00 PM ET</div></td><td width="28%" valign="top" style="padding:14px 0 14
+ px 12px\;border-left:1px solid #c8d8de\;"><div style="font-size:11px\;font
+ -weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">LOCATION</div><div sty
+ le="margin-top:5px\;font-size:14px\;font-weight:600\;color:#182230\;">Onli
+ ne</div></td></tr></table></td></tr><tr><td style="padding:0 28px 22px 28p
+ x\;"><div style="font-size:16px\;font-weight:700\;color:#182230\;margin:0 
+ 0 10px 0\;">What participants will do</div><ul style="margin:0\;padding:0 
+ 0 0 20px\;color:#526575\;font-size:15px\;line-height:1.55\;"><li style="ma
+ rgin:0 0 7px 0\;">Create a Fabric workspace and Eventhouse for Real-Time I
+ ntelligence</li><li style="margin:0 0 7px 0\;">Process streaming data with
+  Eventstream and notebooks</li><li style="margin:0 0 7px 0\;">Integrate Ev
+ enthouse with Lakehouse</li><li style="margin:0 0 7px 0\;">Build a live re
+ al-time dashboard with automated actions</li></ul></td></tr><tr><td style=
+ "padding:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;
+ color:#182230\;margin:0 0 8px 0\;">Audience</div><div style="font-size:15p
+ x\;line-height:1.55\;color:#526575\;">Data engineers\, architects\, and so
+ lution developers with basic familiarity with Azure\, data pipelines\, rea
+ l-time dashboards\, and Python.</div></td></tr><tr><td style="padding:0 28
+ px 22px 28px\;"><table role="presentation" width="100%" cellpadding="0" ce
+ llspacing="0" border="0" style="width:100%\;background-color:#f7f2fb\;bord
+ er-left:4px solid #d83b7d\;"><tr><td style="padding:14px 16px\;color:#4a26
+ 5f\;font-size:14px\;line-height:1.5\;"><strong>Registration is required an
+ d subject to approval.</strong><br>Registration closes Sunday\, December 1
+ 3\, 2026 at 1:00 PM ET.</td></tr></table></td></tr><tr><td style="padding:
+ 0 28px 30px 28px\;"><table role="presentation" cellpadding="0" cellspacing
+ ="0" border="0"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\
+ ;padding:12px 18px\;"><a href="https://ms-workshops.cloudevents.ai/ms-inno
+ vation-workshops/events/94bfeeb4-605f-47e1-abb1-2fcb2b538501" style="color
+ :#ffffff\;text-decoration:none\;font-size:15px\;font-weight:700\;">Registe
+ r for this event</a></td></tr></table><div style="margin-top:12px\;font-si
+ ze:12px\;line-height:1.45\;color:#667684\;">If the button does not open\, 
+ use: <a href="https://ms-workshops.cloudevents.ai/ms-innovation-workshops/
+ events/94bfeeb4-605f-47e1-abb1-2fcb2b538501" style="color:#5b2c83\;">https
+ ://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bfeeb4-605
+ f-47e1-abb1-2fcb2b538501</a></div></td></tr></table></td></tr></table></bo
+ dy></html>
+URL:https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bf
+ eeb4-605f-47e1-abb1-2fcb2b538501
+CATEGORIES:Build & Skill Labs,Frontier Circle
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:2
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+END:VCALENDAR

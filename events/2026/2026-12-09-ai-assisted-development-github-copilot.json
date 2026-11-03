@@ -1,0 +1,27 @@
+{
+  "id": "0f992fbc-7567-4106-98d2-c0529baa1d20",
+  "lane": "lab",
+  "status": "Scheduled",
+  "sequence": 0,
+  "created": "2026-11-03T10:57:11-05:00",
+  "lastModified": "2026-11-03T10:57:11-05:00",
+  "title": "AI-Assisted Development with GitHub Copilot",
+  "start": "2026-12-09T13:00:00-05:00",
+  "end": "2026-12-09T17:00:00-05:00",
+  "timeZone": "America/New_York",
+  "timeZoneLabel": "ET",
+  "location": "Online",
+  "description": "In this hands-on lab, use GitHub Copilot to accelerate generative AI app development. Explore Copilot's core features, scaffold and refactor a summarizer web app, integrate Azure OpenAI, and automate deployment to Azure using GitHub Actions. Practice contextual prompts, improve application UI and real-time features, and streamline issues and pull requests with GitHub Copilot Agent.",
+  "audience": "Developers interested in hands-on AI-assisted application development with GitHub Copilot in VS Code, Azure OpenAI, and GitHub Actions.",
+  "audienceSummary": "Developers exploring AI-assisted application development",
+  "takeaway": "Build, refactor, and test an Azure OpenAI web app with GitHub Copilot, then automate deployment with GitHub Actions.",
+  "topicCategories": ["ai-agents"],
+  "topics": [
+    "Use GitHub Copilot in VS Code for AI-assisted app development",
+    "Build, refactor, and test an Azure OpenAI web app",
+    "Automate deployment with GitHub Actions and secrets",
+    "Enhance apps with prompts, features, and collaboration through Copilot Agent"
+  ],
+  "registrationDeadline": "2026-12-08T13:00:00-05:00",
+  "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/0f992fbc-7567-4106-98d2-c0529baa1d20"
+}
