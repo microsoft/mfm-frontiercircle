@@ -365,6 +365,25 @@
       const limit = Number.parseInt(board.dataset.limit || '3', 10);
       const preview = visible.slice(0, Number.isFinite(limit) ? limit : 3);
       preview.forEach((event, index) => board.appendChild(renderEvent(event, index)));
+      const remaining = visible.length - preview.length;
+      if (remaining > 0) {
+        const link = document.createElement('a');
+        link.className = 'events-more';
+        link.href = 'schedule.html';
+        link.dataset.clarityEvent = 'event_schedule_click';
+        const word = remaining === 1 ? 'session' : 'sessions';
+        link.setAttribute('aria-label', `${remaining} more upcoming ${word}. View all ${visible.length} sessions.`);
+        const count = makeText(link, 'span', 'events-more__count', `+${remaining}`);
+        count.setAttribute('aria-hidden', 'true');
+        const text = document.createElement('span');
+        text.className = 'events-more__text';
+        makeText(text, 'span', 'events-more__label', `More ${word} on the calendar`);
+        makeText(text, 'span', 'events-more__action', 'View all upcoming sessions');
+        link.appendChild(text);
+        const arrow = makeText(link, 'span', 'events-more__arrow', '→');
+        arrow.setAttribute('aria-hidden', 'true');
+        board.appendChild(link);
+      }
       const totalWord = upcoming.length === 1 ? 'session' : 'sessions';
       setStatus(`Showing the next ${preview.length} of ${upcoming.length} upcoming ${totalWord}.`);
       return;

@@ -5,7 +5,7 @@ The records provide durable history, render the landing page's upcoming event
 experience, generate public calendar subscriptions, and support monthly and
 quarterly reporting.
 
-The landing page previews the next three upcoming sessions. `schedule.html`
+The landing page previews the next five upcoming sessions. `schedule.html`
 shows the full upcoming agenda grouped by month, with combined format, topic,
 and keyword filters; neither
 view imposes a three-month or session-count limit. Completed and cancelled

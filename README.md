@@ -9,7 +9,7 @@ This repository holds the public landing page for **Microsoft Manufacturing & Mo
 ## Upcoming events and calendar subscription
 
 The landing page introduces the series, offers a calendar subscription, and
-previews the next three upcoming sessions.
+previews the next five upcoming sessions.
 Both pages show **For** and **You’ll** summaries before registration, with full
 learning objectives and audience/familiarity details available to expand.
 The landing page keeps one subscription options area in the hero and a short
