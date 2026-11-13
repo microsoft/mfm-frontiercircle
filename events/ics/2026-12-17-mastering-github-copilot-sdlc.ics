@@ -1,0 +1,104 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft//Manufacturing and Mobility Frontier Circle//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Manufacturing & Mobility Frontier Circle
+BEGIN:VEVENT
+UID:msevents-1908106858@mfm-frontiercircle.microsoft.com
+DTSTAMP:20261113T204417Z
+CREATED:20261113T204417Z
+LAST-MODIFIED:20261113T204417Z
+DTSTART:20261217T170000Z
+DTEND:20261217T210000Z
+SUMMARY:🧪 Lab | Mastering GitHub Copilot Across the Software Development
+  Life Cycle (SDLC)
+LOCATION:Online
+DESCRIPTION:Practice using GitHub Copilot throughout the software developme
+ nt life cycle in this advanced (L300) hands-on lab. Guided exercises cover
+  feature planning\, codebase exploration\, unit tests\, goal-oriented deve
+ lopment with Agent mode\, delegated coding tasks\, code review\, security 
+ remediation\, MCP servers\, and custom instructions and prompt files. The 
+ public registration page includes a pre-event machine-access test.\n\nTopi
+ cs:\n- Plan features and explore a codebase with GitHub Copilot\n- Write u
+ nit tests and use Chat in Ask\, Edit\, and Agent modes\n- Delegate develop
+ ment tasks to the Copilot coding agent\n- Review code and remediate vulner
+ abilities with Copilot Autofix\n- Extend context with MCP servers\, custom
+  instructions\, and prompt files\n\nAudience: Developers seeking advanced 
+ (L300)\, hands-on experience with GitHub Copilot across the software devel
+ opment life cycle.\n\nRegistration is required and subject to approval.\n\
+ nThis series calendar is for discovery\, not registration. Entries are mar
+ ked Free. Register separately for the sessions you want to attend.\n\nRegi
+ ster: https://msevents.microsoft.com/event?id=1908106858
+X-ALT-DESC;FMTTYPE=text/html:<!doctype html><html><body style="margin:0\;pa
+ dding:0\;background-color:#eef3f5\;font-family:'Segoe UI'\,Arial\,sans-ser
+ if\;color:#182230\;"><table role="presentation" width="100%" cellpadding="
+ 0" cellspacing="0" border="0" style="width:100%\;background-color:#eef3f5\
+ ;"><tr><td align="center" style="padding:18px 10px\;"><table role="present
+ ation" width="680" cellpadding="0" cellspacing="0" border="0" style="width
+ :100%\;max-width:680px\;background-color:#ffffff\;border:1px solid #c8d8de
+ \;"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\;border-left
+ :6px solid #d83b7d\;padding:18px 24px\;color:#ffffff\;"><div style="font-s
+ ize:13px\;font-weight:700\;letter-spacing:1px\;text-transform:uppercase\;"
+ >🧪 Build &amp\; Skill Labs</div><div style="font-size:14px\;margin-top:
+ 5px\;color:#f4eefa\;">Manufacturing &amp\; Mobility Frontier Circle</div><
+ /td></tr><tr><td style="padding:26px 28px 16px 28px\;"><div style="font-si
+ ze:27px\;line-height:1.16\;font-weight:700\;color:#182230\;">Mastering Git
+ Hub Copilot Across the Software Development Life Cycle (SDLC)</div><div st
+ yle="margin-top:14px\;font-size:16px\;line-height:1.6\;color:#526575\;">Pr
+ actice using GitHub Copilot throughout the software development life cycle
+  in this advanced (L300) hands-on lab. Guided exercises cover feature plan
+ ning\, codebase exploration\, unit tests\, goal-oriented development with 
+ Agent mode\, delegated coding tasks\, code review\, security remediation\,
+  MCP servers\, and custom instructions and prompt files. The public regist
+ ration page includes a pre-event machine-access test.<br><br>This series c
+ alendar is for discovery\, not registration. Entries are marked Free. Regi
+ ster separately for the sessions you want to attend.</div></td></tr><tr><t
+ d style="padding:0 28px 24px 28px\;"><table role="presentation" width="100
+ %" cellpadding="0" cellspacing="0" border="0" style="width:100%\;border-to
+ p:1px solid #c8d8de\;border-bottom:1px solid #c8d8de\;"><tr><td width="42%
+ " valign="top" style="padding:14px 12px 14px 0\;"><div style="font-size:11
+ px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">DATE</div><div
+  style="margin-top:5px\;font-size:14px\;font-weight:600\;color:#182230\;">
+ Thursday\, December 17\, 2026</div></td><td width="30%" valign="top" style
+ ="padding:14px 12px\;border-left:1px solid #c8d8de\;"><div style="font-siz
+ e:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">TIME</div>
+ <div style="margin-top:5px\;font-size:14px\;font-weight:600\;color:#182230
+ \;">12:00 PM–4:00 PM ET</div></td><td width="28%" valign="top" style="pa
+ dding:14px 0 14px 12px\;border-left:1px solid #c8d8de\;"><div style="font-
+ size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">LOCATIO
+ N</div><div style="margin-top:5px\;font-size:14px\;font-weight:600\;color:
+ #182230\;">Online</div></td></tr></table></td></tr><tr><td style="padding:
+ 0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;color:#18
+ 2230\;margin:0 0 10px 0\;">What participants will do</div><ul style="margi
+ n:0\;padding:0 0 0 20px\;color:#526575\;font-size:15px\;line-height:1.55\;
+ "><li style="margin:0 0 7px 0\;">Plan features and explore a codebase with
+  GitHub Copilot</li><li style="margin:0 0 7px 0\;">Write unit tests and us
+ e Chat in Ask\, Edit\, and Agent modes</li><li style="margin:0 0 7px 0\;">
+ Delegate development tasks to the Copilot coding agent</li><li style="marg
+ in:0 0 7px 0\;">Review code and remediate vulnerabilities with Copilot Aut
+ ofix</li><li style="margin:0 0 7px 0\;">Extend context with MCP servers\, 
+ custom instructions\, and prompt files</li></ul></td></tr><tr><td style="p
+ adding:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;co
+ lor:#182230\;margin:0 0 8px 0\;">Audience</div><div style="font-size:15px\
+ ;line-height:1.55\;color:#526575\;">Developers seeking advanced (L300)\, h
+ ands-on experience with GitHub Copilot across the software development lif
+ e cycle.</div></td></tr><tr><td style="padding:0 28px 30px 28px\;"><table 
+ role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td bgc
+ olor="#5b2c83" style="background-color:#5b2c83\;padding:12px 18px\;"><a hr
+ ef="https://msevents.microsoft.com/event?id=1908106858" style="color:#ffff
+ ff\;text-decoration:none\;font-size:15px\;font-weight:700\;">Register for 
+ this event</a></td></tr></table><div style="margin-top:12px\;font-size:12p
+ x\;line-height:1.45\;color:#667684\;">If the button does not open\, use: <
+ a href="https://msevents.microsoft.com/event?id=1908106858" style="color:#
+ 5b2c83\;">https://msevents.microsoft.com/event?id=1908106858</a></div></td
+ ></tr></table></td></tr></table></body></html>
+URL:https://msevents.microsoft.com/event?id=1908106858
+CATEGORIES:Build & Skill Labs,Frontier Circle
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+{
+  "id": "1dc26a3e-6b77-4fe1-a1a0-516802753ded",
+  "lane": "briefing",
+  "status": "Scheduled",
+  "sequence": 0,
+  "created": "2026-11-13T15:44:17-05:00",
+  "lastModified": "2026-11-13T15:44:17-05:00",
+  "title": "From Universe to Action: GitHub Universe 2026 Recap",
+  "start": "2026-12-09T13:00:00-05:00",
+  "end": "2026-12-09T14:00:00-05:00",
+  "timeZone": "America/New_York",
+  "timeZoneLabel": "ET",
+  "location": "Online",
+  "description": "Catch up on highlights from GitHub Universe 2026 in this one-hour virtual briefing. Explore what is next in AI-powered software development and what the announcements mean for engineering organizations and developers. Discuss tooling, security, and governance as AI changes how software is built. Register individually; registrations are initially waitlisted and access is confirmed after approval.",
+  "audience": "Engineering leaders, platform and security strategists, and developers interested in the latest GitHub announcements and their implications for software development.",
+  "audienceSummary": "Engineering leaders, platform and security teams, and developers",
+  "takeaway": "Understand GitHub Universe announcements and their implications for AI-powered development, tooling, security, and governance.",
+  "topicCategories": ["ai-agents", "security"],
+  "topics": [
+    "Highlights and announcements from GitHub Universe 2026",
+    "What is next in AI-powered software development",
+    "Implications for engineering organizations and developers",
+    "Tooling, security, and governance as AI changes software development"
+  ],
+  "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/1DC26A3E-6B77-4FE1-A1A0-516802753DED"
+}

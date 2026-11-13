@@ -1,0 +1,27 @@
+{
+  "id": "msevents-219396618",
+  "lane": "lab",
+  "status": "Scheduled",
+  "sequence": 0,
+  "created": "2026-11-13T15:44:17-05:00",
+  "lastModified": "2026-11-13T15:44:17-05:00",
+  "title": "Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+  "start": "2026-12-08T12:00:00-05:00",
+  "end": "2026-12-08T16:00:00-05:00",
+  "timeZone": "America/New_York",
+  "timeZoneLabel": "ET",
+  "location": "Online",
+  "description": "Practice using GitHub Copilot throughout the software development life cycle in this advanced (L300) hands-on lab. Guided exercises cover feature planning, codebase exploration, unit tests, goal-oriented development with Agent mode, delegated coding tasks, code review, security remediation, MCP servers, and custom instructions and prompt files. The public registration page includes a pre-event machine-access test.",
+  "audience": "Developers seeking advanced (L300), hands-on experience with GitHub Copilot across the software development life cycle.",
+  "audienceSummary": "Developers ready for an advanced (L300) Copilot lab",
+  "takeaway": "Practice planning, coding, testing, and reviewing with Copilot, then extend its context with MCP and custom instructions.",
+  "topicCategories": ["ai-agents", "security"],
+  "topics": [
+    "Plan features and explore a codebase with GitHub Copilot",
+    "Write unit tests and use Chat in Ask, Edit, and Agent modes",
+    "Delegate development tasks to the Copilot coding agent",
+    "Review code and remediate vulnerabilities with Copilot Autofix",
+    "Extend context with MCP servers, custom instructions, and prompt files"
+  ],
+  "registrationUrl": "https://msevents.microsoft.com/event?id=219396618"
+}

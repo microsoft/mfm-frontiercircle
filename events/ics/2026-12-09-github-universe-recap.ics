@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft//Manufacturing and Mobility Frontier Circle//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Manufacturing & Mobility Frontier Circle
+BEGIN:VEVENT
+UID:1dc26a3e-6b77-4fe1-a1a0-516802753ded@mfm-frontiercircle.microsoft.com
+DTSTAMP:20261113T204417Z
+CREATED:20261113T204417Z
+LAST-MODIFIED:20261113T204417Z
+DTSTART:20261209T180000Z
+DTEND:20261209T190000Z
+SUMMARY:💡 Briefing | From Universe to Action: GitHub Universe 2026 Recap
+LOCATION:Online
+DESCRIPTION:Catch up on highlights from GitHub Universe 2026 in this one-ho
+ ur virtual briefing. Explore what is next in AI-powered software developme
+ nt and what the announcements mean for engineering organizations and devel
+ opers. Discuss tooling\, security\, and governance as AI changes how softw
+ are is built. Register individually\; registrations are initially waitlist
+ ed and access is confirmed after approval.\n\nTopics:\n- Highlights and an
+ nouncements from GitHub Universe 2026\n- What is next in AI-powered softwa
+ re development\n- Implications for engineering organizations and developer
+ s\n- Tooling\, security\, and governance as AI changes software developmen
+ t\n\nAudience: Engineering leaders\, platform and security strategists\, a
+ nd developers interested in the latest GitHub announcements and their impl
+ ications for software development.\n\nRegistration is required and subject
+  to approval.\n\nThis series calendar is for discovery\, not registration.
+  Entries are marked Free. Register separately for the sessions you want to
+  attend.\n\nRegister: https://ms-workshops.cloudevents.ai/ms-innovation-wo
+ rkshops/events/1DC26A3E-6B77-4FE1-A1A0-516802753DED
+X-ALT-DESC;FMTTYPE=text/html:<!doctype html><html><body style="margin:0\;pa
+ dding:0\;background-color:#eef3f5\;font-family:'Segoe UI'\,Arial\,sans-ser
+ if\;color:#182230\;"><table role="presentation" width="100%" cellpadding="
+ 0" cellspacing="0" border="0" style="width:100%\;background-color:#eef3f5\
+ ;"><tr><td align="center" style="padding:18px 10px\;"><table role="present
+ ation" width="680" cellpadding="0" cellspacing="0" border="0" style="width
+ :100%\;max-width:680px\;background-color:#ffffff\;border:1px solid #c8d8de
+ \;"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\;border-left
+ :6px solid #d83b7d\;padding:18px 24px\;color:#ffffff\;"><div style="font-s
+ ize:13px\;font-weight:700\;letter-spacing:1px\;text-transform:uppercase\;"
+ >💡 Transformation Briefings</div><div style="font-size:14px\;margin-top
+ :5px\;color:#f4eefa\;">Manufacturing &amp\; Mobility Frontier Circle</div>
+ </td></tr><tr><td style="padding:26px 28px 16px 28px\;"><div style="font-s
+ ize:27px\;line-height:1.16\;font-weight:700\;color:#182230\;">From Univers
+ e to Action: GitHub Universe 2026 Recap</div><div style="margin-top:14px\;
+ font-size:16px\;line-height:1.6\;color:#526575\;">Catch up on highlights f
+ rom GitHub Universe 2026 in this one-hour virtual briefing. Explore what i
+ s next in AI-powered software development and what the announcements mean 
+ for engineering organizations and developers. Discuss tooling\, security\,
+  and governance as AI changes how software is built. Register individually
+ \; registrations are initially waitlisted and access is confirmed after ap
+ proval.<br><br>This series calendar is for discovery\, not registration. E
+ ntries are marked Free. Register separately for the sessions you want to a
+ ttend.</div></td></tr><tr><td style="padding:0 28px 24px 28px\;"><table ro
+ le="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" 
+ style="width:100%\;border-top:1px solid #c8d8de\;border-bottom:1px solid #
+ c8d8de\;"><tr><td width="42%" valign="top" style="padding:14px 12px 14px 0
+ \;"><div style="font-size:11px\;font-weight:700\;letter-spacing:0.8px\;col
+ or:#5b2c83\;">DATE</div><div style="margin-top:5px\;font-size:14px\;font-w
+ eight:600\;color:#182230\;">Wednesday\, December 9\, 2026</div></td><td wi
+ dth="30%" valign="top" style="padding:14px 12px\;border-left:1px solid #c8
+ d8de\;"><div style="font-size:11px\;font-weight:700\;letter-spacing:0.8px\
+ ;color:#5b2c83\;">TIME</div><div style="margin-top:5px\;font-size:14px\;fo
+ nt-weight:600\;color:#182230\;">1:00 PM–2:00 PM ET</div></td><td width="
+ 28%" valign="top" style="padding:14px 0 14px 12px\;border-left:1px solid #
+ c8d8de\;"><div style="font-size:11px\;font-weight:700\;letter-spacing:0.8p
+ x\;color:#5b2c83\;">LOCATION</div><div style="margin-top:5px\;font-size:14
+ px\;font-weight:600\;color:#182230\;">Online</div></td></tr></table></td><
+ /tr><tr><td style="padding:0 28px 22px 28px\;"><div style="font-size:16px\
+ ;font-weight:700\;color:#182230\;margin:0 0 10px 0\;">What participants wi
+ ll do</div><ul style="margin:0\;padding:0 0 0 20px\;color:#526575\;font-si
+ ze:15px\;line-height:1.55\;"><li style="margin:0 0 7px 0\;">Highlights and
+  announcements from GitHub Universe 2026</li><li style="margin:0 0 7px 0\;
+ ">What is next in AI-powered software development</li><li style="margin:0 
+ 0 7px 0\;">Implications for engineering organizations and developers</li><
+ li style="margin:0 0 7px 0\;">Tooling\, security\, and governance as AI ch
+ anges software development</li></ul></td></tr><tr><td style="padding:0 28p
+ x 22px 28px\;"><div style="font-size:16px\;font-weight:700\;color:#182230\
+ ;margin:0 0 8px 0\;">Audience</div><div style="font-size:15px\;line-height
+ :1.55\;color:#526575\;">Engineering leaders\, platform and security strate
+ gists\, and developers interested in the latest GitHub announcements and t
+ heir implications for software development.</div></td></tr><tr><td style="
+ padding:0 28px 30px 28px\;"><table role="presentation" cellpadding="0" cel
+ lspacing="0" border="0"><tr><td bgcolor="#5b2c83" style="background-color:
+ #5b2c83\;padding:12px 18px\;"><a href="https://ms-workshops.cloudevents.ai
+ /ms-innovation-workshops/events/1DC26A3E-6B77-4FE1-A1A0-516802753DED" styl
+ e="color:#ffffff\;text-decoration:none\;font-size:15px\;font-weight:700\;"
+ >Register for this event</a></td></tr></table><div style="margin-top:12px\
+ ;font-size:12px\;line-height:1.45\;color:#667684\;">If the button does not
+  open\, use: <a href="https://ms-workshops.cloudevents.ai/ms-innovation-wo
+ rkshops/events/1DC26A3E-6B77-4FE1-A1A0-516802753DED" style="color:#5b2c83\
+ ;">https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/1DC2
+ 6A3E-6B77-4FE1-A1A0-516802753DED</a></div></td></tr></table></td></tr></ta
+ ble></body></html>
+URL:https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/1DC2
+ 6A3E-6B77-4FE1-A1A0-516802753DED
+CATEGORIES:Transformation Briefings,Frontier Circle
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+END:VCALENDAR
