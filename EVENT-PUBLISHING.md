@@ -117,7 +117,7 @@ Do not include:
      import.
 6. Preview the landing page and confirm the event title, schedule, audience,
    topics, deadline, and registration action. The landing page shows the next
-   three upcoming sessions; `schedule.html` shows all upcoming sessions grouped
+   five upcoming sessions; `schedule.html` shows all upcoming sessions grouped
    by month, with format, topic, and keyword filters that combine (AND).
    Search checks titles, descriptions, audience, learning objectives, and
    approved category labels, ignoring case and surrounding whitespace.

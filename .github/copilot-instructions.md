@@ -49,7 +49,7 @@ page and public calendar feed are generated from them. Outlook is an optional
 operational mirror; private outcomes belong in the separate
 OneDrive/SharePoint leadership workbook.
 
-The landing page previews three sessions; `schedule.html` provides the full
+The landing page previews five sessions; `schedule.html` provides the full
 monthly agenda with combined format, topic, and keyword filters. Keep calendar subscription separate from
 event registration in all copy. Generated series entries are Free, not
 attendance commitments. Never publish synthetic/test sessions to the feed.
