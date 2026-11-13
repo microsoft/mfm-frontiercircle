@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft//Manufacturing and Mobility Frontier Circle//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Manufacturing & Mobility Frontier Circle
+BEGIN:VEVENT
+UID:b83fd2ed-b90e-4230-bf6a-2ca34594377e@mfm-frontiercircle.microsoft.com
+DTSTAMP:20261113T204417Z
+CREATED:20261113T204417Z
+LAST-MODIFIED:20261113T204417Z
+DTSTART:20261203T170000Z
+DTEND:20261203T210000Z
+SUMMARY:🧪 Lab | GitHub Copilot Innovation Workshop - Mastering GitHub Co
+ pilot Across the SDLC
+LOCATION:Online
+DESCRIPTION:Gain hands-on experience using GitHub Copilot throughout the so
+ ftware development life cycle\, from feature planning and prototyping to i
+ mplementation\, code review\, and remediation. Practice AI-assisted develo
+ pment to improve productivity\, code quality\, and security\, and extend C
+ opilot with MCP and custom prompts. Register individually\; registrations 
+ are initially waitlisted and access is confirmed after approval.\n\nTopics
+ :\n- Apply GitHub Copilot through all SDLC stages\n- Plan and build featur
+ es with AI-assisted tools\n- Speed up coding\, reviews\, and fixes with au
+ tomation\n- Extend and optimize Copilot using MCP and custom prompts\n\nAu
+ dience: Developers who want practical experience using GitHub Copilot for 
+ feature planning\, implementation\, review\, and remediation in an interac
+ tive team environment.\n\nRegistration is required and subject to approval
+ .\n\nThis series calendar is for discovery\, not registration. Entries are
+  marked Free. Register separately for the sessions you want to attend.\n\n
+ Registration closes Wednesday\, December 2\, 2026 at 9:00 AM ET.\n\nRegist
+ er: https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/B83
+ FD2ED-B90E-4230-BF6A-2CA34594377E
+X-ALT-DESC;FMTTYPE=text/html:<!doctype html><html><body style="margin:0\;pa
+ dding:0\;background-color:#eef3f5\;font-family:'Segoe UI'\,Arial\,sans-ser
+ if\;color:#182230\;"><table role="presentation" width="100%" cellpadding="
+ 0" cellspacing="0" border="0" style="width:100%\;background-color:#eef3f5\
+ ;"><tr><td align="center" style="padding:18px 10px\;"><table role="present
+ ation" width="680" cellpadding="0" cellspacing="0" border="0" style="width
+ :100%\;max-width:680px\;background-color:#ffffff\;border:1px solid #c8d8de
+ \;"><tr><td bgcolor="#5b2c83" style="background-color:#5b2c83\;border-left
+ :6px solid #d83b7d\;padding:18px 24px\;color:#ffffff\;"><div style="font-s
+ ize:13px\;font-weight:700\;letter-spacing:1px\;text-transform:uppercase\;"
+ >🧪 Build &amp\; Skill Labs</div><div style="font-size:14px\;margin-top:
+ 5px\;color:#f4eefa\;">Manufacturing &amp\; Mobility Frontier Circle</div><
+ /td></tr><tr><td style="padding:26px 28px 16px 28px\;"><div style="font-si
+ ze:27px\;line-height:1.16\;font-weight:700\;color:#182230\;">GitHub Copilo
+ t Innovation Workshop - Mastering GitHub Copilot Across the SDLC</div><div
+  style="margin-top:14px\;font-size:16px\;line-height:1.6\;color:#526575\;"
+ >Gain hands-on experience using GitHub Copilot throughout the software dev
+ elopment life cycle\, from feature planning and prototyping to implementat
+ ion\, code review\, and remediation. Practice AI-assisted development to i
+ mprove productivity\, code quality\, and security\, and extend Copilot wit
+ h MCP and custom prompts. Register individually\; registrations are initia
+ lly waitlisted and access is confirmed after approval.<br><br>This series 
+ calendar is for discovery\, not registration. Entries are marked Free. Reg
+ ister separately for the sessions you want to attend.</div></td></tr><tr><
+ td style="padding:0 28px 24px 28px\;"><table role="presentation" width="10
+ 0%" cellpadding="0" cellspacing="0" border="0" style="width:100%\;border-t
+ op:1px solid #c8d8de\;border-bottom:1px solid #c8d8de\;"><tr><td width="42
+ %" valign="top" style="padding:14px 12px 14px 0\;"><div style="font-size:1
+ 1px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">DATE</div><di
+ v style="margin-top:5px\;font-size:14px\;font-weight:600\;color:#182230\;"
+ >Thursday\, December 3\, 2026</div></td><td width="30%" valign="top" style
+ ="padding:14px 12px\;border-left:1px solid #c8d8de\;"><div style="font-siz
+ e:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">TIME</div>
+ <div style="margin-top:5px\;font-size:14px\;font-weight:600\;color:#182230
+ \;">12:00 PM–4:00 PM ET</div></td><td width="28%" valign="top" style="pa
+ dding:14px 0 14px 12px\;border-left:1px solid #c8d8de\;"><div style="font-
+ size:11px\;font-weight:700\;letter-spacing:0.8px\;color:#5b2c83\;">LOCATIO
+ N</div><div style="margin-top:5px\;font-size:14px\;font-weight:600\;color:
+ #182230\;">Online</div></td></tr></table></td></tr><tr><td style="padding:
+ 0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:700\;color:#18
+ 2230\;margin:0 0 10px 0\;">What participants will do</div><ul style="margi
+ n:0\;padding:0 0 0 20px\;color:#526575\;font-size:15px\;line-height:1.55\;
+ "><li style="margin:0 0 7px 0\;">Apply GitHub Copilot through all SDLC sta
+ ges</li><li style="margin:0 0 7px 0\;">Plan and build features with AI-ass
+ isted tools</li><li style="margin:0 0 7px 0\;">Speed up coding\, reviews\,
+  and fixes with automation</li><li style="margin:0 0 7px 0\;">Extend and o
+ ptimize Copilot using MCP and custom prompts</li></ul></td></tr><tr><td st
+ yle="padding:0 28px 22px 28px\;"><div style="font-size:16px\;font-weight:7
+ 00\;color:#182230\;margin:0 0 8px 0\;">Audience</div><div style="font-size
+ :15px\;line-height:1.55\;color:#526575\;">Developers who want practical ex
+ perience using GitHub Copilot for feature planning\, implementation\, revi
+ ew\, and remediation in an interactive team environment.</div></td></tr><t
+ r><td style="padding:0 28px 22px 28px\;"><table role="presentation" width=
+ "100%" cellpadding="0" cellspacing="0" border="0" style="width:100%\;backg
+ round-color:#f7f2fb\;border-left:4px solid #d83b7d\;"><tr><td style="paddi
+ ng:14px 16px\;color:#4a265f\;font-size:14px\;line-height:1.5\;"><strong>Re
+ gistration is required and subject to approval.</strong><br>Registration c
+ loses Wednesday\, December 2\, 2026 at 9:00 AM ET.</td></tr></table></td><
+ /tr><tr><td style="padding:0 28px 30px 28px\;"><table role="presentation" 
+ cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#5b2c83" style
+ ="background-color:#5b2c83\;padding:12px 18px\;"><a href="https://ms-works
+ hops.cloudevents.ai/ms-innovation-workshops/events/B83FD2ED-B90E-4230-BF6A
+ -2CA34594377E" style="color:#ffffff\;text-decoration:none\;font-size:15px\
+ ;font-weight:700\;">Register for this event</a></td></tr></table><div styl
+ e="margin-top:12px\;font-size:12px\;line-height:1.45\;color:#667684\;">If 
+ the button does not open\, use: <a href="https://ms-workshops.cloudevents.
+ ai/ms-innovation-workshops/events/B83FD2ED-B90E-4230-BF6A-2CA34594377E" st
+ yle="color:#5b2c83\;">https://ms-workshops.cloudevents.ai/ms-innovation-wo
+ rkshops/events/B83FD2ED-B90E-4230-BF6A-2CA34594377E</a></div></td></tr></t
+ able></td></tr></table></body></html>
+URL:https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/B83F
+ D2ED-B90E-4230-BF6A-2CA34594377E
+CATEGORIES:Build & Skill Labs,Frontier Circle
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+END:VCALENDAR

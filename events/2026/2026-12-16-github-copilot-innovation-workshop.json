@@ -1,0 +1,27 @@
+{
+  "id": "e9c8658a-712b-412e-9755-c3b70e5f6bf1",
+  "lane": "lab",
+  "status": "Scheduled",
+  "sequence": 0,
+  "created": "2026-11-13T15:44:17-05:00",
+  "lastModified": "2026-11-13T15:44:17-05:00",
+  "title": "GitHub Copilot Innovation Workshop - Mastering GitHub Copilot Across the SDLC",
+  "start": "2026-12-16T11:00:00-05:00",
+  "end": "2026-12-16T15:00:00-05:00",
+  "timeZone": "America/New_York",
+  "timeZoneLabel": "ET",
+  "location": "Online",
+  "description": "Gain hands-on experience using GitHub Copilot throughout the software development life cycle, from feature planning and prototyping to implementation, code review, and remediation. Practice AI-assisted development to improve productivity, code quality, and security, and extend Copilot with MCP and custom prompts. Register individually; registrations are initially waitlisted and access is confirmed after approval.",
+  "audience": "Developers who want practical experience using GitHub Copilot for feature planning, implementation, review, and remediation in an interactive team environment.",
+  "audienceSummary": "Developers applying Copilot across the development life cycle",
+  "takeaway": "Practice AI-assisted feature development, code reviews, and fixes, and extend Copilot with MCP and custom prompts.",
+  "topicCategories": ["ai-agents", "security"],
+  "topics": [
+    "Apply GitHub Copilot through all SDLC stages",
+    "Plan and build features with AI-assisted tools",
+    "Speed up coding, reviews, and fixes with automation",
+    "Extend and optimize Copilot using MCP and custom prompts"
+  ],
+  "registrationDeadline": "2026-12-16T09:00:00-05:00",
+  "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/E9C8658A-712B-412E-9755-C3B70E5F6BF1"
+}

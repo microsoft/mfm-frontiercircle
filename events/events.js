@@ -1,6 +1,6 @@
 window.frontierCircleEventData = {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-03T10:58:42-05:00",
+  "lastUpdated": "2026-11-13T15:44:17-05:00",
   "calendarUrl": "https://microsoft.github.io/mfm-frontiercircle/calendar.ics",
   "topicCategories": [
     {
@@ -65,6 +65,149 @@ window.frontierCircleEventData = {
       "eventIcsUrl": "events/ics/2026-12-01-azure-ai-gateway-api-management.ics"
     },
     {
+      "id": "msevents-734793789",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-13T15:44:17-05:00",
+      "lastModified": "2026-11-13T15:44:17-05:00",
+      "summary": "🧪 Lab | Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+      "title": "Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+      "start": "2026-12-01T12:00:00-05:00",
+      "end": "2026-12-01T16:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "Practice using GitHub Copilot throughout the software development life cycle in this advanced (L300) hands-on lab. Guided exercises cover feature planning, codebase exploration, unit tests, goal-oriented development with Agent mode, delegated coding tasks, code review, security remediation, MCP servers, and custom instructions and prompt files. The public registration page includes a pre-event machine-access test.",
+      "audience": "Developers seeking advanced (L300), hands-on experience with GitHub Copilot across the software development life cycle.",
+      "audienceSummary": "Developers ready for an advanced (L300) Copilot lab",
+      "takeaway": "Practice planning, coding, testing, and reviewing with Copilot, then extend its context with MCP and custom instructions.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Plan features and explore a codebase with GitHub Copilot",
+        "Write unit tests and use Chat in Ask, Edit, and Agent modes",
+        "Delegate development tasks to the Copilot coding agent",
+        "Review code and remediate vulnerabilities with Copilot Autofix",
+        "Extend context with MCP servers, custom instructions, and prompt files"
+      ],
+      "registrationDeadline": null,
+      "registrationUrl": "https://msevents.microsoft.com/event?id=734793789",
+      "eventIcsUrl": "events/ics/2026-12-01-mastering-github-copilot-sdlc.ics"
+    },
+    {
+      "id": "b83fd2ed-b90e-4230-bf6a-2ca34594377e",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-13T15:44:17-05:00",
+      "lastModified": "2026-11-13T15:44:17-05:00",
+      "summary": "🧪 Lab | GitHub Copilot Innovation Workshop - Mastering GitHub Copilot Across the SDLC",
+      "title": "GitHub Copilot Innovation Workshop - Mastering GitHub Copilot Across the SDLC",
+      "start": "2026-12-03T12:00:00-05:00",
+      "end": "2026-12-03T16:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "Gain hands-on experience using GitHub Copilot throughout the software development life cycle, from feature planning and prototyping to implementation, code review, and remediation. Practice AI-assisted development to improve productivity, code quality, and security, and extend Copilot with MCP and custom prompts. Register individually; registrations are initially waitlisted and access is confirmed after approval.",
+      "audience": "Developers who want practical experience using GitHub Copilot for feature planning, implementation, review, and remediation in an interactive team environment.",
+      "audienceSummary": "Developers applying Copilot across the development life cycle",
+      "takeaway": "Practice AI-assisted feature development, code reviews, and fixes, and extend Copilot with MCP and custom prompts.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Apply GitHub Copilot through all SDLC stages",
+        "Plan and build features with AI-assisted tools",
+        "Speed up coding, reviews, and fixes with automation",
+        "Extend and optimize Copilot using MCP and custom prompts"
+      ],
+      "registrationDeadline": "2026-12-02T09:00:00-05:00",
+      "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/B83FD2ED-B90E-4230-BF6A-2CA34594377E",
+      "eventIcsUrl": "events/ics/2026-12-03-github-copilot-innovation-workshop.ics"
+    },
+    {
+      "id": "msevents-3664230077",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-13T15:44:17-05:00",
+      "lastModified": "2026-11-13T15:44:17-05:00",
+      "summary": "🧪 Lab | Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+      "title": "Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+      "start": "2026-12-04T12:00:00-05:00",
+      "end": "2026-12-04T16:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "Practice using GitHub Copilot throughout the software development life cycle in this advanced (L300) hands-on lab. Guided exercises cover feature planning, codebase exploration, unit tests, goal-oriented development with Agent mode, delegated coding tasks, code review, security remediation, MCP servers, and custom instructions and prompt files. The public registration page includes a pre-event machine-access test.",
+      "audience": "Developers seeking advanced (L300), hands-on experience with GitHub Copilot across the software development life cycle.",
+      "audienceSummary": "Developers ready for an advanced (L300) Copilot lab",
+      "takeaway": "Practice planning, coding, testing, and reviewing with Copilot, then extend its context with MCP and custom instructions.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Plan features and explore a codebase with GitHub Copilot",
+        "Write unit tests and use Chat in Ask, Edit, and Agent modes",
+        "Delegate development tasks to the Copilot coding agent",
+        "Review code and remediate vulnerabilities with Copilot Autofix",
+        "Extend context with MCP servers, custom instructions, and prompt files"
+      ],
+      "registrationDeadline": null,
+      "registrationUrl": "https://msevents.microsoft.com/event?id=3664230077",
+      "eventIcsUrl": "events/ics/2026-12-04-mastering-github-copilot-sdlc.ics"
+    },
+    {
+      "id": "msevents-219396618",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-13T15:44:17-05:00",
+      "lastModified": "2026-11-13T15:44:17-05:00",
+      "summary": "🧪 Lab | Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+      "title": "Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+      "start": "2026-12-08T12:00:00-05:00",
+      "end": "2026-12-08T16:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "Practice using GitHub Copilot throughout the software development life cycle in this advanced (L300) hands-on lab. Guided exercises cover feature planning, codebase exploration, unit tests, goal-oriented development with Agent mode, delegated coding tasks, code review, security remediation, MCP servers, and custom instructions and prompt files. The public registration page includes a pre-event machine-access test.",
+      "audience": "Developers seeking advanced (L300), hands-on experience with GitHub Copilot across the software development life cycle.",
+      "audienceSummary": "Developers ready for an advanced (L300) Copilot lab",
+      "takeaway": "Practice planning, coding, testing, and reviewing with Copilot, then extend its context with MCP and custom instructions.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Plan features and explore a codebase with GitHub Copilot",
+        "Write unit tests and use Chat in Ask, Edit, and Agent modes",
+        "Delegate development tasks to the Copilot coding agent",
+        "Review code and remediate vulnerabilities with Copilot Autofix",
+        "Extend context with MCP servers, custom instructions, and prompt files"
+      ],
+      "registrationDeadline": null,
+      "registrationUrl": "https://msevents.microsoft.com/event?id=219396618",
+      "eventIcsUrl": "events/ics/2026-12-08-mastering-github-copilot-sdlc.ics"
+    },
+    {
       "id": "0f992fbc-7567-4106-98d2-c0529baa1d20",
       "lane": "lab",
       "laneName": "Build & Skill Labs",
@@ -99,6 +242,76 @@ window.frontierCircleEventData = {
       "eventIcsUrl": "events/ics/2026-12-09-ai-assisted-development-github-copilot.ics"
     },
     {
+      "id": "1dc26a3e-6b77-4fe1-a1a0-516802753ded",
+      "lane": "briefing",
+      "laneName": "Transformation Briefings",
+      "laneLabel": "Briefing",
+      "laneEmoji": "💡",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-13T15:44:17-05:00",
+      "lastModified": "2026-11-13T15:44:17-05:00",
+      "summary": "💡 Briefing | From Universe to Action: GitHub Universe 2026 Recap",
+      "title": "From Universe to Action: GitHub Universe 2026 Recap",
+      "start": "2026-12-09T13:00:00-05:00",
+      "end": "2026-12-09T14:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "Catch up on highlights from GitHub Universe 2026 in this one-hour virtual briefing. Explore what is next in AI-powered software development and what the announcements mean for engineering organizations and developers. Discuss tooling, security, and governance as AI changes how software is built. Register individually; registrations are initially waitlisted and access is confirmed after approval.",
+      "audience": "Engineering leaders, platform and security strategists, and developers interested in the latest GitHub announcements and their implications for software development.",
+      "audienceSummary": "Engineering leaders, platform and security teams, and developers",
+      "takeaway": "Understand GitHub Universe announcements and their implications for AI-powered development, tooling, security, and governance.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Highlights and announcements from GitHub Universe 2026",
+        "What is next in AI-powered software development",
+        "Implications for engineering organizations and developers",
+        "Tooling, security, and governance as AI changes software development"
+      ],
+      "registrationDeadline": null,
+      "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/1DC26A3E-6B77-4FE1-A1A0-516802753DED",
+      "eventIcsUrl": "events/ics/2026-12-09-github-universe-recap.ics"
+    },
+    {
+      "id": "937f2fbd-4e43-4a96-a135-8eb5beea477f",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-13T15:44:17-05:00",
+      "lastModified": "2026-11-13T15:44:17-05:00",
+      "summary": "🧪 Lab | GitHub Copilot Innovation Workshop - Mastering GitHub Copilot Across the SDLC",
+      "title": "GitHub Copilot Innovation Workshop - Mastering GitHub Copilot Across the SDLC",
+      "start": "2026-12-10T13:00:00-05:00",
+      "end": "2026-12-10T17:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "Gain hands-on experience using GitHub Copilot throughout the software development life cycle, from feature planning and prototyping to implementation, code review, and remediation. Practice AI-assisted development to improve productivity, code quality, and security, and extend Copilot with MCP and custom prompts. Register individually; registrations are initially waitlisted and access is confirmed after approval.",
+      "audience": "Developers who want practical experience using GitHub Copilot for feature planning, implementation, review, and remediation in an interactive team environment.",
+      "audienceSummary": "Developers applying Copilot across the development life cycle",
+      "takeaway": "Practice AI-assisted feature development, code reviews, and fixes, and extend Copilot with MCP and custom prompts.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Apply GitHub Copilot through all SDLC stages",
+        "Plan and build features with AI-assisted tools",
+        "Speed up coding, reviews, and fixes with automation",
+        "Extend and optimize Copilot using MCP and custom prompts"
+      ],
+      "registrationDeadline": "2026-12-10T09:00:00-05:00",
+      "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/937F2FBD-4E43-4A96-A135-8EB5BEEA477F",
+      "eventIcsUrl": "events/ics/2026-12-10-github-copilot-innovation-workshop.ics"
+    },
+    {
       "id": "94bfeeb4-605f-47e1-abb1-2fcb2b538501",
       "lane": "lab",
       "laneName": "Build & Skill Labs",
@@ -131,6 +344,77 @@ window.frontierCircleEventData = {
       "registrationDeadline": "2026-12-13T13:00:00-05:00",
       "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/94bfeeb4-605f-47e1-abb1-2fcb2b538501",
       "eventIcsUrl": "events/ics/2026-12-14-fabric-real-time-intelligence.ics"
+    },
+    {
+      "id": "e9c8658a-712b-412e-9755-c3b70e5f6bf1",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-13T15:44:17-05:00",
+      "lastModified": "2026-11-13T15:44:17-05:00",
+      "summary": "🧪 Lab | GitHub Copilot Innovation Workshop - Mastering GitHub Copilot Across the SDLC",
+      "title": "GitHub Copilot Innovation Workshop - Mastering GitHub Copilot Across the SDLC",
+      "start": "2026-12-16T11:00:00-05:00",
+      "end": "2026-12-16T15:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "Gain hands-on experience using GitHub Copilot throughout the software development life cycle, from feature planning and prototyping to implementation, code review, and remediation. Practice AI-assisted development to improve productivity, code quality, and security, and extend Copilot with MCP and custom prompts. Register individually; registrations are initially waitlisted and access is confirmed after approval.",
+      "audience": "Developers who want practical experience using GitHub Copilot for feature planning, implementation, review, and remediation in an interactive team environment.",
+      "audienceSummary": "Developers applying Copilot across the development life cycle",
+      "takeaway": "Practice AI-assisted feature development, code reviews, and fixes, and extend Copilot with MCP and custom prompts.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Apply GitHub Copilot through all SDLC stages",
+        "Plan and build features with AI-assisted tools",
+        "Speed up coding, reviews, and fixes with automation",
+        "Extend and optimize Copilot using MCP and custom prompts"
+      ],
+      "registrationDeadline": "2026-12-16T09:00:00-05:00",
+      "registrationUrl": "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/E9C8658A-712B-412E-9755-C3B70E5F6BF1",
+      "eventIcsUrl": "events/ics/2026-12-16-github-copilot-innovation-workshop.ics"
+    },
+    {
+      "id": "msevents-1908106858",
+      "lane": "lab",
+      "laneName": "Build & Skill Labs",
+      "laneLabel": "Lab",
+      "laneEmoji": "🧪",
+      "status": "Scheduled",
+      "sequence": 0,
+      "created": "2026-11-13T15:44:17-05:00",
+      "lastModified": "2026-11-13T15:44:17-05:00",
+      "summary": "🧪 Lab | Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+      "title": "Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+      "start": "2026-12-17T12:00:00-05:00",
+      "end": "2026-12-17T16:00:00-05:00",
+      "timeZone": "America/New_York",
+      "timeZoneLabel": "ET",
+      "location": "Online",
+      "description": "Practice using GitHub Copilot throughout the software development life cycle in this advanced (L300) hands-on lab. Guided exercises cover feature planning, codebase exploration, unit tests, goal-oriented development with Agent mode, delegated coding tasks, code review, security remediation, MCP servers, and custom instructions and prompt files. The public registration page includes a pre-event machine-access test.",
+      "audience": "Developers seeking advanced (L300), hands-on experience with GitHub Copilot across the software development life cycle.",
+      "audienceSummary": "Developers ready for an advanced (L300) Copilot lab",
+      "takeaway": "Practice planning, coding, testing, and reviewing with Copilot, then extend its context with MCP and custom instructions.",
+      "topicCategories": [
+        "ai-agents",
+        "security"
+      ],
+      "topics": [
+        "Plan features and explore a codebase with GitHub Copilot",
+        "Write unit tests and use Chat in Ask, Edit, and Agent modes",
+        "Delegate development tasks to the Copilot coding agent",
+        "Review code and remediate vulnerabilities with Copilot Autofix",
+        "Extend context with MCP servers, custom instructions, and prompt files"
+      ],
+      "registrationDeadline": null,
+      "registrationUrl": "https://msevents.microsoft.com/event?id=1908106858",
+      "eventIcsUrl": "events/ics/2026-12-17-mastering-github-copilot-sdlc.ics"
     }
   ]
 };
